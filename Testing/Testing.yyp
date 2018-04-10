@@ -31,10 +31,18 @@
     },
     "resources": [
         {
+            "Key": "32502520-69ba-4754-9008-d095caf1b271",
+            "Value": {
+                "id": "73effa89-31f6-4a2c-bec9-ecf368ad0085",
+                "resourcePath": "sprites\\spr_line\\spr_line.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b97b89a-ff25-4151-b761-4c8210eb7b9e",
             "Value": {
                 "id": "f3484fd6-1320-464f-bef1-f1925171e7c5",
-                "resourcePath": "sprites\\spr_Jack_run\\spr_Jack_run.yy",
+                "resourcePath": "sprites\\spr_jack_run\\spr_jack_run.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -60,14 +68,6 @@
                 "id": "878c84d3-49ca-4e93-bf8a-29f677132997",
                 "resourcePath": "views\\596a5592-d970-4d2c-9517-2b14a6c81a1d.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "62d75026-6e45-4840-9e16-987452b46323",
-            "Value": {
-                "id": "704a198d-e917-464d-8ae3-df37222d75ec",
-                "resourcePath": "scripts\\script0\\script0.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -106,7 +106,7 @@
             "Key": "91ab50ac-f8e8-4c8a-bc79-b07d3f3a7903",
             "Value": {
                 "id": "bf92ec56-c9a7-41ca-b032-c92e972d4eb1",
-                "resourcePath": "sprites\\spr_Jack_roll\\spr_Jack_roll.yy",
+                "resourcePath": "sprites\\spr_jack_roll\\spr_jack_roll.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -114,7 +114,7 @@
             "Key": "93468f98-2555-4845-bfed-3cceac5ca8d9",
             "Value": {
                 "id": "b4343dba-f8b4-42a3-a0ba-cf532b098674",
-                "resourcePath": "objects\\object0\\object0.yy",
+                "resourcePath": "objects\\Player\\Player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -218,13 +218,13 @@
             "Key": "ea24377d-3158-4f21-8772-221e46c08bf2",
             "Value": {
                 "id": "e45864c9-afe8-4e04-a070-54ffcf01a464",
-                "resourcePath": "sprites\\spr_Jack_stand\\spr_Jack_stand.yy",
+                "resourcePath": "sprites\\spr_jack_stand\\spr_jack_stand.yy",
                 "resourceType": "GMSprite"
             }
         }
     ],
     "script_order": [
-        "62d75026-6e45-4840-9e16-987452b46323"
+        
     ],
     "tutorial": ""
 }

@@ -2,7 +2,7 @@
     "id": "3b97b89a-ff25-4151-b761-4c8210eb7b9e",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_Jack_run",
+    "name": "spr_jack_run",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -274,7 +274,7 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 7,
     "playbackSpeedType": 0,
@@ -286,5 +286,5 @@
     "type": 0,
     "width": 64,
     "xorig": 32,
-    "yorig": 32
+    "yorig": 63
 }

@@ -2,7 +2,7 @@
     "id": "ea24377d-3158-4f21-8772-221e46c08bf2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_Jack_stand",
+    "name": "spr_jack_stand",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -164,7 +164,7 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 7,
     "playbackSpeedType": 0,
@@ -176,5 +176,5 @@
     "type": 0,
     "width": 64,
     "xorig": 32,
-    "yorig": 32
+    "yorig": 63
 }

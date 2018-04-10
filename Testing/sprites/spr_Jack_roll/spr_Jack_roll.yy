@@ -2,7 +2,7 @@
     "id": "91ab50ac-f8e8-4c8a-bc79-b07d3f3a7903",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_Jack_roll",
+    "name": "spr_jack_roll",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -164,7 +164,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -175,6 +175,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 64,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 32,
+    "yorig": 63
 }
