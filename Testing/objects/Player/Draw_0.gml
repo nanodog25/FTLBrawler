@@ -11,12 +11,12 @@ draw_self();
 draw_set_color(c_white);
 draw_text(10,10,
 "Open Objects>Player>Create to edit\n\n" +
-"UP: " + string(global.KeyUp) + "\n" +
-"DOWN: " + string(global.KeyDown) + "\n" +
-"LEFT: " + string(global.KeyLeft) + "\n" +
-"RIGHT: " + string(global.KeyRight) + "\n" +
-"JUMP: " + string("Spacebar") + "\n" +
-"toggle lanes: " + string(global.KeyGrid) + "\n"
+"UP: " + KeyToText(global.KeyUp) + "\n" +
+"DOWN: " + KeyToText(global.KeyDown) + "\n" +
+"LEFT: " + KeyToText(global.KeyLeft) + "\n" +
+"RIGHT: " + KeyToText(global.KeyRight) + "\n" +
+"JUMP: " + KeyToText(global.KeyJump) + "\n" +
+"toggle lanes: " + KeyToText(global.KeyGrid) + "\n"
 );
 
 draw_text(200,50,

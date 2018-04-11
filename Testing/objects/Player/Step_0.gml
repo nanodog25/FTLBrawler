@@ -21,15 +21,41 @@ else
 	}
 	else
 	{
-		var isMovingLeft = keyboard_check(ord(global.KeyLeft));
-		var isMovingRight = keyboard_check(ord(global.KeyRight));
+		var isMovingLeft = keyboard_check(global.KeyLeft);
+		var isMovingRight = keyboard_check(global.KeyRight);
 		MoveHorizontally(isMovingLeft, isMovingRight);
 	}
 	
+	//if (_canFire)
+	//{
+	//	var fire1 = keyboard_check(global.KeyFire1);
+	//	var fire2 = keyboard_check(global.KeyFire2);
+	//	if (fire1)
+	//	{
+	//		//sprite_index = spr_jack_fire;
+	//		_canFire = false;
+	//		var inst = instance_create(x, y, obj_playerSpreadGrenade);
+	//		with (inst)
+	//		{
+	//			direction = image_xscale;
+	//		}
+	//	}
+	//	else if (fire2)
+	//	{
+	//		//sprite_index = spr_jack_fire;
+	//		_canFire = false;
+	//		var inst = instance_create(x, y, obj_playerBullet);
+	//		with (inst)
+	//		{
+	//			direction = image_xscale;
+	//		}
+	//	}
+	//}
+	
 	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	{
-		var moveUp = keyboard_check_pressed(ord(global.KeyUp));
-		var moveDown = keyboard_check_pressed(ord(global.KeyDown));
+		var moveUp = keyboard_check_pressed(global.KeyUp);
+		var moveDown = keyboard_check_pressed(global.KeyDown);
 	
 		if (moveUp && _lane != 0) 
 		{ 
@@ -50,7 +76,7 @@ else
 	if (!_isJumping && !_isFalling)
 	{	
 		_canSwitchLane = true;
-		var jump = keyboard_check(global.KeyJump);
+		var jump = keyboard_check(global.KeyJump);	
 		if (jump)
 		{
 			sprite_index = spr_jack_jump;

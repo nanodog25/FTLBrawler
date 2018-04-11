@@ -298,7 +298,7 @@
             "Key": "da7a81ab-8292-4ce5-958b-7c9c2a7dd392",
             "Value": {
                 "id": "6ac060e4-3cb1-4ab9-a736-4539d5b12c22",
-                "resourcePath": "scripts\\Layout\\Layout.yy",
+                "resourcePath": "scripts\\KeyToText\\KeyToText.yy",
                 "resourceType": "GMScript"
             }
         },
