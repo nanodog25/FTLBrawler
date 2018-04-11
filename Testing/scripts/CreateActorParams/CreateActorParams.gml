@@ -1,10 +1,19 @@
-///CreateActorParams(lane, canSwitchLane, speed, switchSpeed, jumpHeight, jumpSpeed, fallSpeed, attackType, maxHp)
-_lane = argument[0];
-_canSwitchLane = argument[1];
-_speed = argument[2];
-_switchSpeed = argument[3];
-_jumpHeight = argument[4];
-_jumpSpeed = argument[5];
-_fallSpeed = argument[6];
-_attackType = argument[7];
-_maxHP = argument[8]; 
+/// @arg lane
+/// @arg canSwitchLane
+/// @arg speed
+/// @arg switchSpeed
+/// @arg jumpHeight
+/// @arg jumpSpeed
+/// @arg fallSpeed
+/// @arg attackType
+/// @arg maxHP
+
+_lane = argument0;
+_canSwitchLane = argument1;
+_speed = argument2;
+_switchSpeed = argument3;
+_jumpHeight = argument4;
+_jumpSpeed = argument5;
+_fallSpeed = argument6;
+_attackType = argument7;
+_maxHP = argument8; 

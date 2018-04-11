@@ -42,7 +42,7 @@
             "Key": "204e586b-fdf5-4de0-a8f0-f82c60e84d96",
             "Value": {
                 "id": "a8f1d0b6-3565-4a4b-aeff-46ba00c66b14",
-                "resourcePath": "scripts\\LaneSwitching\\LaneSwitching.yy",
+                "resourcePath": "scripts\\SwitchLane\\SwitchLane.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "2b35e7c2-cac2-4069-ab36-469f069f2592",
             "Value": {
                 "id": "a8a2950a-f09b-4aa6-8086-c4426c65ff09",
-                "resourcePath": "scripts\\Horizontal\\Horizontal.yy",
+                "resourcePath": "scripts\\MoveHorizontally\\MoveHorizontally.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -114,7 +114,7 @@
             "Key": "50804c09-858f-46e0-901c-60f58b2d27d8",
             "Value": {
                 "id": "50fb55b3-b4df-4381-abbf-32fc330a76e6",
-                "resourcePath": "scripts\\Jumping\\Jumping.yy",
+                "resourcePath": "scripts\\Jump\\Jump.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -306,7 +306,7 @@
             "Key": "e07396a2-50aa-4a7e-b12e-49bbb23a8dac",
             "Value": {
                 "id": "437f4226-1821-480b-b59a-0a6878bd099a",
-                "resourcePath": "scripts\\Falling\\Falling.yy",
+                "resourcePath": "scripts\\Fall\\Fall.yy",
                 "resourceType": "GMScript"
             }
         },

@@ -8,22 +8,22 @@ else
 {
 	if (_isJumping)
 	{	
-		Jumping();
+		Jump();
 	}
 	else if (_isFalling)
 	{
-		Falling();
+		Fall();
 	}
 	
 	if (_isSwitchingLane)
 	{
-		LaneSwitching();
+		SwitchLane();
 	}
 	else
 	{
-		var moveLeft = keyboard_check(ord(global.KeyLeft));
-		var moveRight = keyboard_check(ord(global.KeyRight));
-		Horizontal(moveLeft, moveRight);
+		var isMovingLeft = keyboard_check(ord(global.KeyLeft));
+		var isMovingRight = keyboard_check(ord(global.KeyRight));
+		MoveHorizontally(isMovingLeft, isMovingRight);
 	}
 	
 	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
