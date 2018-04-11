@@ -1,12 +1,5 @@
-//DEBUG
-if (keyboard_check_pressed(ord(global.KeyGrid)))
-{
-	layer_set_visible("lay_grid", !layer_get_visible("lay_grid"));
-}
+Debug();
 
-
-//ON STEP
-//INPUT
 if (_isHit)
 {
 
@@ -15,81 +8,25 @@ else
 {
 	if (_isJumping)
 	{	
-		if (y > _currentGroundY - _jumpHeight)
-		{
-			y -= _jumpSpeed;
-		}
-		
-		if (y <= _currentGroundY - _jumpHeight)
-		{
-			_isJumping = false;
-			_isFalling = true;
-		}
+		Jumping();
 	}
 	else if (_isFalling)
 	{
-		if (y < _currentGroundY)
-		{
-			y += _fallSpeed;
-		}
-		if (y >= _currentGroundY)
-		{
-			y = _currentGroundY;
-			_isFalling = false;
-		}
+		Falling();
 	}
+	
 	if (_isSwitchingLane)
 	{
-		switchSpeed = _switchSpeed*_switchSpeedMod;
-		currenctGroundY = _currentGroundY;
-		
-		if (_xSpeed > 0)
-		{
-			_xSpeed = switchSpeed;
-		}
-		else if (_xSpeed < 0)
-		{
-			_xSpeed = -switchSpeed;
-		}
-
-		if (_currentGroundY > _targetGroundY)
-		{
-			_currentGroundY -= switchSpeed;
-			if (_currentGroundY < _targetGroundY)
-				_currentGroundY = _targetGroundY;
-		}
-		else if (_currentGroundY < _targetGroundY)
-		{
-			_currentGroundY += switchSpeed;
-			if (_currentGroundY > _targetGroundY)
-				_currentGroundY = _targetGroundY;
-		}
-		
-		y += _currentGroundY - currenctGroundY;
-		_isSwitchingLane = _targetGroundY != _currentGroundY;
+		LaneSwitching();
 	}
 	else
 	{
-		moveLeft = keyboard_check(ord(global.KeyLeft));
-		moveRight = keyboard_check(ord(global.KeyRight));
-		
-		if (moveLeft && moveRight || !moveLeft && !moveRight)
-		{
-			_xSpeed = 0;
-		}
-		else if (moveLeft && x > sprite_width/2) 
-		{ 
-			_xSpeed = -1*_speed*_speedMod;			
-			image_xscale = 1;
-		}
-		else if (moveRight && x < room_width - sprite_width/2) 
-		{ 
-			_xSpeed = _speed*_speedMod;	
-			image_xscale = -1;
-		}
+		var moveLeft = keyboard_check(ord(global.KeyLeft));
+		var moveRight = keyboard_check(ord(global.KeyRight));
+		Horizontal(moveLeft, moveRight);
 	}
 	
-	if (!_isSwitchingLane && _canSwitchLane && !_isFalling)
+	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	{
 		var moveUp = keyboard_check_pressed(ord(global.KeyUp));
 		var moveDown = keyboard_check_pressed(ord(global.KeyDown));
