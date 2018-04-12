@@ -1,9 +1,9 @@
 if (y > _currentGroundY - _jumpHeight)
 {
-	y -= _jumpSpeed;
+	_ySpeed -= _jumpSpeed;
 }
 		
-if (y <= _currentGroundY - _jumpHeight)
+if (y + _ySpeed <= _currentGroundY - _jumpHeight)
 {
 	_isJumping = false;
 	_isFalling = true;

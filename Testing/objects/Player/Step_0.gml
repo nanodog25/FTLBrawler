@@ -4,8 +4,14 @@ if (_isHit)
 {
 
 }
+else if (_isAttacking)
+{
+	
+}
 else
 {
+	_ySpeed = 0;
+	
 	if (_isJumping)
 	{	
 		Jump();
@@ -26,51 +32,27 @@ else
 		MoveHorizontally(isMovingLeft, isMovingRight);
 	}
 	
-	//if (_canFire)
-	//{
-	//	var fire1 = keyboard_check(global.KeyFire1);
-	//	var fire2 = keyboard_check(global.KeyFire2);
-	//	if (fire1)
-	//	{
-	//		//sprite_index = spr_jack_fire;
-	//		_canFire = false;
-	//		var inst = instance_create(x, y, obj_playerSpreadGrenade);
-	//		with (inst)
-	//		{
-	//			direction = image_xscale;
-	//		}
-	//	}
-	//	else if (fire2)
-	//	{
-	//		//sprite_index = spr_jack_fire;
-	//		_canFire = false;
-	//		var inst = instance_create(x, y, obj_playerBullet);
-	//		with (inst)
-	//		{
-	//			direction = image_xscale;
-	//		}
-	//	}
-	//}
+	if (!_isAttacking)
+	{
+		var fire1 = keyboard_check(global.KeyFire1);
+		var fire2 = keyboard_check(global.KeyFire2);
+		if (fire1)
+		{
+			Fire(obj_PlayerSpreadGrenade);
+			alarm_set(0, 2);
+		}
+		else if (fire2)
+		{
+			Fire(obj_PlayerBullet);
+			alarm_set(0, 2);
+		}
+	}
 	
 	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	{
 		var moveUp = keyboard_check_pressed(global.KeyUp);
-		var moveDown = keyboard_check_pressed(global.KeyDown);
-	
-		if (moveUp && _lane != 0) 
-		{ 
-			_isSwitchingLane = true;
-			_canSwitchLane = false;
-			_lane--;
-			_targetGroundY = global.LaneYs[| _lane];
-		}
-		else if (moveDown && _lane != 4) 
-		{ 
-			_isSwitchingLane = true;
-			_canSwitchLane = false;
-			_lane++;
-			_targetGroundY = global.LaneYs[| _lane];
-		}
+		var moveDown = keyboard_check_pressed(global.KeyDown);		
+		SetSwitchLane(moveUp, moveDown);
 	}
 	
 	if (!_isJumping && !_isFalling)
@@ -84,19 +66,14 @@ else
 			_isJumping = true;
 		}
 	}
-	
-	if (!_isJumping && !_isFalling && !_isAttacking && !_isSwitchingLane)
-	{
-		if (_xSpeed == 0)
-			sprite_index = spr_jack_stand;
-		else
-			sprite_index = spr_jack_run;
-	}
 }
 
+ApplyMovement();
 
-//MOVEMENT
-if (x > sprite_width/2 && x < room_width - sprite_width/2)
-	x += _xSpeed;
-	
-depth = -1 * _currentGroundY;
+if (!_isHit && !_isJumping && !_isFalling && !_isAttacking && !_isSwitchingLane)
+{
+	if (_xSpeed == 0)
+		sprite_index = spr_jack_stand;
+	else
+		sprite_index = spr_jack_run;
+}

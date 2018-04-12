@@ -5,6 +5,7 @@ _isAttacking = false;
 _isHit = false;
 _currentHP = _maxHP;
 _xSpeed = 0;
+_ySpeed = 0;
 _canEverSwitchLane = _canSwitchLane;
 _canFire = true;
 

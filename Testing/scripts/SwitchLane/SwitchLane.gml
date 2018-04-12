@@ -22,5 +22,5 @@ else if (_currentGroundY < _targetGroundY)
 		_currentGroundY = _targetGroundY;
 }
 		
-y += _currentGroundY - currenctGroundY;
+_ySpeed += _currentGroundY - currenctGroundY;
 _isSwitchingLane = _targetGroundY != _currentGroundY;
