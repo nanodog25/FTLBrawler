@@ -39,11 +39,35 @@
             }
         },
         {
+            "Key": "1af2600d-ff21-4f68-b725-6f89a3218c55",
+            "Value": {
+                "id": "1ba31a90-0330-476d-8dc6-5ae902b06380",
+                "resourcePath": "views\\1af2600d-ff21-4f68-b725-6f89a3218c55.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1af69f50-64ad-4f5c-bd04-dfd8f5de26f2",
             "Value": {
                 "id": "9e3ec266-b8f4-45bd-95aa-e42d4fe83139",
                 "resourcePath": "views\\1af69f50-64ad-4f5c-bd04-dfd8f5de26f2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1f725158-162d-461e-865f-569a5b2d4251",
+            "Value": {
+                "id": "326ead15-cad0-459a-a8bc-a5fc12b18e93",
+                "resourcePath": "scripts\\SetProjectileWhenFired\\SetProjectileWhenFired.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "203f0026-1d79-45dd-8d4b-34ce20596165",
+            "Value": {
+                "id": "edca9da2-f4c8-4489-a048-55b1afd82c80",
+                "resourcePath": "sprites\\PlaceholderProjectile\\PlaceholderProjectile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -135,6 +159,14 @@
             }
         },
         {
+            "Key": "52bf19c5-d1f9-4246-b8c0-1a635689d3e4",
+            "Value": {
+                "id": "8a9f2618-fa10-4bc4-857e-d47b6edf1bfb",
+                "resourcePath": "views\\52bf19c5-d1f9-4246-b8c0-1a635689d3e4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5950c421-db0b-4ff2-8f79-176b021fe9cb",
             "Value": {
                 "id": "f9a7a52e-9f5c-4dfd-8a1e-f724dfb9c56d",
@@ -203,6 +235,14 @@
             "Value": {
                 "id": "9c94dc5b-699c-4f7d-80aa-fe89ecc2fa3a",
                 "resourcePath": "scripts\\Fire\\Fire.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "830a2163-251d-4378-86b1-8daecdf91e3a",
+            "Value": {
+                "id": "d54d9603-d71f-4bc5-9505-ab5ad7622b2e",
+                "resourcePath": "scripts\\CreateProjectile\\CreateProjectile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -375,6 +415,14 @@
             }
         },
         {
+            "Key": "e3aac621-abe0-45ca-98b5-476830573c8e",
+            "Value": {
+                "id": "25e6e129-8ee7-4d09-82fc-a5e699a1db23",
+                "resourcePath": "scripts\\MoveLinearProjectile\\MoveLinearProjectile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ea24377d-3158-4f21-8772-221e46c08bf2",
             "Value": {
                 "id": "e45864c9-afe8-4e04-a070-54ffcf01a464",
@@ -405,7 +453,10 @@
         "701c2d86-48ff-420e-9ec2-0f0299ecf610",
         "4a546b61-c1d3-4b04-8de6-18405ed2d825",
         "28422c41-3e4e-4017-934c-aca69220184f",
-        "80a01f7b-0d74-44ea-ab9f-a3ff80236716"
+        "80a01f7b-0d74-44ea-ab9f-a3ff80236716",
+        "830a2163-251d-4378-86b1-8daecdf91e3a",
+        "e3aac621-abe0-45ca-98b5-476830573c8e",
+        "1f725158-162d-461e-865f-569a5b2d4251"
     ],
     "tutorial": ""
 }

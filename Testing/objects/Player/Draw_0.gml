@@ -16,6 +16,8 @@ draw_text(10,10,
 "LEFT: " + KeyToText(global.KeyLeft) + "\n" +
 "RIGHT: " + KeyToText(global.KeyRight) + "\n" +
 "JUMP: " + KeyToText(global.KeyJump) + "\n" +
+"FIRE1: " + KeyToText(global.KeyFire1) + "\n" +
+"FIRE2: " + KeyToText(global.KeyFire2) + "\n" +
 "toggle lanes: " + KeyToText(global.KeyGrid) + "\n"
 );
 

@@ -4,10 +4,6 @@ if (_isHit)
 {
 
 }
-else if (_isAttacking)
-{
-	
-}
 else
 {
 	_ySpeed = 0;
@@ -25,6 +21,11 @@ else
 	{
 		SwitchLane();
 	}
+	else if (_isAttacking)
+	{
+		if (!_isJumping && !_isFalling)
+			_xSpeed = 0;
+	}
 	else
 	{
 		var isMovingLeft = keyboard_check(global.KeyLeft);
@@ -38,24 +39,22 @@ else
 		var fire2 = keyboard_check(global.KeyFire2);
 		if (fire1)
 		{
-			Fire(obj_PlayerSpreadGrenade);
-			alarm_set(0, 2);
+			Fire(obj_PlayerBullet, 20, -50);
 		}
 		else if (fire2)
 		{
-			Fire(obj_PlayerBullet);
-			alarm_set(0, 2);
+			Fire(obj_PlayerSpreadGrenade, 20, -50);
 		}
 	}
 	
-	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
+	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling && !_isAttacking)
 	{
 		var moveUp = keyboard_check_pressed(global.KeyUp);
 		var moveDown = keyboard_check_pressed(global.KeyDown);		
 		SetSwitchLane(moveUp, moveDown);
 	}
 	
-	if (!_isJumping && !_isFalling)
+	if (!_isJumping && !_isFalling && !_isAttacking)
 	{	
 		_canSwitchLane = true;
 		var jump = keyboard_check(global.KeyJump);	

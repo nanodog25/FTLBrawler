@@ -1,0 +1,1 @@
+CreateProjectile("Player", 10, 50, 30);

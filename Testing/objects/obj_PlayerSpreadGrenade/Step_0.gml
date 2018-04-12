@@ -1,0 +1,1 @@
+MoveLinearProjectile(60, 400);
