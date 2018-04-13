@@ -8,31 +8,6 @@ else
 {
 	_ySpeed = 0;
 	
-	if (_isJumping)
-	{	
-		Jump();
-	}
-	else if (_isFalling)
-	{
-		Fall();
-	}
-	
-	if (_isSwitchingLane)
-	{
-		SwitchLane();
-	}
-	else if (_isAttacking)
-	{
-		if (!_isJumping && !_isFalling)
-			_xSpeed = 0;
-	}
-	else
-	{
-		var isMovingLeft = keyboard_check(global.KeyLeft);
-		var isMovingRight = keyboard_check(global.KeyRight);
-		MoveHorizontally(isMovingLeft, isMovingRight);
-	}
-	
 	if (!_isAttacking)
 	{
 		var fire1 = keyboard_check(global.KeyFire1);
@@ -64,6 +39,31 @@ else
 			image_index = 0;
 			_isJumping = true;
 		}
+	}
+	
+	if (_isJumping)
+	{	
+		Jump();
+	}
+	if (_isFalling)
+	{
+		Fall();
+	}
+	
+	if (_isSwitchingLane)
+	{
+		SwitchLane();
+	}
+	else if (_isAttacking)
+	{
+		if (!_isJumping && !_isFalling)
+			_xSpeed = 0;
+	}
+	else
+	{
+		var isMovingLeft = keyboard_check(global.KeyLeft);
+		var isMovingRight = keyboard_check(global.KeyRight);
+		MoveHorizontally(isMovingLeft, isMovingRight);
 	}
 }
 

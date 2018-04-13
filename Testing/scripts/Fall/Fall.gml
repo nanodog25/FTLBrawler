@@ -1,9 +1,9 @@
 if (y < _currentGroundY)
 {
-	y += _fallSpeed;
+	_ySpeed += _fallSpeed;
 }
-if (y >= _currentGroundY)
+if (y + _ySpeed >= _currentGroundY)
 {
-	y = _currentGroundY;
+	_ySpeed = 0;
 	_isFalling = false;
 }
