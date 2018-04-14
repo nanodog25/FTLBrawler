@@ -2,7 +2,7 @@
 //Raycast to the floor to ensure precision y and shadow and nice offsets and all sorts!
 
 if (_xSpeed != 0 && x + _xSpeed > sprite_width/2 && x + _xSpeed < room_width - sprite_width/2)
-&&	(_xSpeed > 0 && !IsTileMapCollision("right") || _xSpeed < 0 && !IsTileMapCollision("left"))
+&&	(_xSpeed > 0 && IsPlatformCollision("right") == noone || _xSpeed < 0 && IsPlatformCollision("left") == noone)
 {
 	x += _xSpeed;
 }
@@ -11,9 +11,9 @@ else
 	_xSpeed = 0;
 }
 
-var onFloor = IsTileMapCollision("down");
+var onFloor = IsPlatformCollision("down") != noone;
 
-if (_ySpeed > 0 && !onFloor || _ySpeed < 0 && !IsTileMapCollision("up"))
+if (_ySpeed > 0 && !onFloor || _ySpeed < 0 && IsPlatformCollision("up") == noone)
 {
 	y += _ySpeed;
 }
