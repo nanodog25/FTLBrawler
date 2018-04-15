@@ -1,1 +1,1 @@
-CreateProjectile("Player", 10, 50, 30);
+CreateProjectile("Player", 10, 1, 1);
