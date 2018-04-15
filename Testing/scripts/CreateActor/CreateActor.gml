@@ -12,5 +12,7 @@ _canFire = true;
 _onGround = true;
 _targetGroundY = global.LaneYs[| _lane];
 _currentGroundY = _targetGroundY;
+_jumpHeight = 0
 y = _targetGroundY;
 
+_collisionBuffer = 20;

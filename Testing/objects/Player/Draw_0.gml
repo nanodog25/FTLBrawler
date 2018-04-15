@@ -24,7 +24,7 @@ draw_text(10,10,
 draw_text(200,50,
 "left/right movement speed: " + string(_speed) + "\n" +
 "up/down switch speed: " + string(_switchSpeed) + "\n" +
-"jump height: " + string(_jumpHeight) + "\n" +
+"max jump height: " + string(_maxJumpHeight) + "\n" +
 "jump speed: " + string(_jumpSpeed) + "\n" +
 "fall speed: " + string(_fallSpeed) + "\n"
 );

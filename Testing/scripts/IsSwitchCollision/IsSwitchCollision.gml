@@ -15,5 +15,12 @@ var xRight = x + abs(sprite_width) - abs(sprite_xoffset);
 var yUp = y - sprite_yoffset + laneOffset;
 var yDown = y + sprite_height - sprite_yoffset + laneOffset;
 
-var v = collision_rectangle(xLeft, yUp, xRight, yDown, asset_get_index(objName), false, true);
+var v = collision_rectangle(
+	xLeft + _collisionBuffer,
+	yUp + _collisionBuffer,
+	xRight - _collisionBuffer,
+	yDown - _collisionBuffer,
+	asset_get_index(objName),
+	true,
+	true);
 return v;

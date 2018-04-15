@@ -1,4 +1,3 @@
-//Handle obstacles when switching (simple collision call should suffice, at worst at all 4 corners)
 //Raycast to the floor to ensure precision y and shadow and nice offsets and all sorts!
 
 if (_xSpeed != 0 && x + _xSpeed > sprite_width/2 && x + _xSpeed < room_width - sprite_width/2)
@@ -11,27 +10,44 @@ else
 	_xSpeed = 0;
 }
 
-var onFloor = IsPlatformCollision("down") != noone;
+var targetGroundYBefore = _targetGroundY;
+_targetGroundY = GetTargetGroundY();
+
+if (targetGroundYBefore != _targetGroundY)
+{
+	_currentGroundY -= targetGroundYBefore - _targetGroundY;
+}
+
+var onFloor = !_isJumping && _currentGroundY == y;
 
 if (_ySpeed > 0 && !onFloor || _ySpeed < 0 && IsPlatformCollision("up") == noone)
 {
 	y += _ySpeed;
+	
+	if (!_isJumping && y > _currentGroundY)
+	{
+		y = _currentGroundY;
+		_isFalling = false;
+		_ySpeed = 0;
+	}
 }
-else if (y != global.LaneYs[| _lane] && !onFloor)
+else if (_ySpeed == 0 && !onFloor)
 {
-	_isFalling = true;
-	_ySpeed = _fallSpeed;
-	_currentGroundY = global.LaneYs[| _lane];
-	y += _ySpeed;
-}
-else if (onFloor)
-{
-	_isFalling = false;
-	_currentGroundY = y;
-	_ySpeed = 0;
+	if (_currentGroundY > y)
+	{
+		_ySpeed += _fallSpeed;
+		_isFalling = true;
+		y += _ySpeed;
+	}
+	else
+	{
+		y = _currentGroundY;
+	}
 }
 else
 {
 	_ySpeed = 0;
+	_isFalling = false;
+	_isJumping = false;
 }
-depth = -1 * _lane;
+depth = -1 * _lane * 100;
