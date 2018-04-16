@@ -19,7 +19,11 @@ switch(dir)
 	case "down":
 			return collision_rectangle(xLeft + _collisionBuffer, yUp, xRight - _collisionBuffer, global.LaneYs[| _lane], obj, true, true);
 	case "left":
-			return collision_line(xLeft, yUp + _collisionBuffer, xLeft, yDown - _collisionBuffer, obj, true, true);
+			return xLeft < 0
+				? obj_leftBorder
+				: collision_line(xLeft, yUp + _collisionBuffer, xLeft, yDown - _collisionBuffer, obj, true, true);
 	case "right":
-		return collision_line(xRight, yUp + _collisionBuffer, xRight, yDown - _collisionBuffer, obj, true, true);
+		return xRight > room_width
+			? obj_rightBorder
+			: collision_line(xRight, yUp + _collisionBuffer, xRight, yDown - _collisionBuffer, obj, true, true);
 }

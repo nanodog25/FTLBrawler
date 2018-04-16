@@ -1,7 +1,7 @@
 //Raycast to the floor to ensure precision y and shadow and nice offsets and all sorts!
 
-if (_xSpeed != 0 && x + _xSpeed > sprite_width/2 && x + _xSpeed < room_width - sprite_width/2)
-&&	(_xSpeed > 0 && IsPlatformCollision("right") == noone || _xSpeed < 0 && IsPlatformCollision("left") == noone)
+if (_xSpeed != 0
+	&&	(_xSpeed > 0 && IsPlatformCollision("right") == noone || _xSpeed < 0 && IsPlatformCollision("left") == noone))
 {
 	x += _xSpeed;
 }

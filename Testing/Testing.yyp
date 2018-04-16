@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "00e88cda-3a15-44ad-a6dc-751e8e85c8cb",
+            "Value": {
+                "id": "27e6138f-13e0-4255-84fd-2ff2a4b326ce",
+                "resourcePath": "objects\\obj_rightBorder\\obj_rightBorder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "018a74df-f7de-4c1b-bc20-6c2b9c0a4156",
             "Value": {
                 "id": "3f6ca844-98e6-4cf1-9a86-d40da966a5bb",
                 "resourcePath": "scripts\\KeyBindings\\KeyBindings.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0575057d-a692-41e8-a543-fab4ed6b31bb",
+            "Value": {
+                "id": "bd389f02-52f9-440c-8c6d-3bc63ba92e04",
+                "resourcePath": "views\\0575057d-a692-41e8-a543-fab4ed6b31bb.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -228,6 +244,14 @@
                 "id": "706fe1f3-b6bb-4c1e-b3ec-e4fddc5312f6",
                 "resourcePath": "views\\482580bc-7e61-4ea3-88a6-bfa3c0b2dc5c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4971ffc7-dba1-498f-a2a5-89afe78efab0",
+            "Value": {
+                "id": "9ccdf973-df39-4fff-96b6-7b12eaa88497",
+                "resourcePath": "objects\\obj_leftBorder\\obj_leftBorder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -428,6 +452,14 @@
                 "id": "15913f69-de73-46d4-9298-3a4052b201c3",
                 "resourcePath": "sprites\\spr_jack_jump\\spr_jack_jump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a5f9a5ca-1efe-4286-8832-0a215bacb505",
+            "Value": {
+                "id": "e4732494-e246-47f1-8d0e-3a88926bfe09",
+                "resourcePath": "views\\a5f9a5ca-1efe-4286-8832-0a215bacb505.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
