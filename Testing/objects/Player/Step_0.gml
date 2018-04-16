@@ -32,7 +32,7 @@ else
 	if (!_isJumping && !_isFalling)
 	{	
 		_canSwitchLane = true;
-		var jump = keyboard_check(global.KeyJump);	
+		var jump = keyboard_check_pressed(global.KeyJump);	
 		if (jump)
 		{
 			sprite_index = spr_jack_jump;

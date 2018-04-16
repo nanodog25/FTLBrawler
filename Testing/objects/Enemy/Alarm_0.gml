@@ -1,2 +1,2 @@
-/// @Attack
+/// @description Attack
 _canFire = true;

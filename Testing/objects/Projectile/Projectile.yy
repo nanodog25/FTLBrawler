@@ -4,11 +4,20 @@
     "mvc": "1.0",
     "name": "Projectile",
     "eventList": [
-        
+        {
+            "id": "4770a3d9-0519-4356-8edc-da43001d520b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "3064a079-1f37-4673-8bdd-43aeeebdde77"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "12c7341e-98d6-4401-b265-5f0c5a2bd0f9",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

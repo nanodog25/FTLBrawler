@@ -1,2 +1,0 @@
-/// @Attack
-_canFire = true;

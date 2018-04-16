@@ -2,36 +2,29 @@ _ySpeed = 0;
 
 if (_isHit)
 {
-
+	sprite_index = spr_jack_hit;
+	image_xscale = _hitDirection;
+	_xSpeed = _hitDirection * 1;
 }
 else
 {
-	var fire = random(4) > 3;
+	_xSpeed = 0;
+	var fire = true;
 	if (fire && _canFire)
 	{
-		Fire(obj_Bullet, 30, -40);
+		Fire(obj_Bullet, 50, -40);
 	}
 
 	_isAttacking = fire;
 	
 	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	{
-		var moveUp = random(10) > 9.9;
-		var moveDown = random(10) > 9.9;		
-		SetSwitchLane(moveUp, moveDown);
+
 	}
 	
 	if (!_isJumping && !_isFalling)
 	{	
-		_canSwitchLane = true;
-		var jump = random(10) > 9;	
-		if (jump)
-		{
-			sprite_index = spr_jack_jump;
-			image_index = 0;
-			_isJumping = true;
-			_jumpHeight = 0;
-		}
+
 	}
 }
 
@@ -51,9 +44,7 @@ if (_isSwitchingLane)
 }
 else
 {
-	var isMovingLeft = random(2) > 1;
-	var isMovingRight = random(2) > 1;
-	MoveHorizontally(isMovingLeft, isMovingRight);
+
 }
 
 ApplyMovement();

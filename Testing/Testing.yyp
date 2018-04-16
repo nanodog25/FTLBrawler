@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "12c7341e-98d6-4401-b265-5f0c5a2bd0f9",
+            "Value": {
+                "id": "87b5fe46-824e-497e-8569-4eb2461e857b",
+                "resourcePath": "objects\\Solid\\Solid.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1af2600d-ff21-4f68-b725-6f89a3218c55",
             "Value": {
                 "id": "1ba31a90-0330-476d-8dc6-5ae902b06380",
@@ -194,7 +202,7 @@
             "Key": "33076f9e-ecf0-4f8d-969a-8412faf90d61",
             "Value": {
                 "id": "43a2e4a1-4b91-41fc-8dd1-7f6faad1ea11",
-                "resourcePath": "objects\\Enemy_Static\\Enemy_Static.yy",
+                "resourcePath": "objects\\obj_enemy_static\\obj_enemy_static.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -351,6 +359,14 @@
             }
         },
         {
+            "Key": "6a76c471-67c3-4a67-9aeb-6276ab987521",
+            "Value": {
+                "id": "7e0fef02-63db-4a66-bf2a-4383c258704e",
+                "resourcePath": "objects\\LaneObject\\LaneObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6cab6f70-8d1a-4b72-8c45-a131e97b2772",
             "Value": {
                 "id": "8332e2df-8db9-40cd-8e16-f28fcc65bf81",
@@ -458,7 +474,7 @@
             "Key": "83499d3a-6f94-461f-972d-098970ac3c1f",
             "Value": {
                 "id": "f2f4b896-5fe6-4578-8968-60c569d1c619",
-                "resourcePath": "objects\\Enemy\\Enemy.yy",
+                "resourcePath": "objects\\obj_enemy_crazed\\obj_enemy_crazed.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -663,6 +679,14 @@
             }
         },
         {
+            "Key": "d29a2eef-6165-456c-bd70-e91901f240fd",
+            "Value": {
+                "id": "afa4f172-8a8c-423e-b777-c67dd0d726b7",
+                "resourcePath": "scripts\\collision_circle_list\\collision_circle_list.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d4024479-78ff-41d0-84a1-8389eaddd782",
             "Value": {
                 "id": "398049d4-6e0f-4ef1-b9aa-1eec7f838ef2",
@@ -765,6 +789,14 @@
                 "resourcePath": "views\\f8a13bf3-e263-4030-b659-0bbe8a44cd7d.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "f979970a-2aa8-4b38-bab4-ee01b8997a6c",
+            "Value": {
+                "id": "36f29eed-dff7-49a6-986f-c53822833405",
+                "resourcePath": "objects\\Enemy\\Enemy.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -789,6 +821,7 @@
         "f88585de-aff8-469a-ac11-76f0735e5928",
         "e531610e-4435-401a-97f4-28f5ed6b98ba",
         "71985934-2e16-469b-a01b-fd2ac7c48c13",
+        "d29a2eef-6165-456c-bd70-e91901f240fd",
         "92c57bc1-2f4d-4933-8d89-2f78a97d954f",
         "5c3b6182-0b75-4daa-8ee6-f5957eb1075a"
     ],

@@ -1,23 +1,14 @@
 {
-    "id": "2448730a-8354-460c-962e-571882a1b765",
+    "id": "12c7341e-98d6-4401-b265-5f0c5a2bd0f9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "LaneObject3",
+    "name": "Solid",
     "eventList": [
-        {
-            "id": "15b5dd45-446a-4d66-8a41-8c1a533287a4",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "2448730a-8354-460c-962e-571882a1b765"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "6a76c471-67c3-4a67-9aeb-6276ab987521",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -31,9 +22,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": false
