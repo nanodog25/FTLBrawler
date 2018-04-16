@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "71985934-2e16-469b-a01b-fd2ac7c48c13",
+            "Value": {
+                "id": "79a2cc01-925e-4f85-98cf-d808abf67504",
+                "resourcePath": "scripts\\CheckProjectileCollision\\CheckProjectileCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "72575272-e0aa-4367-80aa-449b80856d0a",
             "Value": {
                 "id": "13716191-a484-48b8-8fb5-5d21a7afaf1a",
@@ -780,6 +788,7 @@
         "f7dae3a3-3457-4275-a747-fe9883b2c3dd",
         "f88585de-aff8-469a-ac11-76f0735e5928",
         "e531610e-4435-401a-97f4-28f5ed6b98ba",
+        "71985934-2e16-469b-a01b-fd2ac7c48c13",
         "92c57bc1-2f4d-4933-8d89-2f78a97d954f",
         "5c3b6182-0b75-4daa-8ee6-f5957eb1075a"
     ],
