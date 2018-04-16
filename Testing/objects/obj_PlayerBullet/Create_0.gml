@@ -1,1 +1,0 @@
-CreateProjectile("Player", 10, 1, 1);

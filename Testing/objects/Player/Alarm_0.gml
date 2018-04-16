@@ -1,2 +1,2 @@
 /// @description Attack
-_isAttacking = false;
+_canFire = true;

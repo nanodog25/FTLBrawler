@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "56d6fe48-f020-46ff-ae76-93555ddbb254",
+            "Value": {
+                "id": "454d2d61-c9bf-4b94-bf76-3c8c721d4f21",
+                "resourcePath": "sprites\\spr_jack_runshoot\\spr_jack_runshoot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5950c421-db0b-4ff2-8f79-176b021fe9cb",
             "Value": {
                 "id": "f9a7a52e-9f5c-4dfd-8a1e-f724dfb9c56d",
@@ -319,6 +327,14 @@
             }
         },
         {
+            "Key": "6f09a326-e587-4004-9334-9c5770c1332b",
+            "Value": {
+                "id": "1a07be23-0571-455e-b90d-e8ffce530eb2",
+                "resourcePath": "objects\\obj_Bullet\\obj_Bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "701c2d86-48ff-420e-9ec2-0f0299ecf610",
             "Value": {
                 "id": "fe4fdd66-f6b3-477f-8456-c77069751d19",
@@ -340,6 +356,14 @@
                 "id": "31cec5dd-bee3-4042-bae0-bff9692e96dd",
                 "resourcePath": "views\\74e75b52-ef84-4eee-a7f5-1efd4b2c115c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78e97e0b-61bf-4c14-af16-3fa1354c0f81",
+            "Value": {
+                "id": "948dc525-91c2-44ff-945f-e7da78091e2a",
+                "resourcePath": "sprites\\spr_jack_shoot\\spr_jack_shoot.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -538,7 +562,7 @@
             "Key": "ca5ca17c-e768-4a4a-aea0-e3c2e52e8388",
             "Value": {
                 "id": "b849bcc3-185a-4d94-9d7e-7cc6be64d51a",
-                "resourcePath": "objects\\obj_PlayerSpreadGrenade\\obj_PlayerSpreadGrenade.yy",
+                "resourcePath": "objects\\obj_SpreadGrenade\\obj_SpreadGrenade.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -596,14 +620,6 @@
                 "id": "437f4226-1821-480b-b59a-0a6878bd099a",
                 "resourcePath": "scripts\\Fall\\Fall.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e138b0a8-6d87-4dac-a2f7-a3854491a501",
-            "Value": {
-                "id": "7dc42fc7-27e7-41aa-ac29-9d7fc92fad93",
-                "resourcePath": "objects\\obj_PlayerBullet\\obj_PlayerBullet.yy",
-                "resourceType": "GMObject"
             }
         },
         {

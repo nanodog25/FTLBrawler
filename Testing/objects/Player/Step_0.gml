@@ -8,28 +8,26 @@ else
 {
 	_ySpeed = 0;
 	
-	if (!_isAttacking)
+	var fire1 = keyboard_check(global.KeyFire1);
+	var fire2 = keyboard_check(global.KeyFire2);
+	if (fire1 && _canFire)
 	{
-		var fire1 = keyboard_check(global.KeyFire1);
-		var fire2 = keyboard_check(global.KeyFire2);
-		if (fire1)
-		{
-			Fire(obj_PlayerBullet, 20, -50);
-		}
-		else if (fire2)
-		{
-			Fire(obj_PlayerSpreadGrenade, 20, -50);
-		}
+		Fire(obj_Bullet, 30, -40);
 	}
+	else if (fire2 && _canFire)
+	{
+		Fire(obj_SpreadGrenade, 30, -40);
+	}
+	_isAttacking = fire1 || fire2;
 	
-	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling && !_isAttacking)
+	if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	{
 		var moveUp = keyboard_check_pressed(global.KeyUp);
 		var moveDown = keyboard_check_pressed(global.KeyDown);		
 		SetSwitchLane(moveUp, moveDown);
 	}
 	
-	if (!_isJumping && !_isFalling && !_isAttacking)
+	if (!_isJumping && !_isFalling)
 	{	
 		_canSwitchLane = true;
 		var jump = keyboard_check(global.KeyJump);	
@@ -56,11 +54,6 @@ else
 	{
 		SwitchLane();
 	}
-	else if (_isAttacking)
-	{
-		if (!_isJumping && !_isFalling)
-			_xSpeed = 0;
-	}
 	else
 	{
 		var isMovingLeft = keyboard_check(global.KeyLeft);
@@ -71,10 +64,10 @@ else
 
 ApplyMovement();
 
-if (!_isHit && !_isJumping && !_isFalling && !_isAttacking && !_isSwitchingLane)
+if (!_isHit && !_isJumping && !_isFalling)
 {
 	if (_xSpeed == 0)
-		sprite_index = spr_jack_stand;
+		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;
 	else
-		sprite_index = spr_jack_run;
+		sprite_index = _isAttacking ? spr_jack_runshoot : spr_jack_run;
 }

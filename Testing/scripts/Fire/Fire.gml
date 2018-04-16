@@ -6,13 +6,15 @@ var projectile = argument0;
 var xOffset = argument1;
 var yOffset = argument2;
 
-_isAttacking = true;
+_canFire = false;
+
 var inst = instance_create_layer(x, y, 0, projectile);
 with (inst)
 {
 	_origin = other;
 	_xOffset = xOffset;
 	_yOffset = yOffset;
+	_owner = "Player";
 }
 
-alarm_set(0, inst._attackDuration);
+alarm_set(0, inst._rateOfFire);

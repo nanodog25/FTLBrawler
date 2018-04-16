@@ -1,12 +1,16 @@
-///@arg owner
 ///@arg damage
-///@arg attackDuration
+///@arg rateOfFire
 ///@arg buildUpDuration
+///@arg travelSpeed
+///@arg travelDistance
 
-_owner = argument0;
-_damage = argument1;
-_attackDuration = argument2;
-_buildUpDuration = argument3;
+_damage = argument0;
+_rateOfFire = argument1;
+_buildUpDuration = argument2;
+_travelSpeed = argument3;
+_travelDistance = argument4;
 _stunLength = 4;
-
-alarm_set(0, _buildUpDuration);
+_released = false;
+_direction = 0;
+_xRelease = 0;
+_yRelease = 0;
