@@ -14,7 +14,6 @@ with (inst)
 	_origin = other;
 	_xOffset = xOffset;
 	_yOffset = yOffset;
-	_owner = "Player";
 }
 
 alarm_set(0, inst._rateOfFire);

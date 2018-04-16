@@ -10,11 +10,11 @@ if (isMovingLeft && isMovingRight || !isMovingLeft && !isMovingRight)
 }
 else if (isMovingLeft) 
 { 
-	_xSpeed = -1*_speed*_speedMod;			
+	_xSpeed = -1*_speed;			
 	image_xscale = 1;
 }
 else if (isMovingRight) 
 { 
-	_xSpeed = _speed*_speedMod;	
+	_xSpeed = _speed;	
 	image_xscale = -1;
 }
