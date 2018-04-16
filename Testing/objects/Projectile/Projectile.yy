@@ -2,7 +2,7 @@
     "id": "3064a079-1f37-4673-8bdd-43aeeebdde77",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "PlayerProjectile",
+    "name": "Projectile",
     "eventList": [
         
     ],

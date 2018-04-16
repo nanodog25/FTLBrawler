@@ -1,5 +1,3 @@
-//Raycast to the floor to ensure precision y and shadow and nice offsets and all sorts!
-
 if (_xSpeed != 0
 	&&	(_xSpeed > 0 && IsPlatformCollision("right") == noone || _xSpeed < 0 && IsPlatformCollision("left") == noone))
 {
@@ -50,4 +48,4 @@ else
 	_isFalling = false;
 	_isJumping = false;
 }
-depth = -1 * _lane * 100;
+depth = DepthModifier(_lane, _objectType);

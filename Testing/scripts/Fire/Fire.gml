@@ -8,7 +8,7 @@ var yOffset = argument2;
 
 _canFire = false;
 
-var inst = instance_create_layer(x, y, 0, projectile);
+var inst = instance_create_layer(x, y, "Projectiles", projectile);
 with (inst)
 {
 	_origin = other;

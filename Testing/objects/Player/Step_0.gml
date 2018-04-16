@@ -1,13 +1,15 @@
 Debug();
 
+_ySpeed = 0;
+
 if (_isHit)
 {
-
+	sprite_index = spr_jack_hit;
+	image_xscale = _hitDirection;
+	_xSpeed = _hitDirection * 1;
 }
 else
 {
-	_ySpeed = 0;
-	
 	var fire1 = keyboard_check(global.KeyFire1);
 	var fire2 = keyboard_check(global.KeyFire2);
 	if (fire1 && _canFire)
@@ -39,27 +41,27 @@ else
 			_jumpHeight = 0;
 		}
 	}
+}
+
+if (_isJumping)
+{	
+	_isFalling = false;
+	Jump();
+}
+if (_isFalling)
+{
+	Fall();
+}
 	
-	if (_isJumping)
-	{	
-		_isFalling = false;
-		Jump();
-	}
-	if (_isFalling)
-	{
-		Fall();
-	}
-	
-	if (_isSwitchingLane)
-	{
-		SwitchLane();
-	}
-	else
-	{
-		var isMovingLeft = keyboard_check(global.KeyLeft);
-		var isMovingRight = keyboard_check(global.KeyRight);
-		MoveHorizontally(isMovingLeft, isMovingRight);
-	}
+if (_isSwitchingLane)
+{
+	SwitchLane();
+}
+else if (!_isHit)
+{
+	var isMovingLeft = keyboard_check(global.KeyLeft);
+	var isMovingRight = keyboard_check(global.KeyRight);
+	MoveHorizontally(isMovingLeft, isMovingRight);
 }
 
 ApplyMovement();

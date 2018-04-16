@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "LaneObject1",
     "eventList": [
-        
+        {
+            "id": "fadc898e-8153-4269-a76f-fd7aa5794028",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "2139ee79-62cb-4e7f-8fa4-7472cfaa0bb6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

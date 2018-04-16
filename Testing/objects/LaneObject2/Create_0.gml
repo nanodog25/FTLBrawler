@@ -1,1 +1,1 @@
-depth = -1 * 200 + 1;
+depth = DepthModifier(2, "Platform");

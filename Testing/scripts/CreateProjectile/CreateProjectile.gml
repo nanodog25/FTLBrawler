@@ -14,3 +14,4 @@ _released = false;
 _direction = 0;
 _xRelease = 0;
 _yRelease = 0;
+_lane = 0;
