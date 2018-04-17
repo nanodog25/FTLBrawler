@@ -15,7 +15,13 @@ else if (!_isPunching)
 		sprite_index = spr_jack_punch;
 		image_index = 0;
 		_isPunching = true;
-		alarm_set(3, 45);
+		var inst = instance_create_layer(x, y, "Projectiles", obj_punch);
+		with (inst)
+		{
+			_origin = other;
+			_xOffset = 30;
+			_yOffset = -40;
+		}
 	}
 	else
 	{
@@ -61,6 +67,10 @@ if (_isJumping)
 if (_isFalling)
 {
 	Fall();
+}
+if (_isHit || _isPunching && image_index > image_number - 1)
+{
+	_isPunching = false;
 }
 	
 if (_isSwitchingLane)
