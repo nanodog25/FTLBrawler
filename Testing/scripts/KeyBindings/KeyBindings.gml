@@ -6,3 +6,4 @@ global.KeyJump = ord("Z");
 global.KeyGrid = ord("G");
 global.KeyFire1 = ord("X");
 global.KeyFire2 = ord("C");
+global.KeyPunch = ord("D");

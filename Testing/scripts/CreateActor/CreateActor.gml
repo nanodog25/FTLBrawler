@@ -4,6 +4,7 @@ _isFalling = false;
 _isAttacking = false;
 _isHit = false;
 _isInvulnerable = false;
+_isPunching = false;
 _currentHP = _maxHP;
 _xSpeed = 0;
 _ySpeed = 0;

@@ -13,6 +13,7 @@ draw_text(10,10,
 "JUMP: " + KeyToText(global.KeyJump) + "\n" +
 "FIRE1: " + KeyToText(global.KeyFire1) + "\n" +
 "FIRE2: " + KeyToText(global.KeyFire2) + "\n" +
+"PUNCH: " + KeyToText(global.KeyPunch) + "\n" +
 "toggle lanes: " + KeyToText(global.KeyGrid) + "\n"
 );
 
