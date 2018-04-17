@@ -3,5 +3,14 @@ if (!_released)
 
 _xBefore = x;
 _yBefore = y;
-MoveLinearProjectile(_travelSpeed, _travelDistance);
+MoveLinearProjectile();
 CheckProjectileCollision();
+
+if (_destroySelf)
+{
+	if (_laneCrossing)
+	{
+		LaneSplash();
+	}
+	instance_destroy();
+}

@@ -6,7 +6,8 @@
     "children": [
         "830a2163-251d-4378-86b1-8daecdf91e3a",
         "e3aac621-abe0-45ca-98b5-476830573c8e",
-        "1f725158-162d-461e-865f-569a5b2d4251"
+        "1f725158-162d-461e-865f-569a5b2d4251",
+        "22f85157-e310-4baf-89a1-9ee7188b0b31"
     ],
     "filterType": "GMScript",
     "folderName": "Projectiles",
