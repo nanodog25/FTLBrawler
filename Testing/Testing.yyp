@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0b7beebd-336c-4cd2-b793-f21a6e05cefd",
+            "Value": {
+                "id": "03b5d25a-f2f7-4999-b1fa-406f4164c1ac",
+                "resourcePath": "views\\0b7beebd-336c-4cd2-b793-f21a6e05cefd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "12c7341e-98d6-4401-b265-5f0c5a2bd0f9",
             "Value": {
                 "id": "87b5fe46-824e-497e-8569-4eb2461e857b",
@@ -564,6 +572,14 @@
                 "id": "d303526d-22df-4e81-9db3-873a8e39826a",
                 "resourcePath": "objects\\MetalBarrier\\MetalBarrier.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b281eb2-3b5d-41ea-b8bb-f4fd1cee7f40",
+            "Value": {
+                "id": "b8ea12fa-7dbf-49e5-819c-78b24339b09b",
+                "resourcePath": "views\\8b281eb2-3b5d-41ea-b8bb-f4fd1cee7f40.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

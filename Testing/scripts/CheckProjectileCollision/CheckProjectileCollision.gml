@@ -26,7 +26,9 @@ if (collision_line(_xBefore, _yBefore, x, y, Solid, true, true) != noone)
 			if (_lane == inst._lane)
 			{
 				with (inst)
+				{
 					event_user("onHit");
+				}
 				_destroySelf = true;
 			}
 		}

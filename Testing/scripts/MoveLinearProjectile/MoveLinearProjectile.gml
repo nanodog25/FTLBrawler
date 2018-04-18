@@ -3,7 +3,7 @@ if (alarm_get(0) < 0)
 	if (_isVertical)
 	{
 		y += _direction*_travelSpeed;
-		if (abs(_xRelease-y) > _travelDistance)
+		if (abs(_yRelease-y) > _travelDistance)
 			instance_destroy();
 	}
 	else
