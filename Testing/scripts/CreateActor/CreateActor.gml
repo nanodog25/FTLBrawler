@@ -19,3 +19,12 @@ y = _targetGroundY;
 _hitDirection = 0;
 
 _collisionBuffer = 20;
+_action = "";
+_weapon = "";
+_projectile = obj_Bullet;
+_moveX = 0;
+_moveY = 0;
+_moveLane = 0;
+_isMoving = false;
+
+//create text file for enemy variants

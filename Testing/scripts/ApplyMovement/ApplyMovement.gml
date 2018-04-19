@@ -3,13 +3,19 @@ if (_xSpeed != 0
 {
 	x += _xSpeed;
 }
+
+else if (!_isJumping && _xSpeed != 0 && object_index != asset_get_index("Player"))
+{
+	SetJumping();
+}
 else
 {
 	_xSpeed = 0;
 }
 
 var targetGroundYBefore = _targetGroundY;
-_targetGroundY = GetTargetGroundY();
+var targetGroundYAfter = GetTargetGroundY();
+_targetGroundY = targetGroundYAfter == 0 ? _targetGroundY : targetGroundYAfter;
 
 if (targetGroundYBefore != _targetGroundY)
 {
