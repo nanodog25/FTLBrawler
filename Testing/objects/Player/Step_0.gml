@@ -50,10 +50,7 @@ else if (!_isPunching)
 			var jump = keyboard_check_pressed(global.KeyJump);	
 			if (jump)
 			{
-				sprite_index = spr_jack_jump;
-				image_index = 0;
-				_isJumping = true;
-				_jumpHeight = 0;
+				SetJumping();
 			}
 		}
 	}
@@ -85,6 +82,7 @@ else if (!_isHit)
 }
 
 ApplyMovement();
+UpdatePlayerVariables();
 
 if (!_isHit && !_isJumping && !_isFalling && !_isPunching)
 {
