@@ -5,5 +5,5 @@ if (!_isInvulnerable )
 	_isInvulnerable = true;
 	_hitDirection = other._direction;
 	alarm_set(1, 20);
-	global.currentHP -= 10;
+	global.currentHP -= 100;
 }

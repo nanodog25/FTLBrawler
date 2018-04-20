@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "WoodenBarrier",
     "eventList": [
-        {
-            "id": "86022f20-b700-47af-b386-cbcfbd3e9969",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "a127fa42-71ad-4f3c-a435-9e9b5850faf5"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

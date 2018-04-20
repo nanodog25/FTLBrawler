@@ -4,7 +4,7 @@ if (_moveX == x)
 	if (_moveLane != _lane)
 	{
 		var isMovingUp = _lane > _moveLane;
-		SetSwitchLane(isMovingUp, -isMovingUp);
+		SetSwitchLane(isMovingUp, !isMovingUp);
 	}
 	else
 	{

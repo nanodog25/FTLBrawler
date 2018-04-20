@@ -8,6 +8,18 @@ if (_isHit)
 	image_xscale = _hitDirection;
 	_xSpeed = _hitDirection * 1;
 }
+else if (global.currentHP == 0)
+{
+	if (sprite_index != spr_jack_die)
+	{
+		_xSpeed = 0;
+		sprite_index = spr_jack_die;
+		image_index = 0;
+	}
+	else if (image_index > image_number - 1)
+		image_speed = 0;
+	return;
+}
 else if (!_isPunching)
 {
 	if (!_isJumping && !_isFalling && keyboard_check_pressed(global.KeyPunch))
