@@ -13,7 +13,8 @@
         "6335276f-9ff8-47ae-ac06-dcf17d363879",
         "fb8c6fb4-511a-4e69-878e-3cbfd769a8dd",
         "547d87ab-473a-4e2c-a664-b2c43e5df09e",
-        "e2879bd6-5cf8-4fd1-94e0-848fd08638e4"
+        "e2879bd6-5cf8-4fd1-94e0-848fd08638e4",
+        "bdc904ac-6e26-4a95-ab56-e75d36a75f43"
     ],
     "filterType": "GMSprite",
     "folderName": "Obstacles",

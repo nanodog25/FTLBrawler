@@ -1,14 +1,14 @@
 {
-    "id": "a127fa42-71ad-4f3c-a435-9e9b5850faf5",
+    "id": "68663c58-8a5a-4d19-8fe6-1a573c0cd8a3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "WoodenBarrier",
+    "name": "obj_barrel_1",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "3b4efb7a-43dd-4e4c-8cde-3e0a3aaf8031",
+    "parentObjectId": "26785f2f-0fa1-496c-9572-abff3b96d058",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6335276f-9ff8-47ae-ac06-dcf17d363879",
+    "spriteId": "e2879bd6-5cf8-4fd1-94e0-848fd08638e4",
     "visible": true
 }

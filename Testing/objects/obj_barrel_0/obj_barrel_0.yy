@@ -2,7 +2,7 @@
     "id": "f2017c0f-0ce5-4c30-bc7d-a1091e494155",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Barrel",
+    "name": "obj_barrel_0",
     "eventList": [
         
     ],
