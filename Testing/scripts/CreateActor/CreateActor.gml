@@ -15,7 +15,7 @@ _onGround = true;
 _targetGroundY = global.LaneYs[| _lane];
 _currentGroundY = _targetGroundY;
 _jumpHeight = 0
-y = _targetGroundY;
+//y = _targetGroundY;
 _hitDirection = 0;
 
 _collisionBuffer = 20;

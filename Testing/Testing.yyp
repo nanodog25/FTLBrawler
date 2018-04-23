@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "36d4567f-d97c-4abf-ba2d-7ff9a81efc16",
+            "Value": {
+                "id": "c2ecb75e-b608-43c9-a917-c350f8bfcedd",
+                "resourcePath": "objects\\obj_bridge_1\\obj_bridge_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "39030f2d-abcb-4422-aa63-3daa503e71d7",
             "Value": {
                 "id": "6bf86fe1-a3a7-4d98-9b71-ffaf38f71c34",
@@ -362,7 +370,7 @@
             "Key": "46d95e14-c439-4335-89bd-c54ec549e0fa",
             "Value": {
                 "id": "22c159ca-df58-4935-8add-68d1a1f9f6cc",
-                "resourcePath": "rooms\\rm_street_ParallelBridges\\rm_street_ParallelBridges.yy",
+                "resourcePath": "rooms\\rm_street_mockup\\rm_street_mockup.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -444,6 +452,14 @@
                 "id": "50520a37-9b04-4ee9-bbb5-6256e539e5b8",
                 "resourcePath": "sprites\\spr_metalBarrier\\spr_metalBarrier.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "549f0866-db55-499c-9df1-b073da1e340d",
+            "Value": {
+                "id": "e97820f2-92f5-40d6-880f-388ca174f33a",
+                "resourcePath": "objects\\obj_vertBridge_2\\obj_vertBridge_2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -751,6 +767,14 @@
             }
         },
         {
+            "Key": "8be7490f-d2ce-4d84-81b3-dfc9f420675f",
+            "Value": {
+                "id": "7b6a8c48-500a-4ce9-ab6a-806f6c919278",
+                "resourcePath": "sprites\\sprite36\\sprite36.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8e6254c4-d0dd-4568-b2b0-4d8773d4ad64",
             "Value": {
                 "id": "d70922ed-e62e-41da-9eab-080fcccf10cc",
@@ -764,6 +788,14 @@
                 "id": "485f3ef6-8e0f-40f7-b65e-79198d3a7f44",
                 "resourcePath": "scripts\\Layout\\Layout.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8f680643-d707-4b4b-b093-a2fea98bbfa9",
+            "Value": {
+                "id": "b7a696e1-d5a1-40e9-9fa2-aa4efb1ca43a",
+                "resourcePath": "objects\\obj_debug\\obj_debug.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -812,6 +844,14 @@
                 "id": "2c6ebc57-da40-4676-9013-d4e41060a956",
                 "resourcePath": "views\\93c02ab7-c1f0-4db3-a787-7f7a436a078a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "983637e4-4eb1-4df4-a5af-a2a42f62d37c",
+            "Value": {
+                "id": "d3e84f3a-d814-4875-b311-566c9d90b793",
+                "resourcePath": "objects\\obj_bridge_3\\obj_bridge_3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1004,6 +1044,22 @@
                 "id": "b849bcc3-185a-4d94-9d7e-7cc6be64d51a",
                 "resourcePath": "objects\\obj_SpreadGrenade\\obj_SpreadGrenade.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca674f6f-4341-4581-ad35-0ae36a205ad0",
+            "Value": {
+                "id": "acacb131-bdfb-4d2d-97c1-201d7d918593",
+                "resourcePath": "rooms\\rm_street_parallelBridges\\rm_street_parallelBridges.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "cc974445-1fd7-4fb3-b4c5-2835bbf44cd6",
+            "Value": {
+                "id": "7ea31727-09e9-43f4-94ba-e166c7324bc1",
+                "resourcePath": "sprites\\sprite361\\sprite361.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

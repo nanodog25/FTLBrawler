@@ -12,3 +12,9 @@ with (_healthBar)
 {
 	_maxHP = other._maxHP;
 }
+
+global.playerSpeed = _speed;
+global.playerSwitchSpeed = _switchSpeed;
+global.playerMaxJumpHeight = _maxJumpHeight;
+global.playerJumpSpeed = _jumpSpeed;
+global.playerFallSpeed = _fallSpeed;

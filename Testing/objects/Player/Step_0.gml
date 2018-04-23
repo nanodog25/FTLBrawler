@@ -1,5 +1,3 @@
-Debug();
-
 _ySpeed = 0;
 
 if (_isHit)
