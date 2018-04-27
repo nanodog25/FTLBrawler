@@ -17,11 +17,17 @@ draw_text(200,50,
 "DECREASE VALUE: " + KeyToText(global.KeyMinus) + "\n"
 );
 
-draw_text(500,50,
-"left/right movement speed (l-ctrl): " + string(global.playerSpeed) + "\n" +
-"up/down switch speed(l-alt): " + string(global.playerSwitchSpeed) + "\n" +
-"max jump height(r-shift): " + string(global.playerMaxJumpHeight) + "\n" +
-"jump speed(r-ctrl): " + string(global.playerJumpSpeed) + "\n" +
-"fall speed(l-shift): " + string(global.playerFallSpeed) + "\n" +
-"room(no key): " + room_get_name(room)
-);
+draw_text(500,10,
+	"room(no key): " + room_get_name(room)
+	);
+
+if (instance_exists(Player))
+{
+	draw_text(500,50,
+	"left/right movement speed (l-ctrl): " + string(global.playerSpeed) + "\n" +
+	"up/down switch speed(l-alt): " + string(global.playerSwitchSpeed) + "\n" +
+	"max jump height(r-shift): " + string(global.playerMaxJumpHeight) + "\n" +
+	"jump speed(r-ctrl): " + string(global.playerJumpSpeed) + "\n" +
+	"fall speed(l-shift): " + string(global.playerFallSpeed) + "\n"
+	);
+}
