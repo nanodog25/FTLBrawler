@@ -8,3 +8,4 @@ _hasOrigin = true;
 _isIgnoringCover = false;
 _isPiercing = false;
 _isDestructible = false;
+_isLauncher = false;

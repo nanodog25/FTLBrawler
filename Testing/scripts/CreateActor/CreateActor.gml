@@ -25,5 +25,7 @@ _moveX = 0;
 _moveY = 0;
 _moveLane = 0;
 _isMoving = false;
+_isLaunched = false;
+_sideCollision = false;
 
 //create text file for enemy variants

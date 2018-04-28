@@ -1,15 +1,24 @@
-if (_xSpeed != 0
-	&&	(_xSpeed > 0 && IsPlatformCollision("right") == noone || _xSpeed < 0 && IsPlatformCollision("left") == noone))
+_sideCollision = false;
+var col = noone;
+
+if (_xSpeed != 0)
 {
-	x += _xSpeed;
-}
-else if (!_isJumping && !_isHit && _xSpeed != 0 && object_index != asset_get_index("Player"))
-{
-	SetJumping();
-}
-else
-{
-	_xSpeed = 0;
+	col = _xSpeed > 0
+		? IsPlatformCollision("right")
+		: IsPlatformCollision("left");
+
+	if (col == noone)
+		x += _xSpeed;
+	else
+	{
+		_xSpeed = 0;
+		_sideCollision = true;
+	}
+	
+	if (col != noone && !_isJumping && !_isHit && _xSpeed != 0 && object_index != asset_get_index("Player"))
+	{
+		SetJumping();
+	}
 }
 
 var targetGroundYBefore = _targetGroundY;

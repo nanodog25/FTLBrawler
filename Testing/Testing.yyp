@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "6c19146d-a9fa-4aa7-a280-a41fad847ccf",
+            "Value": {
+                "id": "25cc4604-de29-499d-9458-aaae0977c69f",
+                "resourcePath": "scripts\\GlobalGeneral\\GlobalGeneral.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6cab6f70-8d1a-4b72-8c45-a131e97b2772",
             "Value": {
                 "id": "8332e2df-8db9-40cd-8e16-f28fcc65bf81",
@@ -1295,6 +1303,14 @@
             }
         },
         {
+            "Key": "e02308fa-2359-436c-9993-0030a1f6cf58",
+            "Value": {
+                "id": "9a30953b-37b6-4468-853b-e6a8a6e8146c",
+                "resourcePath": "scripts\\Launch\\Launch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e06fb025-af7c-49f9-b892-7b4320aea805",
             "Value": {
                 "id": "27c83250-dcf8-4f85-bada-02b87f128db1",
@@ -1415,6 +1431,14 @@
             }
         },
         {
+            "Key": "f6eab97b-2857-442e-b84a-1847f55a025c",
+            "Value": {
+                "id": "4ec06d08-65cb-4bf7-9ab4-636ab15d3f51",
+                "resourcePath": "scripts\\onHit\\onHit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f7271ba8-5879-410d-8c8e-3da4686f931d",
             "Value": {
                 "id": "596d02e8-04fc-4e3b-9aac-e4204fc2c922",
@@ -1488,6 +1512,7 @@
         "8f52749a-8e70-4224-87c3-879c5c7321d8",
         "112fd8b4-a244-494c-aa85-1088edb6269c",
         "3eea8f84-2a71-4724-a48d-6674fcde67f8",
+        "6c19146d-a9fa-4aa7-a280-a41fad847ccf",
         "50804c09-858f-46e0-901c-60f58b2d27d8",
         "e07396a2-50aa-4a7e-b12e-49bbb23a8dac",
         "204e586b-fdf5-4de0-a8f0-f82c60e84d96",
@@ -1495,7 +1520,9 @@
         "701c2d86-48ff-420e-9ec2-0f0299ecf610",
         "4a546b61-c1d3-4b04-8de6-18405ed2d825",
         "9b2a8a2f-5550-4beb-b242-cac0c9a7ec1d",
+        "e02308fa-2359-436c-9993-0030a1f6cf58",
         "80a01f7b-0d74-44ea-ab9f-a3ff80236716",
+        "f6eab97b-2857-442e-b84a-1847f55a025c",
         "830a2163-251d-4378-86b1-8daecdf91e3a",
         "e3aac621-abe0-45ca-98b5-476830573c8e",
         "1f725158-162d-461e-865f-569a5b2d4251",

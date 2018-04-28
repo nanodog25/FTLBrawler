@@ -1,6 +1,10 @@
 _ySpeed = 0;
 
-if (_isHit)
+if (_isLaunched)
+{
+	Launch();
+}
+else if (_isHit)
 {
 	sprite_index = spr_jack_hit;
 	image_xscale = _hitDirection;

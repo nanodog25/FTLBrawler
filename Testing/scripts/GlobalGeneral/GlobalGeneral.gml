@@ -1,0 +1,1 @@
+global.bounceHeight = 30;
