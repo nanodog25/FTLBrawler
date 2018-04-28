@@ -6,12 +6,24 @@ if (_isHit)
 	image_xscale = _hitDirection;
 	_xSpeed = _hitDirection * 1;
 }
+else if (_currentHP <= 0)
+{
+	if (sprite_index != spr_jack_die)
+	{
+		_xSpeed = 0;
+		sprite_index = spr_jack_die;
+		image_index = 0;
+	}
+	else if (image_index > image_number - 1)
+		image_speed = 0;
+	return;
+}
 else
 {
 	var fire = random(4) > 3;
 	if (fire && _canFire)
 	{
-		Fire(obj_Bullet, 30, -40);
+		Fire(_projectile, 30, -40);
 	}
 
 	_isAttacking = fire;

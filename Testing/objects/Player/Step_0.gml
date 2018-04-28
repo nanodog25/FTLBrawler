@@ -6,7 +6,7 @@ if (_isHit)
 	image_xscale = _hitDirection;
 	_xSpeed = _hitDirection * 1;
 }
-else if (global.currentHP == 0)
+else if (_currentHP == 0)
 {
 	if (sprite_index != spr_jack_die)
 	{
@@ -39,18 +39,22 @@ else if (!_isPunching)
 		var fire2 = keyboard_check(global.KeyFire2);
 		if (fire1 && _canFire)
 		{
-			Fire(obj_Bullet, 30, -40);
+			Fire(_projectile, 30, -40);
 		}
 		else if (fire2 && _canFire)
 		{
-			Fire(obj_SpreadGrenade, 30, -40);
+			Fire(obj_proj_spreadGrenade, 30, -40);
 		}
 		_isAttacking = fire1 || fire2;
 	
-		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
+		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane)
 		{
-			var moveUp = keyboard_check_pressed(global.KeyUp);
-			var moveDown = keyboard_check_pressed(global.KeyDown);		
+			var moveUp = _isJumping
+				? keyboard_check(global.KeyUp)
+				: keyboard_check_pressed(global.KeyUp);
+			var moveDown = _isJumping
+				? keyboard_check(global.KeyDown)
+				: keyboard_check_pressed(global.KeyDown);		
 			SetSwitchLane(moveUp, moveDown);
 		}
 	
@@ -66,25 +70,27 @@ else if (!_isPunching)
 	}
 }
 
-if (_isJumping)
+if (_isSwitchingLane)
+{
+	_isJumping = false;
+	SwitchLane();
+}
+else if (_isJumping)
 {	
 	_isFalling = false;
 	Jump();
 }
-if (_isFalling)
+else if (_isFalling)
 {
 	Fall();
 }
+
 if (_isHit || _isPunching && image_index > image_number - 1)
 {
 	_isPunching = false;
 }
-	
-if (_isSwitchingLane)
-{
-	SwitchLane();
-}
-else if (!_isHit)
+
+if (!_isHit && !_isSwitchingLane)
 {
 	var isMovingLeft = keyboard_check(global.KeyLeft);
 	var isMovingRight = keyboard_check(global.KeyRight);

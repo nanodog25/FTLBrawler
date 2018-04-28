@@ -3,12 +3,14 @@
 ///@arg buildUpDuration
 ///@arg travelSpeed
 ///@arg travelDistance
+///@arg knockBack
 
 _damage = argument0;
 _rateOfFire = argument1;
 _buildUpDuration = argument2;
 _travelSpeed = argument3;
 _travelDistance = argument4;
+_knockBack = argument5;
 _stunLength = 4;
 _released = false;
 _direction = 0;

@@ -5,16 +5,6 @@
     "name": "obj_enemy_crazed",
     "eventList": [
         {
-            "id": "69fbe61b-340f-4583-be70-3a6e072d6648",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "83499d3a-6f94-461f-972d-098970ac3c1f"
-        },
-        {
             "id": "9ae3e2fa-05a9-466c-9850-f211d0991395",
             "modelName": "GMEvent",
             "mvc": "1.0",

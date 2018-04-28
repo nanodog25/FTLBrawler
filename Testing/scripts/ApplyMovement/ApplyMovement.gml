@@ -3,8 +3,7 @@ if (_xSpeed != 0
 {
 	x += _xSpeed;
 }
-
-else if (!_isJumping && _xSpeed != 0 && object_index != asset_get_index("Player"))
+else if (!_isJumping && !_isHit && _xSpeed != 0 && object_index != asset_get_index("Player"))
 {
 	SetJumping();
 }

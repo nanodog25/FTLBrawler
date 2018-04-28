@@ -8,30 +8,30 @@ var bar3_end = 152;
 if (image_index < bar1_end)
 {
 	image_speed = 0;
-	image_index = 126 * (1 - global.currentHP / _maxHP);
+	image_index = 126 * (1 - _origin._currentHP / _maxHP);
 	if (image_index >= bar1_end)
 	{
-		global.currentHP = (_maxHP/3) * 2;
+		_origin._currentHP = (_maxHP/3) * 2;
 		image_index = bar1_end;
 	}
 }
 else if (image_index >= bar2_start && image_index < bar2_end)
 {
 	image_speed = 0;
-	image_index = 126 * (1 - global.currentHP / _maxHP) + 13;
+	image_index = 126 * (1 - _origin._currentHP / _maxHP) + 13;
 	if (image_index >= bar2_end)
 	{
-		global.currentHP = _maxHP/3;
+		_origin._currentHP = _maxHP/3;
 		image_index = bar2_end;
 	}
 }
 else if (image_index >= bar3_start && image_index < bar3_end)
 {
 	image_speed = 0;
-	image_index = 126 * (1 - global.currentHP / _maxHP) + 26;
+	image_index = 126 * (1 - _origin._currentHP / _maxHP) + 26;
 	if (image_index >= bar3_end)
 	{
-		global.currentHP = 0;
+		_origin._currentHP = 0;
 		image_index = bar3_end;
 	}
 }
@@ -50,7 +50,7 @@ else if (image_index >= bar3_end && image_index < 174)
 else
 {
 	image_speed = 0;
-	global.currentHP = 0;
+	_origin._currentHP = 0;
 	_angle++;
 	randomize();
 	draw_set_color(random(255));

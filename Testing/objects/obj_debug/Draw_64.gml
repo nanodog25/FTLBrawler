@@ -23,11 +23,14 @@ draw_text(500,10,
 
 if (instance_exists(Player))
 {
+	var p = instance_find(Player, 0);
 	draw_text(500,50,
 	"left/right movement speed (l-ctrl): " + string(global.playerSpeed) + "\n" +
 	"up/down switch speed(l-alt): " + string(global.playerSwitchSpeed) + "\n" +
 	"max jump height(r-shift): " + string(global.playerMaxJumpHeight) + "\n" +
 	"jump speed(r-ctrl): " + string(global.playerJumpSpeed) + "\n" +
-	"fall speed(l-shift): " + string(global.playerFallSpeed) + "\n"
+	"fall speed(l-shift): " + string(global.playerFallSpeed) + "\n" +
+	"current projectile: " + string(object_get_name(p._projectile)) + "\n" 
+
 	);
 }

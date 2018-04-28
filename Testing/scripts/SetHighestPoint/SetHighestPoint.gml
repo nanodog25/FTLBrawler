@@ -1,0 +1,22 @@
+var highestObject = noone;
+var height = 0;
+
+with(LaneObject)
+{
+	var objHeight = global.LaneYs[| _lane] - bbox_top;
+	if (height == 0 || height < objHeight)
+	{
+		height = objHeight;
+		highestObject = self;
+	}
+}
+
+if (highestObject != noone)
+{
+	_moveX = highestObject.x;
+	_moveY = highestObject.bbox_top;
+	_moveLane = highestObject._lane;
+	return true;
+}
+
+return false;

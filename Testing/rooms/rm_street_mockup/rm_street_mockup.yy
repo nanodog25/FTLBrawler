@@ -11,11 +11,11 @@
         "f4f0d80c-b24b-4d92-968f-5cd1dfc0f603",
         "064cb967-a452-4a44-90be-0f5085dcc6b3",
         "207b3d63-c50f-4f0e-910f-a897eabac8e1",
+        "7f3b1adf-f84e-4771-9456-08415ea22d48",
         "248f6d76-51fe-4f84-bf82-f3e1598db6ba",
         "ae7222ff-8a9e-41ed-823f-bae3e3c04b93",
         "9b5b8e8f-f9f7-42fe-8b93-f09a73ed9e45",
-        "8ba089e7-e72e-451a-97ab-873dd8c682fa",
-        "7f3b1adf-f84e-4771-9456-08415ea22d48"
+        "8ba089e7-e72e-451a-97ab-873dd8c682fa"
     ],
     "IsDnD": false,
     "layers": [
@@ -157,7 +157,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Debug",
             "id": "512fa6c2-c312-4f22-ae2e-601a8042dd68",
-            "depth": 400,
+            "depth": -100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -304,7 +304,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "a67e4aa1-21c7-471b-bf8b-6bd99b2c7ce1",
-            "depth": 600,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -333,7 +333,7 @@
             "assets": [
 
             ],
-            "depth": 700,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

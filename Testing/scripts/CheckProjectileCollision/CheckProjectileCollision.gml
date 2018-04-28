@@ -29,7 +29,8 @@ if (collision_line(_xBefore, _yBefore, x, y, Solid, true, true) != noone)
 				{
 					event_user("onHit");
 				}
-				_destroySelf = true;
+				if !(_isIgnoringCover || _isPiercing && inst._isDestructible)
+					_destroySelf = true;
 			}
 		}
 		instList = noone;	
