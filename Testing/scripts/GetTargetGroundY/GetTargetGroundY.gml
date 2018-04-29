@@ -5,7 +5,7 @@ if (IsPlatformCollision("down") != noone)
 	var xLeft = x - abs(sprite_xoffset);
 	var xRight = x + abs(sprite_width) - abs(sprite_xoffset);
 	var yUp = y - sprite_yoffset - switchOffset;
-	var yDown = y + sprite_height - sprite_yoffset - jumpOffset - switchOffset;
+	var yDown = y + sprite_height - sprite_yoffset - switchOffset;
 
 	var obj = asset_get_index("LaneObject" + string(_lane));
 
