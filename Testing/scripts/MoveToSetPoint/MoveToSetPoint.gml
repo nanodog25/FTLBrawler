@@ -1,19 +1,20 @@
-if (_moveX == x)
+if (_moveLane != _lane)
+{
+	moveUp = _lane > _moveLane;
+	moveDown = !moveUp;
+}
+
+if (abs(_moveX - x) < _collisionBuffer)
 {
 	_direction = global.playerX > x ? -1 : 1;
-	if (_moveLane != _lane)
-	{
-		var isMovingUp = _lane > _moveLane;
-		SetSwitchLane(isMovingUp, !isMovingUp);
-	}
-	else
-	{
-		_isMoving = false;
-	}
+	_isMoving = false;
 }
 else
 {
-	var sp = min(_speed, abs(_moveX - x));
+	if (_sideCollision)
+		jump = true;
+	
 	_direction = _moveX > x ? 1 : -1;
-	_xSpeed = sp * _direction;
+	isMovingRight = _direction == 1;
+	isMovingLeft = !isMovingRight;
 }

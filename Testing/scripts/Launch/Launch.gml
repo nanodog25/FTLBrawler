@@ -3,8 +3,9 @@ switch(_launchState)
 	case "airborne":
 		if (_sideCollision)
 		{
+			_ySpeed = 0;
+			_yAcc = 2;
 			_launchState = "wall";
-			Launch();
 		}
 		else
 		{
@@ -17,30 +18,20 @@ switch(_launchState)
 	case "wall":
 		if (y >= _targetGroundY)
 		{
+			_ySpeed = -10;
+			_yAcc = 2;
 			_launchState = "bounce";
-			Launch();
 		}
 		else
 		{
 			_xSpeed = _hitDirection * -1;
-			_ySpeed = 5;
 		}
 		break;
 	case "bounce":
-		if (y <= _targetGroundY - global.bounceHeight)
-		{
-			_launchState = "fall";
-			Launch();
-		}
-		else
-		{
-			_xSpeed = _hitDirection * -1;
-			_ySpeed = -5;
-		}
-		break;
-	case "fall":
 		if (y >= _targetGroundY)
 		{
+			_ySpeed = 0;
+			_yAcc = 0;
 			_xSpeed = 0;
 			if (_currentHP <= 0)
 			{
@@ -51,13 +42,11 @@ switch(_launchState)
 			else
 			{
 				_launchState = "getUp";
-				Launch();
 			}
 		}
 		else
 		{
 			_xSpeed = _hitDirection * -1;
-			_ySpeed = 5;
 		}
 		break;
 	case "getUp":

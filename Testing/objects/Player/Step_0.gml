@@ -1,4 +1,4 @@
-_ySpeed = 0;
+_ySwitch = 0;
 
 if (_isLaunched)
 {
@@ -53,10 +53,10 @@ else if (!_isPunching)
 	
 		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane)
 		{
-			var moveUp = _isJumping
+			var moveUp = _isJumping || _isFalling
 				? keyboard_check(global.KeyUp)
 				: keyboard_check_pressed(global.KeyUp);
-			var moveDown = _isJumping
+			var moveDown = _isJumping || _isFalling
 				? keyboard_check(global.KeyDown)
 				: keyboard_check_pressed(global.KeyDown);		
 			SetSwitchLane(moveUp, moveDown);
@@ -76,10 +76,10 @@ else if (!_isPunching)
 
 if (_isSwitchingLane)
 {
-	_isJumping = false;
 	SwitchLane();
 }
-else if (_isJumping)
+
+if (_isJumping)
 {	
 	_isFalling = false;
 	Jump();

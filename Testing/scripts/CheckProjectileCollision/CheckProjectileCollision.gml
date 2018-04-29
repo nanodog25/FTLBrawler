@@ -23,7 +23,7 @@ if (collision_line(_xBefore, _yBefore, x, y, Solid, true, true) != noone)
 		for(var i = 0; i < ds_list_size(instList); i++)
 		{
 			var inst = instList[| i];
-			if (_lane == inst._lane)
+			if (inst != _origin && _lane == inst._lane)
 			{
 				with (inst)
 				{

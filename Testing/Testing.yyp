@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "8b2e1df5-5a18-4b50-938c-c98f8f1934ea",
+            "Value": {
+                "id": "9b124758-f6e3-45b7-83b8-a2893005abce",
+                "resourcePath": "scripts\\EnemyStep\\EnemyStep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8be7490f-d2ce-4d84-81b3-dfc9f420675f",
             "Value": {
                 "id": "7b6a8c48-500a-4ce9-ab6a-806f6c919278",
@@ -1544,6 +1552,7 @@
         "9e0c7b4a-521c-421d-9f70-2364fe2b04de",
         "3f612d70-e63b-4923-85f4-74e82381bda2",
         "51f0b33a-d5c8-4093-8548-9c38cef40d4c",
+        "8b2e1df5-5a18-4b50-938c-c98f8f1934ea",
         "ff028f50-63ce-4217-b0fd-3d9bdb1adfd3",
         "9fae77fa-c1ae-4b51-812a-7eaf846e7117",
         "6e072a7e-104e-4764-b011-40d3fc9571c6"

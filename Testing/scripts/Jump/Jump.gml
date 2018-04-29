@@ -1,6 +1,6 @@
 if (_jumpHeight < _maxJumpHeight)
 {
-	_ySpeed -= _jumpSpeed;
+	_ySpeed = -_jumpSpeed;
 	_jumpHeight += _jumpSpeed;
 }
 else

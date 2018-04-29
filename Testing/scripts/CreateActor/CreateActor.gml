@@ -8,6 +8,8 @@ _isPunching = false;
 _currentHP = _maxHP;
 _xSpeed = 0;
 _ySpeed = 0;
+_yAcc = 0;
+_ySwitch = 0;
 _canEverSwitchLane = _canSwitchLane;
 _canFire = true;
 

@@ -1,4 +1,5 @@
-currenctGroundY = _currentGroundY;
+var currenctGroundY = _currentGroundY;
+_yAcc = 0;
 		
 if (_xSpeed > 0)
 {
@@ -22,5 +23,5 @@ else if (_currentGroundY < _targetGroundY)
 		_currentGroundY = _targetGroundY;
 }
 		
-_ySpeed += _currentGroundY - currenctGroundY;
+_ySwitch = _currentGroundY - currenctGroundY;
 _isSwitchingLane = _targetGroundY != _currentGroundY;

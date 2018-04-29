@@ -1,16 +1,15 @@
 if (IsPlatformCollision("down") != noone)
 {
-	var jumpOffset = _jumpHeight;
 	var switchOffset = _currentGroundY - _targetGroundY;
 
 	var xLeft = x - abs(sprite_xoffset);
 	var xRight = x + abs(sprite_width) - abs(sprite_xoffset);
-	var yUp = y - sprite_yoffset - jumpOffset - switchOffset;
+	var yUp = y - sprite_yoffset - switchOffset;
 	var yDown = y + sprite_height - sprite_yoffset - jumpOffset - switchOffset;
 
 	var obj = asset_get_index("LaneObject" + string(_lane));
 
-	var len = yUp;
+	var len = yUp + _collisionBuffer;
 	var maxY = global.LaneYs[| _lane];
 
 	//Begin raycast loop
