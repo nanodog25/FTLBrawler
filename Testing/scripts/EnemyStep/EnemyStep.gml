@@ -68,7 +68,7 @@ else if (!_isHit)
 if (_isJumping)
 {	
 	_isFalling = false;
-	Jump();
+	Jump(true);
 }
 else if (_isFalling)
 {

@@ -1,3 +1,5 @@
+event_inherited();
+
 _colRadius = sprite_width/2;
 _colX = 0;
 _colY = 0;

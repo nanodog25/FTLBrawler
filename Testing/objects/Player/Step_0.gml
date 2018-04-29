@@ -81,8 +81,9 @@ if (_isSwitchingLane)
 
 if (_isJumping)
 {	
+	var jump = keyboard_check(global.KeyJump);
 	_isFalling = false;
-	Jump();
+	Jump(jump);
 }
 else if (_isFalling)
 {

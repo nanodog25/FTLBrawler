@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "015cb2fb-a651-4852-9cfd-faafa573a8f5",
+            "Value": {
+                "id": "68fd2a07-252f-41cd-9599-d919e7dea310",
+                "resourcePath": "shaders\\shader_outlineShader\\shader_outlineShader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "018a74df-f7de-4c1b-bc20-6c2b9c0a4156",
             "Value": {
                 "id": "3f6ca844-98e6-4cf1-9a86-d40da966a5bb",
@@ -1007,6 +1015,14 @@
             }
         },
         {
+            "Key": "9e455fbd-2736-4586-90b8-2278a5643e96",
+            "Value": {
+                "id": "b7aa5fa8-954d-4a49-9cd0-f9750066ea5f",
+                "resourcePath": "scripts\\GetColour\\GetColour.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9f529dff-59cc-4102-8cb9-7f4474465fb8",
             "Value": {
                 "id": "6e90bb46-5007-4291-8053-84c83a750ec4",
@@ -1521,6 +1537,7 @@
         "112fd8b4-a244-494c-aa85-1088edb6269c",
         "3eea8f84-2a71-4724-a48d-6674fcde67f8",
         "6c19146d-a9fa-4aa7-a280-a41fad847ccf",
+        "9e455fbd-2736-4586-90b8-2278a5643e96",
         "50804c09-858f-46e0-901c-60f58b2d27d8",
         "e07396a2-50aa-4a7e-b12e-49bbb23a8dac",
         "204e586b-fdf5-4de0-a8f0-f82c60e84d96",

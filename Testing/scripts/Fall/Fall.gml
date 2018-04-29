@@ -1,6 +1,6 @@
 if (y < _currentGroundY)
 {
-	_yAcc = 2;
+	_yAcc = 4;
 }
 else
 {

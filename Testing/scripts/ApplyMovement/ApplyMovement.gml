@@ -63,7 +63,7 @@ else
 {
 	_ySpeed = 0;
 	_yAcc = 0;
-	_isFalling = false;
 	_isJumping = false;
+	_isFalling = !onFloor;
 }
 depth = DepthModifier(_lane, _objectType);
