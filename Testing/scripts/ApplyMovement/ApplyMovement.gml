@@ -14,11 +14,6 @@ if (_xSpeed != 0)
 		_xSpeed = 0;
 		_sideCollision = true;
 	}
-	
-	if (col != noone && !_isJumping && !_isHit && _xSpeed != 0 && object_index != asset_get_index("Player"))
-	{
-		SetJumping();
-	}
 }
 
 var targetGroundYBefore = _targetGroundY;

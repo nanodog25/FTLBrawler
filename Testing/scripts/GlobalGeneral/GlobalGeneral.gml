@@ -1,0 +1,1 @@
+global.collisionBuffer = 20;
