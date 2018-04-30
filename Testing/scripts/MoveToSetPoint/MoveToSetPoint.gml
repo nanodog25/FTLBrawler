@@ -6,8 +6,9 @@ if (_moveLane != _lane)
 
 if (abs(_moveX - x) < _collisionBuffer)
 {
-	_direction = global.playerX > x ? -1 : 1;
-	_isMoving = false;
+	_isMoving = _moveLane != _lane || _isJumping || _isFalling;
+	if (!_isMoving)
+		image_xscale = global.playerX > x ? -1 : 1;
 }
 else
 {

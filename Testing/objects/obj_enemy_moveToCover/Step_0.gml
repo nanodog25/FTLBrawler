@@ -6,6 +6,9 @@ isMovingLeft = false;
 isMovingRight = false;
 
 if (!_isMoving)
-	_isMoving = SetNearestCover();
+{
+	var coverIndex = _isHit && !_isLaunched ? 1 : 0;
+	_isMoving = SetNearestCover(coverIndex);
+}
 
 EnemyStep();

@@ -8,4 +8,4 @@ var targetLane = dir == "up"
 
 var objName = "LaneObject" + string(targetLane);
 
-return IsCollision(_lane, targetLane, objName, false);
+return IsCollision(self, x, y, targetLane, objName, false);
