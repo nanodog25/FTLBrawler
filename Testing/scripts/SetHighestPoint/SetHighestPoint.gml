@@ -3,7 +3,7 @@ var height = 0;
 
 with(LaneObject)
 {
-	var objHeight = global.LaneYs[| _lane] - bbox_top;
+	var objHeight = global.LaneWidth * _lane + _lanebbox_top;
 	if (height == 0 || height < objHeight)
 	{
 		height = objHeight;

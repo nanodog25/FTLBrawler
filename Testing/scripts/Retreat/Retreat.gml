@@ -5,5 +5,5 @@ if (_canFire)
 }
 else
 {
-	_xSpeed = _speed * -_direction
+	_xSpeed = (_speed/2) * -_direction
 }
