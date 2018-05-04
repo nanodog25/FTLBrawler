@@ -43,7 +43,31 @@ else if (!_isPunching)
 		var fire2 = keyboard_check(global.KeyFire2);
 		if (fire1 && _canFire)
 		{
-			Fire(_projectile, 30, -40);
+			_canFire = false;
+
+			var inst = instance_create_layer(x, y, "Projectiles", _projectile);
+			with (inst)
+			{
+				_origin = other;
+				_xOffset = 50;
+				_yOffset = -40;
+
+				_laneCrossing = global.laneCrossing;
+				_isVertical = global.isVertical;
+				_isIgnoringCover = global.isIgnoringCover;
+				_isPiercing = global.isPiercing;
+				_isDestructible = global.isDestructible;
+				_isLauncher = global.isLauncher;
+				_damage = global.damage;
+				_rateOfFire = global.rateOfFire;
+				_buildUpDuration = global.buildUpDuration;
+				_travelSpeed = global.travelSpeed;
+				_travelDistance = global.travelDistance;
+				_knockBack = global.knockBack;
+				_stunLength = global.stunLength;
+			}
+
+			alarm_set(0, inst._rateOfFire);
 		}
 		else if (fire2 && _canFire)
 		{
