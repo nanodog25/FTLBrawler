@@ -8,7 +8,7 @@ CheckProjectileCollision();
 
 if (_destroySelf)
 {
-	if (_laneCrossing)
+	if (_laneCrossing && !_isVertical)
 	{
 		LaneSplash();
 	}

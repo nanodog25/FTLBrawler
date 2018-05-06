@@ -11,3 +11,4 @@ _isIgnoringCover = false;
 _isPiercing = false;
 _isDestructible = false;
 _isLauncher = false;
+_isUp = false;

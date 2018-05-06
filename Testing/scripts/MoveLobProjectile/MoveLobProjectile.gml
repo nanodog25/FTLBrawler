@@ -2,7 +2,7 @@ if (_isVertical)
 {
 	if (abs(_yRelease - y) < _travelDistance)
 	{
-		y += _travelSpeed*_direction;
+		y += _travelSpeed * (_isUp ? -1 : 1);
 	}
 }
 else

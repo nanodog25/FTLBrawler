@@ -1,2 +1,1 @@
-_selected = false;
-_variable = "";
+_created = false;

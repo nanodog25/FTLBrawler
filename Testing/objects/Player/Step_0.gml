@@ -65,13 +65,39 @@ else if (!_isPunching)
 				_travelDistance = global.travelDistance;
 				_knockBack = global.knockBack;
 				_stunLength = global.stunLength;
+				_isUp = global.isUp;
 			}
 
 			alarm_set(0, inst._rateOfFire);
 		}
 		else if (fire2 && _canFire)
 		{
-			Fire(obj_proj_spreadGrenade, 30, -40);
+			_canFire = false;
+
+			var inst = instance_create_layer(x, y, "Projectiles", _projectile);
+			with (inst)
+			{
+				_origin = other;
+				_xOffset = 50;
+				_yOffset = -40;
+
+				_laneCrossing = global.laneCrossing2;
+				_isVertical = global.isVertical2;
+				_isIgnoringCover = global.isIgnoringCover2;
+				_isPiercing = global.isPiercing2;
+				_isDestructible = global.isDestructible2;
+				_isLauncher = global.isLauncher2;
+				_damage = global.damage2;
+				_rateOfFire = global.rateOfFire2;
+				_buildUpDuration = global.buildUpDuration2;
+				_travelSpeed = global.travelSpeed2;
+				_travelDistance = global.travelDistance2;
+				_knockBack = global.knockBack2;
+				_stunLength = global.stunLength2;
+				_isUp = global.isUp2;
+			}
+
+			alarm_set(0, inst._rateOfFire);
 		}
 		_isAttacking = fire1 || fire2;
 	

@@ -7,6 +7,6 @@ if (_selected)
 	else
 	{
 		_selected = false;
-		variable_global_set(_variable, _value);
+		variable_global_set(_variable, clamp(_value, _minValue, _maxValue));
 	}
 }

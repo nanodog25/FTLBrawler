@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "21ef4f12-3a37-4141-8176-4f9de89077fd",
+            "Value": {
+                "id": "94e45c21-e4b1-4722-8f58-8c2f2cc31d74",
+                "resourcePath": "views\\21ef4f12-3a37-4141-8176-4f9de89077fd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "22f85157-e310-4baf-89a1-9ee7188b0b31",
             "Value": {
                 "id": "681a5f96-aaf4-4297-8fe2-dcaf614ef56b",
@@ -243,6 +251,14 @@
             "Value": {
                 "id": "26a24e98-0f35-47b2-aa45-ab330cb9a84f",
                 "resourcePath": "objects\\LaneObject3\\LaneObject3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2513960f-854b-4f58-9de1-4210ea35d8e2",
+            "Value": {
+                "id": "88e8a835-e732-47de-8754-0214eef4cac2",
+                "resourcePath": "objects\\obj_button_back\\obj_button_back.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -815,6 +831,14 @@
             }
         },
         {
+            "Key": "81424f3c-24aa-49c0-82ff-12a84b269308",
+            "Value": {
+                "id": "6ad44f96-7481-4dae-9e3f-7e4338268c05",
+                "resourcePath": "objects\\obj_menu_weapon\\obj_menu_weapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8247c45b-ac10-4e98-bbb4-6e98f653b8a4",
             "Value": {
                 "id": "ae6d3583-31da-488c-883e-95e2dec57241",
@@ -916,6 +940,14 @@
                 "id": "9b124758-f6e3-45b7-83b8-a2893005abce",
                 "resourcePath": "scripts\\EnemyStep\\EnemyStep.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8bcfe61a-87ad-4450-9fde-bd69d1839daf",
+            "Value": {
+                "id": "84bcc74c-d77c-4b5d-82b6-e4a1d766b863",
+                "resourcePath": "objects\\obj_button_menu\\obj_button_menu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1255,6 +1287,14 @@
             }
         },
         {
+            "Key": "c459f289-cae3-4d4a-8b4c-2609c1e09e6c",
+            "Value": {
+                "id": "c0d27e50-c176-4202-bd39-f9e2e21c07db",
+                "resourcePath": "objects\\obj_menu_player\\obj_menu_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5bac710-2999-4330-ac2c-637832261e12",
             "Value": {
                 "id": "ace6f168-fcfb-4393-94a8-91404daab62c",
@@ -1308,6 +1348,14 @@
                 "id": "820e985e-4947-41bb-9eae-6f9c0755e846",
                 "resourcePath": "objects\\PlaceholderBlock11\\PlaceholderBlock11.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d1f92d06-eefe-4ca4-9095-ba0f256fbd9b",
+            "Value": {
+                "id": "0cd688b8-1c93-4c84-a151-ca4187bb2489",
+                "resourcePath": "sprites\\sprite41\\sprite41.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1559,6 +1607,14 @@
             }
         },
         {
+            "Key": "f84a6a6e-02b5-4741-87c0-5c39a0e939ec",
+            "Value": {
+                "id": "44cfdefc-b0d3-4912-938e-f71cc4b3f00f",
+                "resourcePath": "rooms\\Menu\\Menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f88585de-aff8-469a-ac11-76f0735e5928",
             "Value": {
                 "id": "23fd86fc-1d98-4273-becf-ae2967dfe483",
@@ -1596,6 +1652,14 @@
                 "id": "65e21a88-848d-44ed-ac04-9ef63a026d6b",
                 "resourcePath": "sprites\\spr_woodenBarrier_damaged\\spr_woodenBarrier_damaged.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd7a2e90-f612-4cd0-ac4d-50730440666c",
+            "Value": {
+                "id": "1a492b8a-f4a9-43b1-b28a-e4f3cc9112d4",
+                "resourcePath": "objects\\obj_menu_weapon2\\obj_menu_weapon2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
