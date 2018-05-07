@@ -1335,6 +1335,14 @@
             }
         },
         {
+            "Key": "c0cb14d6-5da3-4ac5-92b8-191baee98604",
+            "Value": {
+                "id": "e891276a-7ec4-49de-a806-230e388985ea",
+                "resourcePath": "scripts\\DrawOutline\\DrawOutline.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c162acdf-6435-4c01-90bf-5dc285e37a52",
             "Value": {
                 "id": "9cc7d3d7-f8bb-4a4c-bb14-3f93eeefbe3e",
@@ -1766,6 +1774,7 @@
         "60f9acf2-d102-4b92-b685-cf1ecc19f418",
         "92c57bc1-2f4d-4933-8d89-2f78a97d954f",
         "5c3b6182-0b75-4daa-8ee6-f5957eb1075a",
+        "c0cb14d6-5da3-4ac5-92b8-191baee98604",
         "28422c41-3e4e-4017-934c-aca69220184f",
         "e5a0069d-0074-4112-b8f4-3aae1693739c",
         "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",

@@ -8,7 +8,7 @@ var targetLane = dir == "up"
 
 var objName = "LaneObject" + string(targetLane);
 var col = IsCollision(self, x, y, targetLane, objName, false);
-var lenience = 20;
+var lenience = 40;
 
 if (col != noone)
 {
