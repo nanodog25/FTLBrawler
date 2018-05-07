@@ -16,6 +16,7 @@ global.isPiercing = false;
 global.isDestructible = false;
 global.isUp = false;
 global.isLauncher = false;
+global.canDetonate = 0;
 global.damage = 20;
 global.rateOfFire = 20;
 global.buildUpDuration = 0;

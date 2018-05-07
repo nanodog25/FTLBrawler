@@ -13,18 +13,19 @@ var collidingWith = argument4;
 var checkLaneVariable = argument5;
 
 var laneOffset = global.LaneWidth * (targetLane - obj._lane);
+var bbHalfWidth = (obj.bbox_right - obj.bbox_left)/2;
 
-var xLeft = targetX - abs(obj.sprite_xoffset);
-var xRight = targetX + abs(obj.sprite_width) - abs(obj.sprite_xoffset);
+var xLeft = targetX - bbHalfWidth;
+var xRight = targetX + bbHalfWidth;
 var yUp = targetY - obj.sprite_yoffset + laneOffset;
 var yDown = targetY + obj.sprite_height - sprite_yoffset + laneOffset;
 
 if (checkLaneVariable)
 {
 	var instList = collision_rectangle_list(
-		xLeft + global.collisionBuffer,
+		xLeft,
 		yUp + global.collisionBuffer,
-		xRight - global.collisionBuffer,
+		xRight,
 		yDown - global.collisionBuffer,
 		asset_get_index(collidingWith),
 		true,
@@ -49,9 +50,9 @@ if (checkLaneVariable)
 else
 {
 	return collision_rectangle(
-		xLeft + global.collisionBuffer,
+		xLeft,
 		yUp + global.collisionBuffer,
-		xRight - global.collisionBuffer,
+		xRight,
 		yDown - global.collisionBuffer,
 		asset_get_index(collidingWith),
 		true,

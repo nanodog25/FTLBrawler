@@ -4,7 +4,7 @@
 var lane = argument0;
 var objectType = argument1;
 
-var baseDepth = -1 * argument0 * 100;
+var baseDepth = -1 * argument0 * 1000;
 
 switch(argument1)
 {

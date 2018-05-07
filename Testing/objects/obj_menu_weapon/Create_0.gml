@@ -114,3 +114,10 @@ with (inst)
 	_variable = "isLauncher";
 	_lable = "isLauncher:";
 }
+
+var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
+with (inst)
+{
+	_variable = "canDetonate";
+	_lable = "canDetonate:";
+}

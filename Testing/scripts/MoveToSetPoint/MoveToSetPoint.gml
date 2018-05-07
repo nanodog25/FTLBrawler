@@ -4,7 +4,7 @@ if (_moveLane != _lane)
 	moveDown = !moveUp;
 }
 
-if (abs(_moveX - x) < _collisionBuffer)
+if (abs(_moveX - x) < global.collisionBuffer)
 {
 	_isMoving = _moveLane != _lane || _isJumping || _isFalling;
 	if (!_isMoving)

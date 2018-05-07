@@ -19,7 +19,6 @@ _currentGroundY = _targetGroundY;
 _jumpHeight = 0
 _hitDirection = 0;
 
-_collisionBuffer = 20;
 _action = "";
 _weapon = "";
 _projectile = obj_proj_bullet;

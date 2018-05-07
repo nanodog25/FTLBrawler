@@ -1,6 +1,6 @@
 event_inherited();
 
-_colRadius = sprite_width/2;
+_colRadius = (bbox_right - bbox_left)/2;
 _colX = 0;
 _colY = 0;
 _destroySelf = false;
@@ -12,3 +12,4 @@ _isPiercing = false;
 _isDestructible = false;
 _isLauncher = false;
 _isUp = false;
+_canDetonate = false;

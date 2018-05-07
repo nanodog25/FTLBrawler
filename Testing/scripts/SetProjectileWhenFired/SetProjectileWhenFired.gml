@@ -15,7 +15,7 @@ else
 }
 
 if (_isVertical)
-	_lane += _isUp ? 1 : -1;
+	_lane += _isUp ? -1 : 1;
 
 depth = DepthModifier(_lane, "Projectile");
 visible = true;

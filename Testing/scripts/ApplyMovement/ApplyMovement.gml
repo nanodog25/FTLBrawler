@@ -1,6 +1,13 @@
 _sideCollision = false;
 var col = noone;
 
+var switchOffset = _currentGroundY - _targetGroundY;
+move_xLeft = bbox_left;
+move_xRight = bbox_right;
+move_yUp = bbox_top - switchOffset;
+move_yDown = bbox_bottom - switchOffset;
+move_obj = asset_get_index("LaneObject" + string(_lane));
+
 if (_xSpeed != 0)
 {
 	col = _xSpeed > 0
@@ -11,6 +18,8 @@ if (_xSpeed != 0)
 		x += _xSpeed;
 	else
 	{
+		
+		x += GetExactHorizontalCollision();
 		_xSpeed = 0;
 		_sideCollision = true;
 	}
@@ -61,4 +70,6 @@ else
 	_isJumping = false;
 	_isFalling = !onFloor;
 }
-depth = DepthModifier(_lane, _objectType);
+
+var laneDepth = _ySwitch < 0 ? _lane + 1 : _lane;
+depth = DepthModifier(laneDepth, _objectType);

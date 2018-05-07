@@ -8,7 +8,7 @@
     "VTile": false,
     "bbox_bottom": 63,
     "bbox_left": 13,
-    "bbox_right": 20,
+    "bbox_right": 30,
     "bbox_top": 7,
     "bboxmode": 2,
     "colkind": 1,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 64,
+    "height": 66,
     "layers": [
         {
             "id": "09b60399-1c91-4fca-a5a4-754d07ba6e29",

@@ -4,7 +4,7 @@
 var isMovingUp = argument0;
 var isMovingDown = argument1;
 
-if (isMovingUp && _lane != 0 && IsSwitchCollision("up") == noone) 
+if (isMovingUp && _lane != 0 && !IsSwitchCollision("up")) 
 { 
 	_isSwitchingLane = true;
 	_canSwitchLane = false;
@@ -13,7 +13,7 @@ if (isMovingUp && _lane != 0 && IsSwitchCollision("up") == noone)
 	_lane--;
 	_targetGroundY -= global.LaneWidth;
 }
-else if (isMovingDown && _lane != 4 && IsSwitchCollision("down") == noone) 
+else if (isMovingDown && _lane != 4 && !IsSwitchCollision("down")) 
 { 
 	_isSwitchingLane = true;
 	_canSwitchLane = false;

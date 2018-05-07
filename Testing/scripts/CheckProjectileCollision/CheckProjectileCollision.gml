@@ -16,23 +16,6 @@ if (collision_line(_xBefore, _yBefore, x, y, Solid, true, true) != noone)
 	
 	_colX =  _xBefore + len * _direction * xMove;
 	_colY =  _yBefore + len * _direction * yMove;
-	var instList = collision_circle_list(_colX, _colY, _colRadius, Solid, true, true);
-
-	if (instList != noone)
-	{
-		for(var i = 0; i < ds_list_size(instList); i++)
-		{
-			var inst = instList[| i];
-			if (inst != _origin && _lane == inst._lane)
-			{
-				with (inst)
-				{
-					event_user("onHit");
-				}
-				if !(_isIgnoringCover || _isPiercing && inst._isDestructible)
-					_destroySelf = true;
-			}
-		}
-		instList = noone;	
-	}
+	
+	ProjectileCollision(_colX, _colY);
 }
