@@ -146,7 +146,7 @@ if (_isHit || _isPunching && image_index > image_number - 1)
 	_isPunching = false;
 }
 
-if (!_isHit && !_isSwitchingLane)
+if (!_isHit && (!_isSwitchingLane || _xSpeed == 0))
 {
 	var isMovingLeft = keyboard_check(global.KeyLeft);
 	var isMovingRight = keyboard_check(global.KeyRight);
