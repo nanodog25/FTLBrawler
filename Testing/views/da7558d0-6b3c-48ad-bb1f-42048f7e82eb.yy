@@ -6,7 +6,8 @@
     "children": [
         "d9e55e30-f1c0-4111-a3bb-10812e871633",
         "6c19146d-a9fa-4aa7-a280-a41fad847ccf",
-        "018a74df-f7de-4c1b-bc20-6c2b9c0a4156"
+        "018a74df-f7de-4c1b-bc20-6c2b9c0a4156",
+        "8f52749a-8e70-4224-87c3-879c5c7321d8"
     ],
     "filterType": "GMScript",
     "folderName": "OnStart",
