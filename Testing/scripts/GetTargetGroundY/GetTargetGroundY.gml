@@ -1,6 +1,6 @@
 if (IsPlatformCollision("down") != noone)
 {
-	var len = move_yDown - 10;
+	var len = _ySwitch == 0 ? move_yDown - 10 : move_yDown + 1;
 	var maxY = global.LaneYs[| _lane];
 
 	//Begin raycast loop

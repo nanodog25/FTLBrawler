@@ -12,16 +12,19 @@ var lenience = 40;
 
 if (col != noone)
 {
+	//left of obstacle
 	var overlap = bbox_right - col.bbox_left + 5;
 	if (overlap <= lenience && IsCollision(self, x - overlap, y, targetLane, objName, false) == noone)
 	{
-		x -= overlap;
+		if (_xSpeed >= 0)
+			_xSpeed = -overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}	
 	overlap = col.bbox_right - bbox_left + 5;
 	if (overlap <= lenience && IsCollision(self, x + overlap, y, targetLane, objName, false) == noone)
 	{
-		x += overlap;
+		if (_xSpeed <= 0)
+			_xSpeed = overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}
 	return true;
