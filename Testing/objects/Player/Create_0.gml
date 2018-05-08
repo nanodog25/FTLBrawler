@@ -1,6 +1,6 @@
 event_inherited();
 
-CreateActorParams(1, true, 12, 12, 180, 12, 15, 0, 100, "Player");
+CreateActorParams(true, 6, 6, 180, 6, 20, 0, 100, "Player");
 CreateActor();
 UpdatePlayerVariables();
 CreatePlayer(1, 1);

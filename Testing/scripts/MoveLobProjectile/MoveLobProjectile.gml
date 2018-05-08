@@ -2,14 +2,14 @@ if (_isVertical)
 {
 	if (abs(_yRelease - y) < _travelDistance)
 	{
-		y += _travelSpeed * (_isUp ? -1 : 1);
+		y += _travelSpeed * (_isUp ? -1 : 1) * global.delta;
 	}
 }
 else
 {
 	if (abs(_xRelease - x) < _travelDistance/2)
 	{
-		x += _travelSpeed * _direction;
+		x += _travelSpeed * _direction * global.delta;
 		y -= _travelSpeed;
 	}
 	else
@@ -22,7 +22,7 @@ else
 			LaneSplash();
 		}
 	
-		x += _travelSpeed * _direction;
-		y += _travelSpeed;
+		x += _travelSpeed * _direction * global.delta;
+		y += _travelSpeed * global.delta;
 	}
 }

@@ -1,13 +1,14 @@
 KeyBindings();
 Layout();
 GlobalGeneral();
+//Resolution();
 room = rm_street_parallelBridges;
 
-global.playerSpeed = 12;
-global.playerSwitchSpeed = 12;
+global.playerSpeed = 6;
+global.playerSwitchSpeed = 6;
 global.playerMaxJumpHeight = 180;
-global.playerJumpSpeed = 12;
-global.playerFallSpeed = 30;
+global.playerJumpSpeed = 6;
+global.playerFallSpeed = 20;
 
 global.laneCrossing = false;
 global.isVertical = false;
@@ -20,7 +21,7 @@ global.canDetonate = 0;
 global.damage = 20;
 global.rateOfFire = 20;
 global.buildUpDuration = 0;
-global.travelSpeed = 30;
+global.travelSpeed = 15;
 global.travelDistance = 800;
 global.knockBack = 1;
 global.stunLength = 4;
@@ -36,7 +37,7 @@ global.isLauncher2 = false;
 global.damage2 = 20;
 global.rateOfFire2 = 20;
 global.buildUpDuration2 = 0;
-global.travelSpeed2 = 30;
+global.travelSpeed2 = 15;
 global.travelDistance2 = 800;
 global.knockBack2 = 1;
 global.stunLength2 = 4;

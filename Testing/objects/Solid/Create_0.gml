@@ -1,5 +1,6 @@
 _isDestructible = false;
 _isHit = false;
+_lane = 0;
 
 if (sprite_index >= 0)
 {

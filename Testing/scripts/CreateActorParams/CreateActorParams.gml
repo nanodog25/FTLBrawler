@@ -1,4 +1,3 @@
-/// @arg lane
 /// @arg canSwitchLane
 /// @arg speed
 /// @arg switchSpeed
@@ -9,13 +8,12 @@
 /// @arg maxHP
 /// @arg objectType
 
-_lane = argument0;
-_canSwitchLane = argument1;
-_speed = argument2;
-_switchSpeed = argument3;
-_maxJumpHeight = argument4;
-_jumpSpeed = argument5;
-_fallSpeed = argument6;
-_attackType = argument7;
-_maxHP = argument8;
-_objectType = argument9;
+_canSwitchLane = argument0;
+_speed = argument1;
+_switchSpeed = argument2;
+_maxJumpHeight = argument3;
+_jumpSpeed = argument4;
+_fallSpeed = argument5;
+_attackType = argument6;
+_maxHP = argument7;
+_objectType = argument8;

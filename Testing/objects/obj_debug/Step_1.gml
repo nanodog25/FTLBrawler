@@ -1,0 +1,1 @@
+global.delta = delta_time * game_get_speed(gamespeed_fps)/1000000;

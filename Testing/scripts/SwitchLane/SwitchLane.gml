@@ -18,7 +18,7 @@ if (_currentGroundY > _targetGroundY)
 }
 else if (_currentGroundY < _targetGroundY)
 {
-	_currentGroundY += _switchSpeed;
+	_currentGroundY += _switchSpeed * global.delta;
 	if (_currentGroundY > _targetGroundY)
 		_currentGroundY = _targetGroundY;
 }

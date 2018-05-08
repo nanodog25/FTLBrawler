@@ -1,3 +1,3 @@
 event_inherited();
-CreateProjectile(20, 50, 0, 60, 800, 1);
+CreateProjectile(20, 50, 0, 5, 800, 1);
 _laneCrossing = true;
