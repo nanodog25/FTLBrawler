@@ -2,7 +2,7 @@
     "id": "17e332dd-4c20-4f7b-8d4f-58c0e0bb2280",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_proj_LinearProjectile",
+    "name": "obj_proj_StandardProjectile",
     "eventList": [
         {
             "id": "98f8253d-cc9e-41be-9edd-d9142308347d",

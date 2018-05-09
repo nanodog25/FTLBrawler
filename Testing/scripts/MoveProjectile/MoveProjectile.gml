@@ -3,8 +3,15 @@ if (_isVertical)
 	_lane = _yRelease == y
 		? _initialLane
 		: _initialLane - round((_yRelease - y  + global.LaneWidth/2) / global.LaneWidth);
-		
-	y += _travelSpeed * (_isUp ? -1 : 1) * global.delta;
+	
+	var vert = _travelSpeed * (_isUp ? -1 : 1) * global.delta;
+	
+	_currentGroundY += vert;
+	y += vert;
+	
+	//if (_isLob && _height < )
+	//	y -= _travelSpeed;
+	
 	depth = DepthModifier(_lane + (_isUp ? 1 : -1), "Projectile");
 	
 	if (abs(_yRelease-y) > _travelDistance)
@@ -26,4 +33,13 @@ while(y + len < maxY)
 
 	len++;
 }
-_currentGroundY = y + len;
+
+if (_lastCollisionY != 0)
+{
+	var lastCollisionY = _lastCollisionY;
+	_lastCollisionY = y + len;
+
+	_currentGroundY += _lastCollisionY - lastCollisionY;
+}
+else
+	_lastCollisionY = y + len;

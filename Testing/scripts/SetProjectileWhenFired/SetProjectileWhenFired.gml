@@ -4,6 +4,7 @@ if (_hasOrigin)
 	_xRelease = _origin.x + _direction*_xOffset;
 	_yRelease = _origin.y + _yOffset;
 	_lane = _origin._lane;
+	_currentGroundY = _origin._currentGroundY;
 
 	x = _xRelease;
 	y = _yRelease;

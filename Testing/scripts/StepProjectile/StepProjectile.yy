@@ -1,8 +1,8 @@
 {
-    "id": "e3aac621-abe0-45ca-98b5-476830573c8e",
+    "id": "aab19d1c-a8c4-4ac7-aed3-6cd3ddc5af2a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MoveLinearProjectile",
+    "name": "StepProjectile",
     "IsCompatibility": false,
     "IsDnD": false
 }

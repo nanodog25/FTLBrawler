@@ -3,7 +3,7 @@ if (!_released)
 
 _xBefore = x;
 _yBefore = y;
-MoveLinearProjectile();
+MoveProjectile();
 CheckProjectileCollision();
 
 if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyFire1))

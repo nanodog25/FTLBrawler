@@ -146,7 +146,7 @@
             "Key": "17e332dd-4c20-4f7b-8d4f-58c0e0bb2280",
             "Value": {
                 "id": "9fa3a99d-36a2-4bc0-8c47-ce7d26aaf121",
-                "resourcePath": "objects\\obj_proj_LinearProjectile\\obj_proj_LinearProjectile.yy",
+                "resourcePath": "objects\\obj_proj_StandardProjectile\\obj_proj_StandardProjectile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -711,14 +711,6 @@
             }
         },
         {
-            "Key": "68d5c28a-6885-4b82-8ac9-16252e4e04d9",
-            "Value": {
-                "id": "6cbe590d-98a6-42b1-8b2f-8e5b43686bdd",
-                "resourcePath": "objects\\obj_proj_LobProjectile\\obj_proj_LobProjectile.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6a76c471-67c3-4a67-9aeb-6276ab987521",
             "Value": {
                 "id": "7e0fef02-63db-4a66-bf2a-4383c258704e",
@@ -1234,7 +1226,7 @@
             "Key": "aab19d1c-a8c4-4ac7-aed3-6cd3ddc5af2a",
             "Value": {
                 "id": "a05234fc-bb65-4646-b14e-502c705028c1",
-                "resourcePath": "scripts\\StepLinearProjectile\\StepLinearProjectile.yy",
+                "resourcePath": "scripts\\StepProjectile\\StepProjectile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1570,7 +1562,7 @@
             "Key": "e3aac621-abe0-45ca-98b5-476830573c8e",
             "Value": {
                 "id": "25e6e129-8ee7-4d09-82fc-a5e699a1db23",
-                "resourcePath": "scripts\\MoveLinearProjectile\\MoveLinearProjectile.yy",
+                "resourcePath": "scripts\\MoveProjectile\\MoveProjectile.yy",
                 "resourceType": "GMScript"
             }
         },
