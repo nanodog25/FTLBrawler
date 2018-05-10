@@ -1,6 +1,13 @@
 _previousLane = _lane;
 _lane = _initialLane - round((_yRelease - y  + global.LaneWidth/2) / global.LaneWidth);
-	
+
+if (_previousLane != _lane)
+{
+	//Check collision using switch logic
+	//Set depth depending on collision
+	//If continuing past collision, change depth on collision
+}
+
 var vert = _travelSpeed * (_isUp ? -1 : 1) * global.delta;
 	
 _currentGroundY += vert;

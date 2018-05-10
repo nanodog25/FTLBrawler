@@ -11,6 +11,13 @@ while(y + len < maxY)
 }
 
 _currentGroundY = y + len;
-	
+
+var top = y - sprite_get_yoffset(spr_proj_horizontal);
+var bottom = y + sprite_get_height(spr_proj_horizontal) - sprite_get_yoffset(spr_proj_horizontal);
+var xx = x - 50 * _direction;
+
+effect_create_below(ef_spark, xx, bottom, 0.01, GetColour(_lane));
+effect_create_below(ef_spark, xx, top, 0.01, GetColour(_lane));
+
 if (abs(_xRelease-x) > _travelDistance)
 	instance_destroy();
