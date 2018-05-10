@@ -1,8 +1,8 @@
 {
-    "id": "26e7d3b5-c30e-4b39-8821-1a960e660bc3",
+    "id": "7462da30-168d-4937-b69a-e43595144507",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "StepLobProjectile",
+    "name": "MoveProjectileArced",
     "IsCompatibility": false,
     "IsDnD": false
 }

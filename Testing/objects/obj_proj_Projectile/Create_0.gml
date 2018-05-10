@@ -6,6 +6,7 @@ _colY = 0;
 _lastCollisionY = 0;
 _initialLane = 0;
 _destroySelf = false;
+_ignoreProjectiles = false;
 _laneCrossing = false;
 _isVertical = false;
 _hasOrigin = true;

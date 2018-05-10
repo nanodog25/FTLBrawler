@@ -1,8 +1,8 @@
 {
-    "id": "7462da30-168d-4937-b69a-e43595144507",
+    "id": "5d1aa44b-f625-4911-b8d6-2cc937632188",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MoveLobProjectile",
+    "name": "MoveProjectileHorizontally",
     "IsCompatibility": false,
     "IsDnD": false
 }

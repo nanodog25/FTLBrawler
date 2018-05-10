@@ -295,14 +295,6 @@
             }
         },
         {
-            "Key": "26e7d3b5-c30e-4b39-8821-1a960e660bc3",
-            "Value": {
-                "id": "bde9e77f-cb70-4438-9adf-bad5e066d3d5",
-                "resourcePath": "scripts\\StepLobProjectile\\StepLobProjectile.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "28422c41-3e4e-4017-934c-aca69220184f",
             "Value": {
                 "id": "5d6b124e-e128-463c-889c-41d9849fef4d",
@@ -487,11 +479,27 @@
             }
         },
         {
+            "Key": "43c6cbdd-d7e1-404b-9a50-9402b7963275",
+            "Value": {
+                "id": "e9fc203c-5377-4681-993b-f527504c7c59",
+                "resourcePath": "sprites\\spr_proj_vertical\\spr_proj_vertical.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46d95e14-c439-4335-89bd-c54ec549e0fa",
             "Value": {
                 "id": "22c159ca-df58-4935-8add-68d1a1f9f6cc",
                 "resourcePath": "rooms\\rm_street_mockup\\rm_street_mockup.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4762479e-cd74-475c-9935-42aae187b4eb",
+            "Value": {
+                "id": "0b298eb5-a79d-4e90-880d-f9d4759fac72",
+                "resourcePath": "scripts\\MoveProjectileVertically\\MoveProjectileVertically.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -643,6 +651,14 @@
             "Value": {
                 "id": "cf5332cb-a53a-497e-bae5-87b193fb3ff5",
                 "resourcePath": "scripts\\DepthModifier\\DepthModifier.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5d1aa44b-f625-4911-b8d6-2cc937632188",
+            "Value": {
+                "id": "31c72d51-663e-441e-bcf1-f69dc33e3e82",
+                "resourcePath": "scripts\\MoveProjectileHorizontally\\MoveProjectileHorizontally.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -802,7 +818,7 @@
             "Key": "7462da30-168d-4937-b69a-e43595144507",
             "Value": {
                 "id": "e1ca2136-109a-4480-94b3-d3a2bebd4bea",
-                "resourcePath": "scripts\\MoveLobProjectile\\MoveLobProjectile.yy",
+                "resourcePath": "scripts\\MoveProjectileArced\\MoveProjectileArced.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1103,14 +1119,6 @@
             }
         },
         {
-            "Key": "995ec9d0-c894-458c-8258-5a3275b920d3",
-            "Value": {
-                "id": "91b29304-0b17-4c2e-b373-d6c3d6f6a4a5",
-                "resourcePath": "objects\\obj_proj_ignoreCover\\obj_proj_ignoreCover.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "99ffa678-b89c-4072-9a63-dda9d235a3b8",
             "Value": {
                 "id": "93ffd9e7-72a6-484f-92cd-44852e3a1376",
@@ -1367,11 +1375,11 @@
             }
         },
         {
-            "Key": "ca5ca17c-e768-4a4a-aea0-e3c2e52e8388",
+            "Key": "c9e3c282-f1e8-45c5-90fc-d93d771142fd",
             "Value": {
-                "id": "b849bcc3-185a-4d94-9d7e-7cc6be64d51a",
-                "resourcePath": "objects\\obj_proj_spreadGrenade\\obj_proj_spreadGrenade.yy",
-                "resourceType": "GMObject"
+                "id": "8e75a2eb-9814-47ae-aaf5-2d862dbe58be",
+                "resourcePath": "sprites\\sprite47\\sprite47.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1631,6 +1639,14 @@
             }
         },
         {
+            "Key": "f377467f-133c-4eab-ab9f-fb54d2e10884",
+            "Value": {
+                "id": "0b335cb5-9ce3-4a66-a7cd-bc86c96d4a66",
+                "resourcePath": "sprites\\spr_proj_horizontal\\spr_proj_horizontal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3fd690c-f5fb-4de0-911e-64354e236d51",
             "Value": {
                 "id": "9c368f99-7916-43d7-90c1-98290701bcce",
@@ -1660,14 +1676,6 @@
                 "id": "4ec06d08-65cb-4bf7-9ab4-636ab15d3f51",
                 "resourcePath": "scripts\\onHit\\onHit.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f7271ba8-5879-410d-8c8e-3da4686f931d",
-            "Value": {
-                "id": "596d02e8-04fc-4e3b-9aac-e4204fc2c922",
-                "resourcePath": "objects\\obj_proj_rocket\\obj_proj_rocket.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1766,10 +1774,11 @@
         "1f725158-162d-461e-865f-569a5b2d4251",
         "22f85157-e310-4baf-89a1-9ee7188b0b31",
         "aab19d1c-a8c4-4ac7-aed3-6cd3ddc5af2a",
-        "26e7d3b5-c30e-4b39-8821-1a960e660bc3",
         "7462da30-168d-4937-b69a-e43595144507",
         "71985934-2e16-469b-a01b-fd2ac7c48c13",
         "7106b7a9-177e-4a12-9bc2-dcbf6c42c6c1",
+        "4762479e-cd74-475c-9935-42aae187b4eb",
+        "5d1aa44b-f625-4911-b8d6-2cc937632188",
         "f7dae3a3-3457-4275-a747-fe9883b2c3dd",
         "f88585de-aff8-469a-ac11-76f0735e5928",
         "e531610e-4435-401a-97f4-28f5ed6b98ba",

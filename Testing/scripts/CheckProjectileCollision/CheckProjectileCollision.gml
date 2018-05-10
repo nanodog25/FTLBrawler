@@ -17,5 +17,5 @@ if (collision_line(_xBefore, _yBefore, x, y, Solid, true, true) != noone)
 	_colX =  _xBefore + len * _direction * xMove;
 	_colY =  _yBefore + len * _direction * yMove;
 	
-	ProjectileCollision(_colX, _colY);
+	ProjectileCollision();
 }
