@@ -1,5 +1,13 @@
 /// @description onHit
-if (!_isInvulnerable && !_isLaunched)
+if (_isBlocking)
+{
+	_knockBack = other._knockBack;
+	_hasBlocked = true;
+	_hitDirection = other._direction;
+	alarm_set(3, 20/_speedMod);
+
+}
+else if (!_isInvulnerable && !_isLaunched)
 {
 	if (other._isLauncher)
 	{

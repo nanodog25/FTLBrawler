@@ -8,6 +8,7 @@ global.KeySlow = vk_space;
 global.KeyFire1 = ord("X");
 global.KeyFire2 = ord("C");
 global.KeyPunch = ord("D");
+global.KeyShield = ord("F");
 global.KeyPlus = vk_add;
 global.KeyMinus = vk_subtract;
 

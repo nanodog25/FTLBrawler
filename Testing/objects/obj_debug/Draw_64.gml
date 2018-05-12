@@ -12,5 +12,6 @@ draw_text(200,50,
 	"FIRE1: " + KeyToText(global.KeyFire1) + "\n" +
 	"FIRE2: " + KeyToText(global.KeyFire2) + "\n" +
 	"PUNCH: " + KeyToText(global.KeyPunch) + "\n" +
+	"BLOCK: " + KeyToText(global.KeyShield) + "\n" +
 	"lanes: " + KeyToText(global.KeyGrid) + "\n"
 );

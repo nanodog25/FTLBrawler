@@ -1,6 +1,7 @@
 SetSpeedMod();
 
 _ySwitch = 0;
+_isBlocking = false;
 
 if (_isLaunched)
 {
@@ -11,6 +12,16 @@ else if (_isHit)
 	sprite_index = spr_jack_hit;
 	image_xscale = _hitDirection;
 	_xSpeed = _hitDirection * _knockBack;
+}
+else if (_hasBlocked)
+{
+	image_xscale = _hitDirection;
+	_xSpeed = _hitDirection * _knockBack;
+	var jump = keyboard_check_pressed(global.KeyJump);	
+	if (jump)
+	{
+		SetJumping();
+	}
 }
 else if (_currentHP == 0)
 {
@@ -38,6 +49,14 @@ else if (!_isPunching)
 			_xOffset = 30;
 			_yOffset = -40;
 		}
+	}
+	else if(keyboard_check(global.KeyShield))
+	{
+		sprite_index = spr_jack_punch;
+		image_index = 0;
+		image_speed = 0;
+		_isBlocking = true;
+		_xSpeed = 0;
 	}
 	else
 	{
@@ -150,7 +169,7 @@ if (_isHit || _isPunching && image_index > image_number - 1)
 	_isPunching = false;
 }
 
-if (!_isHit && (!_isSwitchingLane || _xSpeed == 0))
+if (!_isHit && !_hasBlocked && !_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
 {
 	var isMovingLeft = keyboard_check(global.KeyLeft);
 	var isMovingRight = keyboard_check(global.KeyRight);
@@ -160,7 +179,7 @@ if (!_isHit && (!_isSwitchingLane || _xSpeed == 0))
 ApplyMovement();
 UpdatePlayerVariables();
 
-if (!_isHit && !_isJumping && !_isFalling && !_isPunching)
+if (!_isHit && !_hasBlocked && !_isBlocking && !_isJumping && !_isFalling && !_isPunching)
 {
 	if (_xSpeed == 0)
 		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;
