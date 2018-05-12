@@ -8,12 +8,18 @@ var baseDepth = -1 * argument0 * 1000;
 
 switch(argument1)
 {
+	case "FrontProjectile":
+		return baseDepth-12;
 	case "Projectile":
 		return baseDepth-11;
 	case "Player":
 		return baseDepth-10;
 	case "Enemy":
 		return baseDepth-9;
-	case "Platform":
+	case "RearProjectile":
 		return baseDepth-8;
+	case "Platform":
+		return baseDepth-7;
+	case "Behind":
+		return baseDepth-6;
 }

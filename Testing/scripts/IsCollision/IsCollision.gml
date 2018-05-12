@@ -49,11 +49,13 @@ if (checkLaneVariable)
 }
 else
 {
+	var buffer = object_is_ancestor(obj.object_index, obj_proj_Projectile) ? 0 : global.collisionBuffer;
+	
 	return collision_rectangle(
 		xLeft,
-		yUp + global.collisionBuffer,
+		yUp + buffer,
 		xRight,
-		yDown - global.collisionBuffer,
+		yDown - buffer,
 		asset_get_index(collidingWith),
 		true,
 		true);

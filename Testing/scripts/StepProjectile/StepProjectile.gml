@@ -4,21 +4,25 @@ if (!_released)
 _xBefore = x;
 _yBefore = y;
 MoveProjectile();
-CheckProjectileCollision();
 
-if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyFire1))
+if (!_isVertical)
 {
-	_colX = x;
-	_colY = y;
-	ProjectileCollision();
-	_destroySelf = true;
-}
+	CheckProjectileCollision();
 
-if (_destroySelf)
-{
-	if (_laneCrossing && !_isVertical)
+	if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyFire1))
 	{
-		LaneSplash();
+		_colX = x;
+		_colY = y;
+		ProjectileCollision();
+		_destroySelf = true;
 	}
-	instance_destroy();
+
+	if (_destroySelf)
+	{
+		if (_laneCrossing && !_isVertical)
+		{
+			LaneSplash();
+		}
+		instance_destroy();
+	}
 }

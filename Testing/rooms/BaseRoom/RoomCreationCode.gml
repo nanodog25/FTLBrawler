@@ -11,7 +11,7 @@ global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 
 global.laneCrossing = false;
-global.isVertical = false;
+global.isVertical = true;
 global.isIgnoringCover = false;
 global.isPiercing = false;
 global.isDestructible = false;

@@ -1,35 +1,36 @@
-_previousLane = _lane;
-_lane = _initialLane - round((_yRelease - y  + global.LaneWidth/2) / global.LaneWidth);
-
-if (_previousLane != _lane)
+if (_state == "released")
 {
-	//Check collision using switch logic
-	//Set depth depending on collision
-	//If continuing past collision, change depth on collision
-}
+	var vert = _crossSpeed * (_isUp ? -1 : 1) * global.delta;
+	
+	_yRelease += vert;
 
-var vert = _travelSpeed * (_isUp ? -1 : 1) * global.delta;
-	
-_currentGroundY += vert;
-y += vert;
-	
-depth = DepthModifier(_lane, "Projectile");
-	
-var len = 1;
-var maxY = global.LaneYs[| _lane];
-while(y + len < maxY)
+	if (abs(_yRelease - y) >= sprite_get_height(spr_proj_vertical))
+	{
+		mask_index = PlaceholderProjectile;
+		var col = IsSwitchCollision(_isUp ? "Up" : "Down");
+		mask_index = spr_empty;
+		if (!col)
+		{
+			_yRelease = y;
+			_lane += _isUp ? -1 : 1;
+			_colX = x;
+			_colY = y + (_isUp ? -global.LaneHalf : global.LaneHalf);
+			_colRadius = sprite_width/2;
+			ProjectileCollision();
+			depth = DepthModifier(_lane, "Projectile");
+			_state = "through";
+		}
+		else
+		{
+			_state = "poof";
+			instance_destroy();
+		}
+	}
+}
+else if (_state == "through")
 {
-	if (collision_line(x, y, x, y+len, asset_get_index("LaneObject" + string(_lane)), true, true))
-		break;
-
-	len++;
+	if (abs(_yRelease - y) < global.LaneWidth)
+		y += 12 * (_isUp ? -1 : 1);
+	else
+		instance_destroy();
 }
-
-var lastCollisionY = _lastCollisionY;
-_lastCollisionY = y + len;
-
-_currentGroundY += _lastCollisionY - lastCollisionY;
-_currentGroundY += (_previousLane - _lane) * global.LaneWidth;
-
-if (abs(_yRelease-y) > _travelDistance)
-	instance_destroy();
