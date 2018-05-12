@@ -20,7 +20,7 @@ if (!_isVertical)
 	}
 }
 
-if (_destroySelf && _hasSlowAura)
+if (_destroySelf && _colX != 0 && _hasSlowAura)
 	CreateSlowAura();
 	
 if (_destroySelf)

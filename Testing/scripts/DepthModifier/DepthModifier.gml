@@ -1,12 +1,12 @@
 ///@arg lane
 ///@arg objectType
 
-var lane = argument0;
+var lane = argument0+1;
 var objectType = argument1;
 
-var baseDepth = -1 * argument0 * 1000;
+var baseDepth = -1 * lane * 1000;
 
-switch(argument1)
+switch(objectType)
 {
 	case "Overlay":
 		return baseDepth-13;

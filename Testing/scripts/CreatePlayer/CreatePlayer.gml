@@ -6,7 +6,7 @@ _switchSpeedMod = argument1;
 _speed = _speed*_speedMod;
 _switchSpeed = _switchSpeed * _switchSpeedMod;
 
-_healthBar = instance_create_layer(850, 32, "GUI_obj", obj_HealthBar);
+_healthBar = instance_create_depth(view_wview[0] - 32*6, 32, -10000, obj_HealthBar);
 with (_healthBar)
 {
 	_maxHP = other._maxHP;
