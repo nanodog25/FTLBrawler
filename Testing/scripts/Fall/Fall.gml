@@ -1,6 +1,6 @@
 if (y < _currentGroundY)
 {
-	_yAcc = 4;
+	_yAcc = 4*_speedMod;
 }
 else
 {

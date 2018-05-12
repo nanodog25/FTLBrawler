@@ -1,6 +1,8 @@
 if (!_released)
 	SetProjectileWhenFired();
 
+SetSpeedMod();
+
 _xBefore = x;
 _yBefore = y;
 MoveProjectile();
@@ -16,13 +18,16 @@ if (!_isVertical)
 		ProjectileCollision();
 		_destroySelf = true;
 	}
+}
 
-	if (_destroySelf)
+if (_destroySelf && _hasSlowAura)
+	CreateSlowAura();
+	
+if (_destroySelf)
+{
+	if (_laneCrossing && !_isVertical)
 	{
-		if (_laneCrossing && !_isVertical)
-		{
-			LaneSplash();
-		}
-		instance_destroy();
+		LaneSplash();
 	}
+	instance_destroy();
 }

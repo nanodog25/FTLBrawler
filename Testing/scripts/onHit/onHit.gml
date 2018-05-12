@@ -10,7 +10,7 @@ if (!_isInvulnerable && !_isLaunched)
 	}
 	else
 	{
-		alarm_set(1, 20);
+		alarm_set(1, 20/_speedMod);
 	}
 	_isHit = true;
 	_isInvulnerable = true;

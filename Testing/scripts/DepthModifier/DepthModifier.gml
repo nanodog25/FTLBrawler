@@ -8,6 +8,8 @@ var baseDepth = -1 * argument0 * 1000;
 
 switch(argument1)
 {
+	case "Overlay":
+		return baseDepth-13;
 	case "FrontProjectile":
 		return baseDepth-12;
 	case "Projectile":

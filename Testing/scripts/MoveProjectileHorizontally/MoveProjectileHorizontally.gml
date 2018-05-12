@@ -11,16 +11,21 @@ while(y + len < maxY)
 _currentGroundY = y + len;
 
 
-x += _direction*_travelSpeed * global.delta;
+x += _direction*_travelSpeed * _speedMod * global.delta;
 
 if (_isLob)
 {
-	y -= (_travelSpeed - _yAcc) * global.delta;
+	y -= (_travelSpeed - _yAcc) * _speedMod * global.delta;
 	if (_yRelease - y > 100)
 		_yAcc += 3;
 	
 	if (y >= _currentGroundY)
-		instance_destroy();
+	{
+		_colX = x;
+		_colY = y;
+		ProjectileCollision();
+		_destroySelf = true;
+	}
 }
 
 
@@ -31,5 +36,5 @@ var xx = x - 50 * _direction;
 effect_create_below(ef_spark, xx, bottom, 0.01, GetColour(_lane));
 effect_create_below(ef_spark, xx, top, 0.01, GetColour(_lane));
 
-if (abs(_xRelease-x) > _travelDistance)
-	instance_destroy();
+if (!_isLob && abs(_xRelease-x) > _travelDistance)
+	_destroySelf = true;

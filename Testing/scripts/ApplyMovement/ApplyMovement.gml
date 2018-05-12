@@ -15,7 +15,7 @@ if (_xSpeed != 0)
 		: IsPlatformCollision("left");
 
 	if (col == noone)
-		x += _xSpeed * global.delta;
+		x += _xSpeed * _speedMod * global.delta;
 	else
 	{
 		
@@ -41,7 +41,7 @@ _ySpeed = clamp(_ySpeed + _yAcc, -_jumpSpeed, _fallSpeed);
 
 if (_ySpeed > 0 && !onFloor || _ySpeed < 0 && IsPlatformCollision("up") == noone)
 {
-	y += (_ySpeed + _ySwitch) * global.delta;
+	y += (_ySpeed + _ySwitch) * _speedMod * global.delta;
 	
 	if (!_isJumping && _ySwitch == 0 && y > _currentGroundY)
 	{
@@ -56,7 +56,7 @@ else if (_ySpeed == 0 && _yAcc == 0 && !onFloor)
 	if (_currentGroundY > y)
 	{	
 		_isFalling = _ySwitch == 0;
-		y += (_ySpeed + _ySwitch) * global.delta;
+		y += (_ySpeed + _ySwitch) * _speedMod * global.delta;
 	}
 	else
 	{

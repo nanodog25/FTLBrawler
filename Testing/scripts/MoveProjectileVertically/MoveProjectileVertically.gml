@@ -1,6 +1,6 @@
 if (_state == "released")
 {
-	var vert = _crossSpeed * (_isUp ? -1 : 1) * global.delta;
+	var vert = _crossSpeed * (_isUp ? -1 : 1) * _speedMod * global.delta;
 	
 	_yRelease += vert;
 
@@ -23,7 +23,7 @@ if (_state == "released")
 		else
 		{
 			_state = "poof";
-			instance_destroy();
+			_destroySelf = true;
 		}
 	}
 }
@@ -32,5 +32,5 @@ else if (_state == "through")
 	if (abs(_yRelease - y) < global.LaneWidth)
 		y += 12 * (_isUp ? -1 : 1);
 	else
-		instance_destroy();
+		_destroySelf = true;
 }

@@ -1,3 +1,5 @@
+SetSpeedMod();
+
 _ySwitch = 0;
 
 if (_isLaunched)
@@ -68,9 +70,10 @@ else if (!_isPunching)
 				_isUp = global.isUp;
 				_canDetonate = global.canDetonate;
 				_isLob = global.isLob;
+				_hasSlowAura = global.hasSlowAura;
 			}
 
-			alarm_set(0, inst._rateOfFire);
+			alarm_set(0, inst._rateOfFire/_speedMod);
 		}
 		else if (fire2 && _canFire)
 		{
@@ -99,7 +102,7 @@ else if (!_isPunching)
 				_isUp = global.isUp2;
 			}
 
-			alarm_set(0, inst._rateOfFire);
+			alarm_set(0, inst._rateOfFire/_speedMod);
 		}
 		_isAttacking = fire1 || fire2;
 	

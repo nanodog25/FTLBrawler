@@ -1,3 +1,5 @@
+SetSpeedMod();
+
 _ySwitch = 0;
 
 if (_isLaunched)

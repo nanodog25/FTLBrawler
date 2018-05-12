@@ -19,6 +19,7 @@ global.isUp = false;
 global.isLauncher = false;
 global.isLob = true;
 global.canDetonate = false;
+global.hasSlowAura = true;
 global.damage = 20;
 global.rateOfFire = 20;
 global.buildUpDuration = 0;

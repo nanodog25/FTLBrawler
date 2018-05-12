@@ -16,4 +16,4 @@ with (inst)
 	_yOffset = yOffset;
 }
 
-alarm_set(0, inst._rateOfFire);
+alarm_set(0, inst._rateOfFire/_speedMod);
