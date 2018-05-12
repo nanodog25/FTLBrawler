@@ -15,7 +15,7 @@ if (_state == "released")
 			_lane += _isUp ? -1 : 1;
 			_colX = x;
 			_colY = y + (_isUp ? -global.LaneHalf : global.LaneHalf);
-			_colRadius = sprite_width/2;
+			_colRadius = (bbox_right-bbox_left)/2;
 			ProjectileCollision();
 			depth = DepthModifier(_lane, "Projectile");
 			_state = "through";

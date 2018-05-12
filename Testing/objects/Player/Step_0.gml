@@ -67,6 +67,7 @@ else if (!_isPunching)
 				_stunLength = global.stunLength;
 				_isUp = global.isUp;
 				_canDetonate = global.canDetonate;
+				_isLob = global.isLob;
 			}
 
 			alarm_set(0, inst._rateOfFire);

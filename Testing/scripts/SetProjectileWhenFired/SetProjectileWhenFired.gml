@@ -18,7 +18,6 @@ if (_hasOrigin)
 	{
 		_xRelease = _origin.x + _direction*_xOffset;
 		_yRelease = _origin._targetGroundY + _yOffset + _origin.y - _origin._currentGroundY;
-		_currentGroundY = _origin._currentGroundY;
 		depth = DepthModifier(_lane, "Projectile");
 	}
 	

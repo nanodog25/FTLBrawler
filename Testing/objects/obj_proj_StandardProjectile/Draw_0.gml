@@ -4,8 +4,6 @@ draw_self();
 
 var spr = _isVertical ? spr_proj_vertical : spr_proj_horizontal;
 
-
-
 if (_isVertical)
 {
 	var yS = !_isUp ? -1 : 1;

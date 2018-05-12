@@ -4,6 +4,7 @@ _colRadius = (bbox_right - bbox_left)/2;
 _colX = 0;
 _colY = 0;
 _state = "";
+_yAcc = 0;
 _lastCollisionY = 0;
 _initialLane = 0;
 _destroySelf = false;

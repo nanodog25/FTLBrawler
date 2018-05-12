@@ -11,13 +11,14 @@ global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 
 global.laneCrossing = false;
-global.isVertical = true;
+global.isVertical = false;
 global.isIgnoringCover = false;
 global.isPiercing = false;
 global.isDestructible = false;
 global.isUp = false;
 global.isLauncher = false;
-global.canDetonate = 0;
+global.isLob = true;
+global.canDetonate = false;
 global.damage = 20;
 global.rateOfFire = 20;
 global.buildUpDuration = 0;
@@ -26,6 +27,7 @@ global.travelDistance = 800;
 global.knockBack = 1;
 global.stunLength = 4;
 global.direction = 0;
+
 
 global.laneCrossing2 = false;
 global.isVertical2 = false;

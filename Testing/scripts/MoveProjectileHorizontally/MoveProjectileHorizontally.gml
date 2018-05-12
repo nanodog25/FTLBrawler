@@ -1,5 +1,3 @@
-x += _direction*_travelSpeed * global.delta;
-	
 var len = 1;
 var maxY = global.LaneYs[| _lane];
 while(y + len < maxY)
@@ -11,6 +9,20 @@ while(y + len < maxY)
 }
 
 _currentGroundY = y + len;
+
+
+x += _direction*_travelSpeed * global.delta;
+
+if (_isLob)
+{
+	y -= (_travelSpeed - _yAcc) * global.delta;
+	if (_yRelease - y > 100)
+		_yAcc += 3;
+	
+	if (y >= _currentGroundY)
+		instance_destroy();
+}
+
 
 var top = y - sprite_get_yoffset(spr_proj_horizontal);
 var bottom = y + sprite_get_height(spr_proj_horizontal) - sprite_get_yoffset(spr_proj_horizontal);
