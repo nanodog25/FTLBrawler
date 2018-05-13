@@ -9,6 +9,8 @@ var baseDepth = -1 * lane * 1000;
 switch(objectType)
 {
 	case "Overlay":
+		return baseDepth-14;
+	case "FrontLane":
 		return baseDepth-13;
 	case "FrontProjectile":
 		return baseDepth-12;
@@ -24,4 +26,8 @@ switch(objectType)
 		return baseDepth-7;
 	case "Behind":
 		return baseDepth-6;
+	case "BackLane":
+		return baseDepth-5;
+	case "":
+		return baseDepth;
 }

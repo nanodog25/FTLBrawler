@@ -23,6 +23,10 @@ _hitDirection = 0;
 
 _action = "";
 _weapon = "";
+_state = "";
+_nextState = "";
+_stateTimer = 0;
+
 _projectile = obj_proj_bullet;
 _moveX = 0;
 _moveY = 0;

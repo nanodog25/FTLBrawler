@@ -1,35 +1,20 @@
-////if !surface_exists(surf)
-////{
-//   //surf = surface_create(room_width, room_height);
-//   //surface_set_target(surf);
-//   draw_set_alpha(0.3);
-//   for (i = 0; i<5; i++)
-//   {
-//	   col = noone;
-//		switch(i)
-//		{
-//			case 0:
-//				col = c_red;
-//				break;
-//			case 1:
-//				col = c_aqua;
-//				break;
-//			case 2:
-//				col = c_navy;
-//				break;
-//			case 3:
-//				col = c_green;
-//				break;
-//			case 4:
-//				col = c_purple;
-//				break;
-//		}
+if (_displayGrid)
+{
+	for (i=0; i < 5; i++)
+	{
+		var yDraw = global.LaneYs[| i] - global.LaneHalf;
+		draw_line_width_color(camera_get_view_x(view_camera[0]), yDraw, camera_get_view_x(view_camera[0]) + view_wview[0], yDraw, 5, c_white, c_white);
+	
+		if (global.playerLane == i)
+		{
 		
-		
-//		draw_set_color(col);
-//		draw_rectangle(0,global.LaneWidth * i + global.LaneWidth/2,room_width,global.LaneYs[| i] + global.LaneWidth/2,false);
-//   }
-//   //surface_reset_target();
-   
-////}
-////draw_surface(surf,0,0);
+			draw_set_alpha(0.5);
+			var c = GetColour(i);
+			for (j=i*20; j <= view_wview[0]; j+=50)
+			{
+				draw_line_width_color(0 + j, yDraw, 0+j - 50, 0, (i+1), c, c);
+			}
+			draw_set_alpha(1);
+		}
+	}
+}

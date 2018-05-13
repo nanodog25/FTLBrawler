@@ -45,4 +45,6 @@ if (!ds_list_empty(distances))
 
 ds_list_destroy(distances);
 ds_map_destroy(objs);
-return obj != noone;
+
+if (obj != noone)
+	_state = st_moveToCover;

@@ -80,10 +80,10 @@
             "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
-            "inheritLayerDepth": true,
-            "inheritLayerSettings": true,
-            "inheritSubLayers": true,
-            "inheritVisibility": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
             "layers": [
                 {
                     "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -447,7 +447,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Debug",
             "id": "512fa6c2-c312-4f22-ae2e-601a8042dd68",
-            "depth": 400,
+            "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -474,7 +474,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "a67e4aa1-21c7-471b-bf8b-6bd99b2c7ce1",
-            "depth": 500,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -503,7 +503,7 @@
             "assets": [
 
             ],
-            "depth": 600,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

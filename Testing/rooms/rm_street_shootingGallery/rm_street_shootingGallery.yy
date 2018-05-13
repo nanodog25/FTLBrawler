@@ -28,7 +28,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_663D1759","id": "cc0f2666-3868-40d6-a32e-f2f990855bbb","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_663D1759","objId": "7b7deb06-37c5-4198-8a20-5812ea006a3d","properties": null,"rotation": 0,"scaleX": -1,"scaleY": 1,"mvc": "1.0","x": 480,"y": 544}
+{"name": "inst_663D1759","id": "cc0f2666-3868-40d6-a32e-f2f990855bbb","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_663D1759.gml","creationCodeType": ".gml","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_663D1759","objId": "7b7deb06-37c5-4198-8a20-5812ea006a3d","properties": null,"rotation": 0,"scaleX": -1,"scaleY": 1,"mvc": "1.0","x": 480,"y": 544}
             ],
             "layers": [
 
@@ -100,10 +100,10 @@
             "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
-            "inheritLayerDepth": true,
-            "inheritLayerSettings": true,
-            "inheritSubLayers": true,
-            "inheritVisibility": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
             "layers": [
                 {
                     "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -119,10 +119,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -154,10 +154,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -189,10 +189,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -224,10 +224,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -259,10 +259,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -294,10 +294,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -329,10 +329,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -364,10 +364,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -399,10 +399,10 @@
                     "hierarchyVisible": true,
                     "hspeed": 0,
                     "htiled": true,
-                    "inheritLayerDepth": true,
-                    "inheritLayerSettings": true,
-                    "inheritSubLayers": true,
-                    "inheritVisibility": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
                     "layers": [
 
                     ],
@@ -467,7 +467,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Debug",
             "id": "0448f11d-59f8-4006-a0b5-3475b60dabea",
-            "depth": 400,
+            "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -494,7 +494,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "d04a8ee2-2690-40d4-8499-07d681adc977",
-            "depth": 500,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -523,7 +523,7 @@
             "assets": [
 
             ],
-            "depth": 600,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -566,7 +566,7 @@
     },
     "mvc": "1.0",
     "views": [
-{"id": "6c92e070-c718-48ed-853f-71a203cd7951","hborder": 620,"hport": 1080,"hspeed": -1,"hview": 864,"inherit": true,"modelName": "GMRView","objId": "93468f98-2555-4845-bfed-3cceac5ca8d9","mvc": "1.0","vborder": 0,"visible": true,"vspeed": -1,"wport": 1920,"wview": 1536,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "6c92e070-c718-48ed-853f-71a203cd7951","hborder": 620,"hport": 1080,"hspeed": -1,"hview": 864,"inherit": false,"modelName": "GMRView","objId": "93468f98-2555-4845-bfed-3cceac5ca8d9","mvc": "1.0","vborder": 0,"visible": true,"vspeed": -1,"wport": 1920,"wview": 1536,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "5ed45cfa-997d-4bea-a2cf-876aa78c7817","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": true,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "7799cc85-a8ca-4856-be8a-875cca46d74d","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": true,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "f012091a-c342-4351-9435-e8aed17452ce","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": true,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},

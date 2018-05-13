@@ -1,9 +1,9 @@
-fire = true;
-moveUp = false;
-moveDown = false;
-jump = false;
-isMovingLeft = false;
-isMovingRight = false;
+ai_fire = true;
+ai_moveUp = false;
+ai_moveDown = false;
+ai_jump = false;
+ai_isMovingLeft = false;
+ai_isMovingRight = false;
 
 if (!_isMoving)
 	_isMoving = SetHighestPoint();
