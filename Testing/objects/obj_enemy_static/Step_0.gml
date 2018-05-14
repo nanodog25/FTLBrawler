@@ -1,3 +1,5 @@
+event_inherited();
+
 ai_fire = true;
 ai_moveUp = false;
 ai_moveDown = false;

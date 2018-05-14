@@ -1,3 +1,5 @@
+event_inherited();
+
 ai_fire = random(4) > 3;
 ai_moveUp = random(10) > 9.9;
 ai_moveDown = random(10) > 9.9;

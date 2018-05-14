@@ -36,15 +36,18 @@ if (!ds_list_empty(distances))
 	coverIndex = coverIndex > ds_list_size(distances) - 1 ? ds_list_size(distances) - 1 : coverIndex;
 	obj = objs[? distances[| coverIndex]];
 	
-	_moveX = isPlayerLeft
+	ai_moveX = isPlayerLeft
 		? obj.bbox_right + bbWidth
 		: obj.bbox_left - bbWidth;
-	_moveY = obj.y;
-	_moveLane = obj._lane;
+	ai_moveY = obj.y;
+	ai_moveLane = obj._lane;
 }
 
 ds_list_destroy(distances);
 ds_map_destroy(objs);
 
 if (obj != noone)
-	_state = st_moveToCover;
+{
+	_nextState = st_moveToCover;
+	ai_coverObj = obj;
+}

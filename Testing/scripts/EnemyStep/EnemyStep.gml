@@ -28,10 +28,14 @@ else
 {
 	_xSpeed = 0;
 	
-	if (_isMoving)
+	if (_state == st_moveToCover || _state == st_retreat)
 	{
 		MoveToSetPoint();
 	}
+	
+	MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
+	if (ai_retreat)
+		Retreat();
 	
 	if (ai_fire && _canFire)
 	{
@@ -61,10 +65,6 @@ else
 if (_isSwitchingLane)
 {
 	SwitchLane();
-}
-else if (!_isHit)
-{
-	MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
 }
 
 if (_isJumping)

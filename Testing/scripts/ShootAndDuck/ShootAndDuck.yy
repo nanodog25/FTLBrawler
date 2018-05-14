@@ -1,8 +1,8 @@
 {
-    "id": "6290b84b-9c1c-4b30-a4d8-a434c8bfc8ca",
+    "id": "ccd014ae-e4b4-4acb-b6a2-b72696ed6ecf",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "PopAndShoot",
+    "name": "ShootAndDuck",
     "IsCompatibility": false,
     "IsDnD": false
 }

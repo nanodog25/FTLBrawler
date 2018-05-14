@@ -13,9 +13,9 @@ with(LaneObject)
 
 if (highestObject != noone)
 {
-	_moveX = highestObject.x;
-	_moveY = highestObject.bbox_top;
-	_moveLane = highestObject._lane;
+	ai_moveX = highestObject.x;
+	ai_moveY = highestObject.bbox_top;
+	ai_moveLane = highestObject._lane;
 	return true;
 }
 

@@ -17,3 +17,6 @@ _fallSpeed = argument5;
 _attackType = argument6;
 _maxHP = argument7;
 _objectType = argument8;
+
+_currentHP = _maxHP;
+_canEverSwitchLane = _canSwitchLane;
