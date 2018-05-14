@@ -6,7 +6,7 @@ if (ai_moveLane != _lane)
 
 if (abs(ai_moveX - x) < global.collisionBuffer)
 {
-	if (!(ai_moveLane != _lane || _isJumping || _isFalling))
+	if (!(ai_moveLane != _lane || _isJumping || _isFalling || _ySwitch != 0))
 	{
 		image_xscale = global.playerX > x ? -1 : 1;
 		if (_state == st_moveToCover)
@@ -22,6 +22,6 @@ else
 	ai_isMovingRight = _direction == 1;
 	ai_isMovingLeft = !ai_isMovingRight;
 	
-	if (_stateTimer < 3)
+	if (_stateTimer < 60)
 		ai_retreat = true;
 }
