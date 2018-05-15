@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "469440ba-171d-4a15-98a1-831ef95e4942",
+            "Value": {
+                "id": "403ae4c1-b8d2-4d74-87e0-0e9207a08af4",
+                "resourcePath": "scripts\\ProjectileIncoming\\ProjectileIncoming.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "46d95e14-c439-4335-89bd-c54ec549e0fa",
             "Value": {
                 "id": "22c159ca-df58-4935-8add-68d1a1f9f6cc",
@@ -539,6 +547,14 @@
             "Value": {
                 "id": "6147597a-881b-4fcd-8b47-8b050df44629",
                 "resourcePath": "scripts\\ApplyMovement\\ApplyMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c9d4bb5-c1a2-4eee-8d97-776ec06b2927",
+            "Value": {
+                "id": "8d30386d-1068-47bf-b24f-c0f5972f04f4",
+                "resourcePath": "scripts\\DecideMovement\\DecideMovement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1759,6 +1775,14 @@
             }
         },
         {
+            "Key": "f7ce8fb7-e5ee-4f9e-9e56-ae3b3b0db35f",
+            "Value": {
+                "id": "768194d0-c440-4ab0-8e2e-494de86506b9",
+                "resourcePath": "scripts\\CalculateMovement\\CalculateMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f7dae3a3-3457-4275-a747-fe9883b2c3dd",
             "Value": {
                 "id": "bb12959a-0ad0-48de-a04c-e11cf5ea0c22",
@@ -1889,7 +1913,10 @@
         "6290b84b-9c1c-4b30-a4d8-a434c8bfc8ca",
         "ccd014ae-e4b4-4acb-b6a2-b72696ed6ecf",
         "8421c991-59f1-4c64-a562-7d224ef0c943",
+        "469440ba-171d-4a15-98a1-831ef95e4942",
         "5213a66f-9b7f-4085-b920-0349b1abaebe",
+        "f7ce8fb7-e5ee-4f9e-9e56-ae3b3b0db35f",
+        "4c9d4bb5-c1a2-4eee-8d97-776ec06b2927",
         "ff028f50-63ce-4217-b0fd-3d9bdb1adfd3",
         "9fae77fa-c1ae-4b51-812a-7eaf846e7117",
         "6e072a7e-104e-4764-b011-40d3fc9571c6",

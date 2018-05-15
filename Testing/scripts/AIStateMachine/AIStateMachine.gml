@@ -1,12 +1,13 @@
 switch(_state)
 {
 	case st_waiting:
-		var coverIndex = _isHit && !_isLaunched ? 1 : 0;
-		SetNearestCover(coverIndex);
+		SetNearestCover(0);
 		break;
 	case st_inCover:
 		if (IsCoverBreached())
-			SetNearestCover(0);
+			_nextState = st_waiting;
+		else if (stb_isHit)
+			SetNearestCover(irandom(2) + 1);
 		else
 			Pop();
 		break;
@@ -15,3 +16,5 @@ switch(_state)
 		ShootAndDuck();
 		break;
 }
+
+st_Hit = false;

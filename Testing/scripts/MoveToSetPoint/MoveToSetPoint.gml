@@ -22,6 +22,6 @@ else
 	ai_isMovingRight = _direction == 1;
 	ai_isMovingLeft = !ai_isMovingRight;
 	
-	if (_stateTimer < 60)
+	if (_stateTimer < 1)
 		ai_retreat = true;
 }

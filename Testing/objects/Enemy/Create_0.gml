@@ -6,6 +6,10 @@ st_popUp = "popUp";
 st_popDown = "popDown";
 st_fire = "fire";
 st_inCover = "inCover";
+stb_isHit = false;
+
+ai_agility = 7;
+
 
 event_inherited();
 CreateActor();
