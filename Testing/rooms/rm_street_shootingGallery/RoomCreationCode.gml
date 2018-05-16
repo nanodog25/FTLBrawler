@@ -4,7 +4,7 @@ for (var i = 0; i < 5; i++)
 	with(obj)
 	{
 		_lane = i;
-		image_xscale = -1;
+		_direction = 1;
 	}
 }
 

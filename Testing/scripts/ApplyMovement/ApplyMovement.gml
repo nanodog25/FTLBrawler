@@ -1,5 +1,4 @@
 _sideCollision = false;
-var col = noone;
 if (_direction != 0)
 	image_xscale = -_direction;
 
@@ -10,17 +9,17 @@ move_yUp = bbox_top - switchOffset;
 move_yDown = bbox_bottom - switchOffset;
 move_obj = asset_get_index("LaneObject" + string(_lane));
 
+var col = noone;
 if (_xSpeed != 0)
 {
 	col = _xSpeed > 0
 		? IsPlatformCollision("right")
 		: IsPlatformCollision("left");
 
-	if (col == noone)
+	if (col == noone || _isLaunched && (col == obj_leftBorder || col == obj_rightBorder))
 		x += _xSpeed * _speedMod * global.delta;
 	else
 	{
-		
 		x += GetExactHorizontalCollision();
 		_xSpeed = 0;
 		_sideCollision = true;

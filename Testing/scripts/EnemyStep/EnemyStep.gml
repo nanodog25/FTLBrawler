@@ -1,3 +1,9 @@
+if (bbox_right < global.roomLeft || bbox_left > global.roomRight)
+{
+	instance_destroy();
+	return;
+}
+
 SetSpeedMod();
 
 _ySwitch = 0;

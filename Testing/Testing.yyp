@@ -442,7 +442,7 @@
             "Key": "3eea8f84-2a71-4724-a48d-6674fcde67f8",
             "Value": {
                 "id": "1056b8ca-5c39-4b4e-b8cc-8a83c1ca8476",
-                "resourcePath": "scripts\\UpdateRoomVariables\\UpdateRoomVariables.yy",
+                "resourcePath": "scripts\\GetObjectsInView\\GetObjectsInView.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "9c51754e-97ee-4d58-8efb-721647cec442",
+            "Value": {
+                "id": "5e021837-3494-4efe-9721-4f3ac8167ab3",
+                "resourcePath": "scripts\\GetEnemyStates\\GetEnemyStates.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9cb2348a-4ee5-40c4-9299-2748540fa3f8",
             "Value": {
                 "id": "97640b49-5840-44ca-b46f-6c16bedd7699",
@@ -1928,6 +1936,7 @@
         "3eea8f84-2a71-4724-a48d-6674fcde67f8",
         "9e455fbd-2736-4586-90b8-2278a5643e96",
         "45f18959-978d-4ea8-afc2-66b9f24d58ca",
+        "9c51754e-97ee-4d58-8efb-721647cec442",
         "50804c09-858f-46e0-901c-60f58b2d27d8",
         "e07396a2-50aa-4a7e-b12e-49bbb23a8dac",
         "204e586b-fdf5-4de0-a8f0-f82c60e84d96",

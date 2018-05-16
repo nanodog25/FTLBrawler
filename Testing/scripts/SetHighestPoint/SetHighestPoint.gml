@@ -1,13 +1,17 @@
 var highestObject = noone;
 var height = 0;
 
-with(LaneObject)
+for (var i=0; i<ds_list_size(global.objectsInView); i++)
 {
-	var objHeight = global.LaneWidth * _lane + bbox_top;
+	var obj = global.objectsInView[| i];
+	if (!instance_exists(obj))
+		continue;
+		
+	var objHeight = global.LaneWidth * obj._lane + obj.bbox_top;
 	if (height == 0 || height < objHeight)
 	{
 		height = objHeight;
-		highestObject = self;
+		highestObject = obj;
 	}
 }
 

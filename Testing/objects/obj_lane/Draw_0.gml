@@ -3,8 +3,6 @@ lrp -= 0.5;
 if (lrp < 0)
 	instance_destroy();
 
-draw_set_alpha(0.5);
-
 shader_set(shader_dissipate);
 shader_set_uniform_f(shader_params_radius, rad);
 shader_set_uniform_f(shader_params_bandWidth, band);
