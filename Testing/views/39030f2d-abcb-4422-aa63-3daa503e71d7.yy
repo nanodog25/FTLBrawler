@@ -7,7 +7,8 @@
         "da7a81ab-8292-4ce5-958b-7c9c2a7dd392",
         "112fd8b4-a244-494c-aa85-1088edb6269c",
         "3eea8f84-2a71-4724-a48d-6674fcde67f8",
-        "9e455fbd-2736-4586-90b8-2278a5643e96"
+        "9e455fbd-2736-4586-90b8-2278a5643e96",
+        "45f18959-978d-4ea8-afc2-66b9f24d58ca"
     ],
     "filterType": "GMScript",
     "folderName": "Global",

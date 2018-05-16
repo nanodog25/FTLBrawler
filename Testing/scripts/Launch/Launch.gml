@@ -10,7 +10,7 @@ switch(_launchState)
 		else
 		{
 			sprite_index = spr_jack_hit;
-			image_xscale = _hitDirection;
+			_direction = -_hitDirection;
 			_xSpeed = _hitDirection * _knockBack;
 			_ySpeed = -10;
 		}
@@ -52,6 +52,6 @@ switch(_launchState)
 	case "getUp":
 		_isLaunched = false;
 		_isHit = false;
-		alarm_set(2, 30);
+		alarm_set(2, InSeconds(0.5));
 		break;
 }

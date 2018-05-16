@@ -12,6 +12,7 @@ _ySpeed = 0;
 _yAcc = 0;
 _ySwitch = 0;
 _canFire = true;
+_direction = -image_xscale;
 
 _onGround = true;
 _targetGroundY = global.LaneYs[| _lane];

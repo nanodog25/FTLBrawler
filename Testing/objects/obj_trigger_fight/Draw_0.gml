@@ -1,0 +1,1 @@
+draw_line_width_color(x, 0, x, view_hview[0], 5, c_white, c_white);

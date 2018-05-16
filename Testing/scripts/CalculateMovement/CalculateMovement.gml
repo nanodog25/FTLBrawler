@@ -14,7 +14,7 @@ if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling)
 	SetSwitchLane(ai_moveUp, ai_moveDown);
 }
 	
-if (!_isJumping && !_isFalling)
+if (!_isJumping && !_isFalling && _currentGroundY == y)
 {	
 	_canSwitchLane = true;
 	if (ai_jump)

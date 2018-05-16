@@ -9,11 +9,14 @@ if (_isLaunched)
 else if (_isHit)
 {
 	sprite_index = spr_jack_hit;
-	image_xscale = _hitDirection;
+	_direction = -_hitDirection;
 	_xSpeed = _hitDirection * _knockBack;
 }
 else if (_currentHP <= 0)
 {
+	_isSwitchingLane = false;
+	_isJumping = false;
+	
 	if (sprite_index != spr_jack_die)
 	{
 		_xSpeed = 0;
@@ -22,7 +25,6 @@ else if (_currentHP <= 0)
 	}
 	else if (image_index > image_number - 1)
 		image_speed = 0;
-	return;
 }
 else
 {
@@ -49,7 +51,7 @@ else if (_isFalling)
 
 ApplyMovement();
 
-if (!_isHit && !_isJumping && !_isFalling)
+if (!_isHit && !_isJumping && !_isFalling && _currentHP > 0)
 {
 	if (_xSpeed == 0)
 		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;

@@ -10,12 +10,12 @@ if (_isLaunched)
 else if (_isHit)
 {
 	sprite_index = spr_jack_hit;
-	image_xscale = _hitDirection;
+	_direction = -_hitDirection;
 	_xSpeed = _hitDirection * _knockBack;
 }
 else if (_hasBlocked)
 {
-	image_xscale = _hitDirection;
+	_direction = -_hitDirection;
 	_xSpeed = _hitDirection * _knockBack;
 	var jump = keyboard_check_pressed(global.KeyJump);	
 	if (jump)
@@ -91,8 +91,7 @@ else if (!_isPunching)
 				_isLob = global.isLob;
 				_hasSlowAura = global.hasSlowAura;
 			}
-
-			alarm_set(0, inst._rateOfFire/_speedMod);
+			alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
 		}
 		else if (fire2 && _canFire)
 		{
@@ -121,7 +120,7 @@ else if (!_isPunching)
 				_isUp = global.isUp2;
 			}
 
-			alarm_set(0, inst._rateOfFire/_speedMod);
+			alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
 		}
 		_isAttacking = fire1 || fire2;
 	

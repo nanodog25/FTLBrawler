@@ -8,7 +8,7 @@ if (abs(ai_moveX - x) < global.collisionBuffer)
 {
 	if (!(ai_moveLane != _lane || _isJumping || _isFalling || _ySwitch != 0))
 	{
-		image_xscale = global.playerX > x ? -1 : 1;
+		_direction = sign(global.playerX - x);
 		if (_state == st_moveToCover)
 			_nextState = st_inCover;
 	}

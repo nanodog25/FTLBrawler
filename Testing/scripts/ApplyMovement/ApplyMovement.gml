@@ -1,5 +1,7 @@
 _sideCollision = false;
 var col = noone;
+if (_direction != 0)
+	image_xscale = -_direction;
 
 var switchOffset = _currentGroundY - _targetGroundY;
 move_xLeft = bbox_left;

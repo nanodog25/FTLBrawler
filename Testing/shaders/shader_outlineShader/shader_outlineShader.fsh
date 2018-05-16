@@ -6,6 +6,7 @@ varying vec4 v_vColour;
 uniform vec4 in_Colour;
 uniform float pixelWidth;
 uniform float pixelHeight;
+uniform float alph;
 
 void main()
 {
@@ -30,5 +31,5 @@ void main()
                  texture2D(gm_BaseTexture, v_vTexcoord);
   
   // Use the computed alpha
-  gl_FragColor.a = alpha;
+  gl_FragColor.a = sign(alpha) * alph;
 }

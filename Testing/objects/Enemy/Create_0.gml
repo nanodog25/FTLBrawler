@@ -9,6 +9,7 @@ st_inCover = "inCover";
 stb_isHit = false;
 
 ai_agility = 7;
+ai_canDodge = true;
 
 
 event_inherited();

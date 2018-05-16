@@ -7,7 +7,7 @@ if (_state = "grow")
 	}
 	else
 	{
-		alarm_set(0, 600);
+		alarm_set(0, InSeconds(10));
 		_state = "hold";
 	}
 }

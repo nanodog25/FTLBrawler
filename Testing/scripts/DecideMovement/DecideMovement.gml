@@ -1,9 +1,5 @@
-var projectile = ProjectileIncoming();
-if (projectile != noone)
-{
-	
-}
-
+DodgeProjectile();
+ShootAtPlayer();
 
 if (_state == st_moveToCover || _state == st_retreat)
 {
