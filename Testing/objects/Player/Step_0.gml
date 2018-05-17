@@ -23,8 +23,11 @@ else if (_hasBlocked)
 		SetJumping();
 	}
 }
-else if (_currentHP == 0)
+else if (_currentHP <= 0)
 {
+	_isSwitchingLane = false;
+	_isJumping = false;
+	
 	if (sprite_index != spr_jack_die)
 	{
 		_xSpeed = 0;
@@ -33,7 +36,6 @@ else if (_currentHP == 0)
 	}
 	else if (image_index > image_number - 1)
 		image_speed = 0;
-	return;
 }
 else if (!_isPunching)
 {
@@ -168,7 +170,7 @@ if (_isHit || _isPunching && image_index > image_number - 1)
 	_isPunching = false;
 }
 
-if (!_isHit && !_hasBlocked && !_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
+if (_currentHP > 0 && !_isHit && !_hasBlocked && !_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
 {
 	var isMovingLeft = keyboard_check(global.KeyLeft);
 	var isMovingRight = keyboard_check(global.KeyRight);
@@ -178,7 +180,7 @@ if (!_isHit && !_hasBlocked && !_isBlocking && (!_isSwitchingLane || _xSpeed == 
 ApplyMovement();
 UpdatePlayerVariables();
 
-if (!_isHit && !_hasBlocked && !_isBlocking && !_isJumping && !_isFalling && !_isPunching)
+if (!_isHit && !_hasBlocked && !_isBlocking && !_isJumping && !_isFalling && !_isPunching && _currentHP > 0)
 {
 	if (_xSpeed == 0)
 		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;
