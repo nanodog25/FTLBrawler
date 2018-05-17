@@ -10,3 +10,10 @@ if (mouse_check_button_pressed(mb_left))
 		room_goto(Menu);
 	}
 }
+else if (keyboard_check_pressed(global.KeyItemMenu))
+{
+	global.roomSurface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
+	global.roomToMenu = room;
+	room_persistent = true;
+	room_goto(ItemSelect);
+}

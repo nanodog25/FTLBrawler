@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "017f0801-1fad-4d3d-b6b4-f67ec2c585f6",
+            "Value": {
+                "id": "bbb9a9b4-956a-40e2-a87f-fe9390a1c04d",
+                "resourcePath": "rooms\\ItemSelect\\ItemSelect.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "018a74df-f7de-4c1b-bc20-6c2b9c0a4156",
             "Value": {
                 "id": "3f6ca844-98e6-4cf1-9a86-d40da966a5bb",
@@ -212,6 +220,14 @@
                 "id": "1fbb6574-b7d6-4805-80c0-8f6a29e68cdf",
                 "resourcePath": "rooms\\rm_street\\rm_street.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "1f46e9bf-a343-4b15-8113-b3fc0e820703",
+            "Value": {
+                "id": "916687ea-0a61-4327-9d8d-35292358dcff",
+                "resourcePath": "objects\\obj_button_item\\obj_button_item.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -879,6 +895,14 @@
             }
         },
         {
+            "Key": "73522b41-8851-42d1-8895-d152ba08c832",
+            "Value": {
+                "id": "a9da1106-79fc-4625-b9ee-b488d8394ab0",
+                "resourcePath": "scripts\\ExitMenu\\ExitMenu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "74befe89-24f8-42e2-bbcc-77113025b872",
             "Value": {
                 "id": "3a21e170-e80b-4860-b590-cd3eec1deca7",
@@ -1215,6 +1239,14 @@
             }
         },
         {
+            "Key": "9a0c2cd6-9a94-48fc-8bd9-7bd565e44195",
+            "Value": {
+                "id": "5eb2d6fb-5f56-455b-8690-f35f50b94df5",
+                "resourcePath": "scripts\\DrawRoomSurface\\DrawRoomSurface.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9b2a8a2f-5550-4beb-b242-cac0c9a7ec1d",
             "Value": {
                 "id": "9c015b7f-2ecf-44de-afc5-25ab20eab6a1",
@@ -1332,6 +1364,14 @@
                 "id": "a05234fc-bb65-4646-b14e-502c705028c1",
                 "resourcePath": "scripts\\StepProjectile\\StepProjectile.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ad29011f-8f2f-49c0-9ef2-72b6acdb7eb5",
+            "Value": {
+                "id": "2eddb2c7-20dd-41c9-8115-b4c456479013",
+                "resourcePath": "objects\\obj_itemMenu\\obj_itemMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1968,6 +2008,8 @@
         "92c57bc1-2f4d-4933-8d89-2f78a97d954f",
         "5c3b6182-0b75-4daa-8ee6-f5957eb1075a",
         "c0cb14d6-5da3-4ac5-92b8-191baee98604",
+        "73522b41-8851-42d1-8895-d152ba08c832",
+        "9a0c2cd6-9a94-48fc-8bd9-7bd565e44195",
         "28422c41-3e4e-4017-934c-aca69220184f",
         "e5a0069d-0074-4112-b8f4-3aae1693739c",
         "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",

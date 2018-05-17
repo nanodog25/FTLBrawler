@@ -4,7 +4,8 @@ draw_text(10,10,
 	"UP:    " + KeyToText(global.KeyUp) + "\n" +
 	"DOWN:  " + KeyToText(global.KeyDown) + "\n" +
 	"LEFT:  " + KeyToText(global.KeyLeft) + "\n" +
-	"RIGHT: " + KeyToText(global.KeyRight) + "\n"
+	"RIGHT: " + KeyToText(global.KeyRight) + "\n" +
+	"ITEMS: " + KeyToText(global.KeyItemMenu) + "\n"
 );
 
 draw_text(200,50,

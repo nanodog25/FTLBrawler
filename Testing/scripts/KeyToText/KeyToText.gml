@@ -16,6 +16,7 @@ switch(argument0)
     case 19: return "Pause/Break";
     case 20: return "CAPS";
     case 27: return "Esc";
+	case 32: return "Spacebar";
     case 33: return "Page Up";
     case 34: return "Page Down";
     case 35: return "End";
