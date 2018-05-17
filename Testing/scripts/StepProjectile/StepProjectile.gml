@@ -23,6 +23,9 @@ if (!_isVertical)
 if (_destroySelf && _colX != 0 && _hasSlowAura)
 	CreateSlowAura();
 	
+if (_destroySelf && _colX != 0 && _hasSpeedAura)
+	CreateSpeedAura();
+	
 if (_destroySelf)
 {
 	if (_laneCrossing && !_isVertical)

@@ -1,6 +1,7 @@
 KeyBindings();
 Layout();
 GlobalGeneral();
+Items();
 //Resolution();
 room = rm_street_parallelBridges;
 
@@ -19,7 +20,8 @@ global.isUp = false;
 global.isLauncher = false;
 global.isLob = true;
 global.canDetonate = false;
-global.hasSlowAura = true;
+global.hasSlowAura = false;
+global.hasSpeedAura = false;
 global.damage = 20;
 global.rateOfFire = .8;
 global.buildUpDuration = 0;

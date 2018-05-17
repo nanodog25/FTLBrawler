@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "0e9842d2-1361-4390-b2ad-3eba8d18a6c1",
+            "Value": {
+                "id": "924d0e5c-4c1f-4454-9b92-3fda8bc4fb36",
+                "resourcePath": "scripts\\Items\\Items.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "112fd8b4-a244-494c-aa85-1088edb6269c",
             "Value": {
                 "id": "5aea2828-d37c-4b65-a2fb-c45ab726addd",
@@ -1207,6 +1215,14 @@
             }
         },
         {
+            "Key": "941b7713-24a0-43ac-b212-656f7bca2736",
+            "Value": {
+                "id": "836f3dd9-d696-4ba7-a5d9-770d2e6dc721",
+                "resourcePath": "scripts\\ItemActive\\ItemActive.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "983637e4-4eb1-4df4-a5af-a2a42f62d37c",
             "Value": {
                 "id": "d3e84f3a-d814-4875-b311-566c9d90b793",
@@ -1471,6 +1487,14 @@
             }
         },
         {
+            "Key": "bf150a5b-b5bd-452f-bc43-96075504a074",
+            "Value": {
+                "id": "64403a64-fb67-49cb-aac3-1f2b3c8a8069",
+                "resourcePath": "scripts\\CreateSpeedAura\\CreateSpeedAura.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c0a4158e-10c5-4d83-8b54-eae2a5a1eda3",
             "Value": {
                 "id": "9866fe4f-9f40-4896-a6a7-9411693aad81",
@@ -1563,6 +1587,14 @@
             "Value": {
                 "id": "820e985e-4947-41bb-9eae-6f9c0755e846",
                 "resourcePath": "objects\\PlaceholderBlock11\\PlaceholderBlock11.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cf4d84fc-6894-47f4-9285-63605e0ef19d",
+            "Value": {
+                "id": "27d5bc6e-db97-4703-a22c-67948748e108",
+                "resourcePath": "objects\\obj_items\\obj_items.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1959,6 +1991,14 @@
             }
         },
         {
+            "Key": "fe805c7c-e2be-4188-aaf0-22cdcdf35c94",
+            "Value": {
+                "id": "962a256a-9aad-4c2c-8ad7-cc13e953a0df",
+                "resourcePath": "objects\\obj_effect_slowAura\\obj_effect_slowAura.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ff028f50-63ce-4217-b0fd-3d9bdb1adfd3",
             "Value": {
                 "id": "817fddb3-5759-46aa-bc45-8c222c0b5455",
@@ -1977,6 +2017,7 @@
         "9e455fbd-2736-4586-90b8-2278a5643e96",
         "45f18959-978d-4ea8-afc2-66b9f24d58ca",
         "9c51754e-97ee-4d58-8efb-721647cec442",
+        "941b7713-24a0-43ac-b212-656f7bca2736",
         "50804c09-858f-46e0-901c-60f58b2d27d8",
         "e07396a2-50aa-4a7e-b12e-49bbb23a8dac",
         "204e586b-fdf5-4de0-a8f0-f82c60e84d96",
@@ -1998,6 +2039,7 @@
         "e3aac621-abe0-45ca-98b5-476830573c8e",
         "22f85157-e310-4baf-89a1-9ee7188b0b31",
         "d67d4b50-020d-457f-bace-d9347d177de9",
+        "bf150a5b-b5bd-452f-bc43-96075504a074",
         "f7dae3a3-3457-4275-a747-fe9883b2c3dd",
         "f88585de-aff8-469a-ac11-76f0735e5928",
         "e531610e-4435-401a-97f4-28f5ed6b98ba",
@@ -2033,7 +2075,8 @@
         "d9e55e30-f1c0-4111-a3bb-10812e871633",
         "6c19146d-a9fa-4aa7-a280-a41fad847ccf",
         "018a74df-f7de-4c1b-bc20-6c2b9c0a4156",
-        "8f52749a-8e70-4224-87c3-879c5c7321d8"
+        "8f52749a-8e70-4224-87c3-879c5c7321d8",
+        "0e9842d2-1361-4390-b2ad-3eba8d18a6c1"
     ],
     "tutorial": ""
 }

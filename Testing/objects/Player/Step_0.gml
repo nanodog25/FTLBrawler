@@ -91,7 +91,8 @@ else if (!_isPunching)
 				_isUp = global.isUp;
 				_canDetonate = global.canDetonate;
 				_isLob = global.isLob;
-				_hasSlowAura = global.hasSlowAura;
+				_hasSlowAura = global.hasSlowAura || ItemActive(global.ItemSlowShot);
+				_hasSpeedAura = global.hasSpeedAura;
 			}
 			alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
 		}
@@ -126,7 +127,7 @@ else if (!_isPunching)
 		}
 		_isAttacking = fire1 || fire2;
 	
-		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane)
+		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !ItemActive(global.ItemLaneBarrier))
 		{
 			var moveUp = _isJumping || _isFalling
 				? keyboard_check(global.KeyUp)

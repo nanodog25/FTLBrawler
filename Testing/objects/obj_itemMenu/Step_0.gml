@@ -1,4 +1,4 @@
-var selectedItem = noone;
+ var selectedItem = noone;
 
 if (_item1._isHighlighted)
 	selectedItem = _item1;
@@ -20,7 +20,11 @@ else if (keyboard_check_pressed(global.KeyDown))
 
 if (keyboard_check_released(global.KeyItemMenu))
 {
-	//apply selectedItem
+	if (selectedItem != noone)
+	{
+		global.ItemActivated = selectedItem._text;
+		selectedItem = noone;
+	}
 	ExitMenu();
 }
 
