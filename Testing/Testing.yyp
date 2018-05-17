@@ -935,6 +935,14 @@
             }
         },
         {
+            "Key": "78321030-2883-47b3-b345-9a24d885f6aa",
+            "Value": {
+                "id": "90c74118-c587-4bef-8966-3f7dd66a50f8",
+                "resourcePath": "scripts\\EndFight\\EndFight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78e97e0b-61bf-4c14-af16-3fa1354c0f81",
             "Value": {
                 "id": "948dc525-91c2-44ff-945f-e7da78091e2a",
@@ -1124,6 +1132,14 @@
                 "id": "84bcc74c-d77c-4b5d-82b6-e4a1d766b863",
                 "resourcePath": "objects\\obj_button_menu\\obj_button_menu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8bdc1d6b-0b52-42cd-bc69-0e2f795b4022",
+            "Value": {
+                "id": "5b9e1108-45cb-4089-b4a1-5d1655067f81",
+                "resourcePath": "scripts\\StartFight\\StartFight.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2029,6 +2045,8 @@
         "fc36d8e3-dc4f-43d9-9ef4-42436fc8af0d",
         "80a01f7b-0d74-44ea-ab9f-a3ff80236716",
         "f6eab97b-2857-442e-b84a-1847f55a025c",
+        "78321030-2883-47b3-b345-9a24d885f6aa",
+        "8bdc1d6b-0b52-42cd-bc69-0e2f795b4022",
         "830a2163-251d-4378-86b1-8daecdf91e3a",
         "1f725158-162d-461e-865f-569a5b2d4251",
         "aab19d1c-a8c4-4ac7-aed3-6cd3ddc5af2a",
