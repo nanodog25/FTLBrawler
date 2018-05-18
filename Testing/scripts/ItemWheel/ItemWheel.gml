@@ -17,3 +17,13 @@ with(_item3)
 	
 with(_item4)
 	_text = global.ItemsAvailable[| 3];
+	
+if (global.isItemSelectionScreen)
+{
+	_go = instance_create_layer(view_wview[0]*0.5 + xOffset, view_hview[0]*0.5, _itemWheel, obj_button_item);
+	with(_go)
+	{
+		_text = "GO";
+		_isHighlighted = true;
+	}
+}

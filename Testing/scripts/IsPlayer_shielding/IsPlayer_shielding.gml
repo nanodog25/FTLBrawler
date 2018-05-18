@@ -1,4 +1,4 @@
-if (keyboard_check(global.KeyMidRight) && _direction == -1 || keyboard_check(global.KeyMidLeft) && _direction == 1)
+if (!_isJumping && !_isFalling && (keyboard_check(global.KeyMidRight) && _direction == -1 || keyboard_check(global.KeyMidLeft) && _direction == 1))
 {
 	sprite_index = spr_jack_punch;
 	image_index = 0;

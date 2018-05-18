@@ -12,6 +12,8 @@ else if (!_isJumping && !_isFalling
 		_origin = other;
 		_xOffset = 30;
 		_yOffset = -40;
+		_direction = other._direction;
+		_lane = other._lane;
 	}
 	return true;
 }

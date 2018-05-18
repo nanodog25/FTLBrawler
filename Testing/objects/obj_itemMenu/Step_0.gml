@@ -16,19 +16,28 @@ else if (_item3._isHighlighted)
 	selectedItem = _item3;
 else if (_item4._isHighlighted)
 	selectedItem = _item4;
+else if (_go != noone && _go._isHighlighted)
+	selectedItem = _go;
 
 if (!_changingSelection)
 {
 	if (global.isItemSelectionScreen)
 	{
 		if (keyboard_check_pressed(global.KeyMidLeft) || keyboard_check_pressed(global.KeyLeft))
-			selectedItem =  _item1;
+			selectedItem = _item3._isHighlighted ? _go : _item1;
 		else if (keyboard_check_pressed(global.KeyHigh) || keyboard_check_pressed(global.KeyUp))
-			selectedItem = _item2;
+			selectedItem = _item4._isHighlighted ? _go : _item2;
 		else if (keyboard_check_pressed(global.KeyMidRight) || keyboard_check_pressed(global.KeyRight))
-			selectedItem = _item3;
+			selectedItem = _item1._isHighlighted ? _go : _item3;
 		else if (keyboard_check_pressed(global.KeyLow) || keyboard_check_pressed(global.KeyDown))
-			selectedItem = _item4;
+		{
+			if (_item2._isHighlighted)
+				selectedItem = _go;
+			else if (_item4._isHighlighted)
+				{}//next section
+			else
+				selectedItem = _item4;
+		}
 	}
 	else
 	{
@@ -77,8 +86,15 @@ else if (global.isItemSelectionScreen)
 	
 	if (selectedItem != noone && keyboard_check_pressed(global.KeySelect))
 	{
-		_changingSelection = true;
-		_itemListIndex = 0;
+		if (selectedItem == _go)
+		{
+			exitMenu = true;
+		}
+		else
+		{
+			_changingSelection = true;
+			_itemListIndex = 0;
+		}
 	}
 }
 else
@@ -93,6 +109,13 @@ else
 		exitMenu = true;
 	}
 }
+if (global.isItemSelectionScreen)
+{
+	_go._isHighlighted = false;
+	
+	if (keyboard_check_pressed(vk_escape))
+		exitMenu = true;
+}
 
 _item1._isHighlighted = false;
 _item2._isHighlighted = false;
@@ -102,8 +125,7 @@ _item4._isHighlighted = false;
 if (selectedItem != noone)
 	selectedItem._isHighlighted = true;
 
-if (global.isItemSelectionScreen && keyboard_check_pressed(vk_escape))
-	exitMenu = true;
+
 	
 if (exitMenu)
 	ExitItemMenu();

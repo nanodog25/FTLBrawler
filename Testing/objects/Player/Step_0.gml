@@ -15,13 +15,11 @@ if (!IsActorInterrupted())
 	}
 	else
 	{
-		if (!IsPlayer_shielding())
-		{
-			if(!IsPlayer_punching())
-				Player_fire();
-			Player_switch();
-			Player_jump();
-		}
+		if(!IsPlayer_punching() && !IsPlayer_shielding())
+			Player_fire();
+			
+		Player_switch();
+		Player_jump();
 	}
 	
 	if (!_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
