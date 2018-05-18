@@ -3,6 +3,7 @@ global.KeyRight = ord("D");
 global.KeyUp = ord("W");
 global.KeyDown = ord("S");
 global.KeyJump = vk_space;
+global.KeySelect = ord("E");
 global.KeyGrid = ord("G");
 global.KeyChangeMode = ord("F");
 global.KeyItemMenu = vk_shift;
