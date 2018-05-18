@@ -5,14 +5,29 @@ draw_text(10,10,
 	"DOWN:  " + KeyToText(global.KeyDown) + "\n" +
 	"LEFT:  " + KeyToText(global.KeyLeft) + "\n" +
 	"RIGHT: " + KeyToText(global.KeyRight) + "\n" +
-	"ITEMS: " + KeyToText(global.KeyItemMenu) + "\n"
+	"ITEMS: " + KeyToText(global.KeyItemMenu) + "\n" +
+	"JUMP:  " + KeyToText(global.KeyJump) + "\n"
 );
 
-draw_text(200,50,
-	"JUMP:  " + KeyToText(global.KeyJump) + "\n" +
-	"FIRE1: " + KeyToText(global.KeyFire1) + "\n" +
-	"FIRE2: " + KeyToText(global.KeyFire2) + "\n" +
-	"PUNCH: " + KeyToText(global.KeyPunch) + "\n" +
-	"BLOCK: " + KeyToText(global.KeyShield) + "\n" +
-	"lanes: " + KeyToText(global.KeyGrid) + "\n"
-);
+if (global.playerMelee)
+{
+	draw_text(200,50,
+		"MODE:         FISTS" +
+		"HIGH ATTACK:  " + KeyToText(global.KeyHigh) + "\n" +
+		"LOW ATTACK:   " + KeyToText(global.KeyLow) + "\n" +
+		"LEFT ATTACK:  " + KeyToText(global.KeyMidLeft) + "\n" +
+		"RIGHT ATTACK: " + KeyToText(global.KeyMidRight) + "\n" +
+		"CHANGE MODE:  " + KeyToText(global.KeyChangeMode) + "\n"
+	);
+}
+else
+{
+	draw_text(200,50,
+		"MODE:          GUNS" +
+		"LOB SHOT:      " + KeyToText(global.KeyHigh) + "\n" +
+		"STRAIGHT SHOT: " + KeyToText(global.KeyLow) + "\n" +
+		"PUNCH:         " + "Arrow towards enemy" + "\n" +
+		"BLOCK:         " + "Arrow away from enemy" + "\n" +
+		"CHANGE MODE:   " + KeyToText(global.KeyChangeMode) + "\n"
+	);
+}

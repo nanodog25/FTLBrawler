@@ -1,5 +1,5 @@
-var fire1 = keyboard_check(global.KeyFire1);
-var fire2 = keyboard_check(global.KeyFire2);
+var fire1 = keyboard_check(global.KeyHigh);
+var fire2 = keyboard_check(global.KeyLow);
 if (fire1 && _canFire)
 {
 	_canFire = false;
@@ -58,6 +58,10 @@ else if (fire2 && _canFire)
 		_knockBack = global.knockBack2;
 		_stunLength = global.stunLength2;
 		_isUp = global.isUp2;
+		_canDetonate = global.canDetonate2;
+		_isLob = global.isLob2;
+		_hasSlowAura = global.hasSlowAura2 || ItemActive(global.ItemSlowShot);
+		_hasSpeedAura = global.hasSpeedAura2;
 	}
 
 	alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);

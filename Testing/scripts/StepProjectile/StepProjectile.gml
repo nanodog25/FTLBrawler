@@ -11,7 +11,7 @@ if (!_isVertical)
 {
 	CheckProjectileCollision();
 
-	if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyFire1))
+	if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyHigh))
 	{
 		_colX = x;
 		_colY = y;

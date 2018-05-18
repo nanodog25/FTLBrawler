@@ -9,13 +9,13 @@ else if (_item3._isHighlighted)
 else if (_item4._isHighlighted)
 	selectedItem = _item4;
 
-if (keyboard_check_pressed(global.KeyLeft))
+if (keyboard_check_pressed(global.KeyMidLeft))
 	selectedItem = _item3._isHighlighted ? noone : _item1;
-else if (keyboard_check_pressed(global.KeyUp))
+else if (keyboard_check_pressed(global.KeyHigh))
 	selectedItem = _item4._isHighlighted ? noone : _item2;
-else if (keyboard_check_pressed(global.KeyRight))
+else if (keyboard_check_pressed(global.KeyMidRight))
 	selectedItem = _item1._isHighlighted ? noone : _item3;
-else if (keyboard_check_pressed(global.KeyDown))
+else if (keyboard_check_pressed(global.KeyLow))
 	selectedItem = _item2._isHighlighted ? noone : _item4;
 
 if (keyboard_check_released(global.KeyItemMenu))

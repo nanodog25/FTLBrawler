@@ -33,8 +33,4 @@ else if (_currentHP <= 0)
 		
 	return true;
 }
-else if (_isPunching)
-{
-	return true;
-}
 return false;

@@ -8,16 +8,16 @@ if (!IsActorInterrupted())
 {
 	if (_isMelee)
 	{
-		
-		
+		Player_melee();
 		Player_switch();
 		Player_jump();
 	}
 	else
 	{
-		if (!Player_punch() && !Player_shield())
+		if (!IsPlayer_shielding())
 		{
-			Player_fire();
+			if(!IsPlayer_punching())
+				Player_fire();
 			Player_switch();
 			Player_jump();
 		}

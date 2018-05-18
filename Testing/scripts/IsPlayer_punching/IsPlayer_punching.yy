@@ -1,8 +1,8 @@
 {
-    "id": "305002a2-3115-4707-90e2-bb1f31e46512",
+    "id": "5881aa01-ef80-4c55-b2ac-e7af7a5b8046",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Player_shield",
+    "name": "IsPlayer_punching",
     "IsCompatibility": false,
     "IsDnD": false
 }

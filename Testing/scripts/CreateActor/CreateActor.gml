@@ -24,6 +24,7 @@ _hitDirection = 0;
 _targetGroundY = global.LaneYs[| _lane];
 _currentGroundY = _targetGroundY;
 
+_direction = 1;
 image_xscale = -_direction;
 
 _state = st_none;
