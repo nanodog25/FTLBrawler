@@ -1,8 +1,8 @@
 {
-    "id": "4c9d4bb5-c1a2-4eee-8d97-776ec06b2927",
+    "id": "5881aa01-ef80-4c55-b2ac-e7af7a5b8046",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "DecideMovement",
+    "name": "Player_punch",
     "IsCompatibility": false,
     "IsDnD": false
 }

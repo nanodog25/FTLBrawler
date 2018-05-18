@@ -10,6 +10,9 @@ stb_isHit = false;
 
 ai_agility = 7;
 ai_canDodge = true;
+ai_moveX = 0;
+ai_moveY = 0;
+ai_moveLane = 0;
 
 
 event_inherited();
