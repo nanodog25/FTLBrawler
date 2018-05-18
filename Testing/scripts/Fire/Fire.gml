@@ -17,3 +17,4 @@ with (inst)
 }
 
 alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
+_hasFired = true;

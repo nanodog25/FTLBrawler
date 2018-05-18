@@ -1,10 +1,5 @@
 if (!_isBlocking && !_isJumping && !_isFalling && !_isPunching)
 {
-	if (_xSpeed == 0)
-		sprite_index = spr_jack_stand;
-	else
-		sprite_index = _isAttacking ? spr_jack_runshoot : spr_jack_run;
-		
 	if (_isAttacking && _xSpeed == 0)
 	{
 		if (_hasFired)
@@ -17,5 +12,12 @@ if (!_isBlocking && !_isJumping && !_isFalling && !_isPunching)
 		{
 			sprite_index = spr_jack_aim;
 		}
+	}
+	else
+	{
+		if (_xSpeed == 0)
+			sprite_index = spr_jack_stand;
+		else
+			sprite_index = _isAttacking ? spr_jack_runshoot : spr_jack_run;
 	}
 }

@@ -54,7 +54,7 @@ var inst = instance_create_layer(x, y, "Projectiles", obj_punch);
 with (inst)
 {
 	_origin = other;
-	_direct = dir;
+	_direction = dir;
 	_xOffset = xOffset;
 	_yOffset = yOffset;
 	_lane = lane;

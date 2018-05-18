@@ -1,5 +1,5 @@
 layer_create(0, _itemWheel);
-var xOffset = global.isItemSelectionScreen ? -300 : 0;
+var xOffset = global.isItemSelectionScreen ? -200 : 0;
 
 _item1 = instance_create_layer(view_wview[0]*0.25 + xOffset, view_hview[0]*0.5, _itemWheel, obj_button_item);
 _item2 = instance_create_layer(view_wview[0]*0.5 + xOffset, view_hview[0]*0.25, _itemWheel, obj_button_item);

@@ -1,5 +1,4 @@
-if (global.isItemSelectionScreen && keyboard_check_pressed(vk_escape))
-	ExitMenu();
+var exitMenu = false;
 
 if (!layer_exists(_itemWheel))
 {
@@ -91,7 +90,7 @@ else
 			global.ItemActivated = selectedItem._text;
 			selectedItem = noone;
 		}
-		ExitMenu();
+		exitMenu = true;
 	}
 }
 
@@ -102,3 +101,9 @@ _item4._isHighlighted = false;
 
 if (selectedItem != noone)
 	selectedItem._isHighlighted = true;
+
+if (global.isItemSelectionScreen && keyboard_check_pressed(vk_escape))
+	exitMenu = true;
+	
+if (exitMenu)
+	ExitItemMenu();

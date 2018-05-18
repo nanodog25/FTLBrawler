@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "7dfab47b-0838-4a18-998b-ea428ef32a08",
+            "Value": {
+                "id": "cf4b07d9-48b6-478b-ace2-33939334092f",
+                "resourcePath": "scripts\\ExitItemMenu\\ExitItemMenu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "80a01f7b-0d74-44ea-ab9f-a3ff80236716",
             "Value": {
                 "id": "9c94dc5b-699c-4f7d-80aa-fe89ecc2fa3a",
@@ -2202,6 +2210,7 @@
         "73522b41-8851-42d1-8895-d152ba08c832",
         "9a0c2cd6-9a94-48fc-8bd9-7bd565e44195",
         "159f65c6-5ae3-4dcf-bd65-15bef156efa0",
+        "7dfab47b-0838-4a18-998b-ea428ef32a08",
         "28422c41-3e4e-4017-934c-aca69220184f",
         "e5a0069d-0074-4112-b8f4-3aae1693739c",
         "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",

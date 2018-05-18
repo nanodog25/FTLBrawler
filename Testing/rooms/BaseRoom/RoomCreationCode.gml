@@ -10,6 +10,7 @@ global.playerSwitchSpeed = 6;
 global.playerMaxJumpHeight = 180;
 global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
+global.playerMelee = false;
 
 global.laneCrossing = false;
 global.isVertical = false;

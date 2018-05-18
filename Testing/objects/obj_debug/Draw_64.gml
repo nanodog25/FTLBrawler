@@ -12,7 +12,7 @@ draw_text(10,10,
 if (global.playerMelee)
 {
 	draw_text(200,50,
-		"MODE:         FISTS" +
+		"MODE:         FISTS" + "\n" +
 		"HIGH ATTACK:  " + KeyToText(global.KeyHigh) + "\n" +
 		"LOW ATTACK:   " + KeyToText(global.KeyLow) + "\n" +
 		"LEFT ATTACK:  " + KeyToText(global.KeyMidLeft) + "\n" +
@@ -23,7 +23,7 @@ if (global.playerMelee)
 else
 {
 	draw_text(200,50,
-		"MODE:          GUNS" +
+		"MODE:          GUNS" + "\n" +
 		"LOB SHOT:      " + KeyToText(global.KeyHigh) + "\n" +
 		"STRAIGHT SHOT: " + KeyToText(global.KeyLow) + "\n" +
 		"PUNCH:         " + "Arrow towards enemy" + "\n" +

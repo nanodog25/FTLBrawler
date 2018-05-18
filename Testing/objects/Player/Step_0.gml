@@ -2,6 +2,7 @@ SetSpeedMod();
 
 _ySwitch = 0;
 _isBlocking = false;
+_isMelee = global.playerMelee;
 
 
 if (!IsActorInterrupted())
