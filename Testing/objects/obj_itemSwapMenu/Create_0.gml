@@ -1,8 +1,11 @@
-_itemWheel = "ItemWheel";
-_itemList = "ItemList";
-_itemListObjects = ds_list_create();
+_page1 = "Page1";
+_page2 = "Page2";
 
-_abilityList = "AbilityList";
+_itemListObjects = ds_list_create();
 _abilityListObjects = ds_list_create();
+_lobListObjects = ds_list_create();
+_linearListObjects = ds_list_create();
+_fistListObjects = ds_list_create();
 
 _editingAbilities = false;
+_onPage2 = false;

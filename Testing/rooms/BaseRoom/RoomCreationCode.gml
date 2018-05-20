@@ -3,6 +3,9 @@ Layout();
 GlobalGeneral();
 Items();
 Abilities();
+Weapons();
+Attacks();
+
 //Resolution();
 room = rm_street_parallelBridges;
 
@@ -13,6 +16,8 @@ global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 global.playerMelee = false;
 global.playerAbilityPoints = 3;
+global.playerWeaponPoints = 3;
+global.playerAttackPoints = 3;
 
 global.laneCrossing = false;
 global.isVertical = false;
