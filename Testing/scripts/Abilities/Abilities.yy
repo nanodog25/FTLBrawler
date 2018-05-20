@@ -1,8 +1,8 @@
 {
-    "id": "7dfab47b-0838-4a18-998b-ea428ef32a08",
+    "id": "c80c64ba-06fc-4036-9f4a-28ec3357052b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ExitItemMenu",
+    "name": "Abilities",
     "IsCompatibility": false,
     "IsDnD": false
 }

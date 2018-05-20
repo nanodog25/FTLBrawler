@@ -2,6 +2,7 @@ KeyBindings();
 Layout();
 GlobalGeneral();
 Items();
+Abilities();
 //Resolution();
 room = rm_street_parallelBridges;
 
@@ -11,6 +12,7 @@ global.playerMaxJumpHeight = 180;
 global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 global.playerMelee = false;
+global.playerAbilityPoints = 3;
 
 global.laneCrossing = false;
 global.isVertical = false;

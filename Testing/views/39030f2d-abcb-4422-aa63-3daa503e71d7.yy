@@ -11,7 +11,8 @@
         "45f18959-978d-4ea8-afc2-66b9f24d58ca",
         "9c51754e-97ee-4d58-8efb-721647cec442",
         "941b7713-24a0-43ac-b212-656f7bca2736",
-        "116f5272-9394-4f34-9c6c-0127942d95f5"
+        "116f5272-9394-4f34-9c6c-0127942d95f5",
+        "1d64ade2-15b0-48de-b031-4741c3ae1e65"
     ],
     "filterType": "GMScript",
     "folderName": "Global",

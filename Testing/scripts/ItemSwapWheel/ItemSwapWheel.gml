@@ -1,0 +1,27 @@
+layer_create(0, _itemWheel);
+var xOffset = -200;
+var yOffset = -200;
+
+_item1 = instance_create_layer(view_wview[0]*0.5 - 150 + xOffset, view_hview[0]*0.5 + yOffset, _itemWheel, obj_button_item);
+_item2 = instance_create_layer(view_wview[0]*0.5 + xOffset, view_hview[0]*0.5 - 100 + yOffset, _itemWheel, obj_button_item);
+_item3 = instance_create_layer(view_wview[0]*0.5 + 150 + xOffset, view_hview[0]*0.5 + yOffset, _itemWheel, obj_button_item);
+_item4 = instance_create_layer(view_wview[0]*0.5 + xOffset, view_hview[0]*0.5 + 100 + yOffset, _itemWheel, obj_button_item);
+
+with(_item1)
+	_text = global.ItemsAvailable[| 0];
+	
+with(_item2)
+	_text = global.ItemsAvailable[| 1];
+	
+with(_item3)
+	_text = global.ItemsAvailable[| 2];
+	
+with(_item4)
+	_text = global.ItemsAvailable[| 3];
+	
+_go = instance_create_layer(view_wview[0]*0.5 + xOffset, view_hview[0]*0.5 + yOffset, _itemWheel, obj_button_item);
+with(_go)
+{
+	_text = "GO";
+	_isHighlighted = true;
+}

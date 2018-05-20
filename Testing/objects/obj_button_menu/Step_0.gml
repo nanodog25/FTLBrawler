@@ -10,13 +10,11 @@ if (mouse_check_button_pressed(mb_left))
 }
 else if (keyboard_check_pressed(global.KeyItemMenu))
 {
-	global.isItemSelectionScreen = false;
 	SaveRoom();
 	room_goto(ItemSelect);
 }
 else if (keyboard_check_pressed(vk_escape))
 {
-	global.isItemSelectionScreen = true;
 	SaveRoom();
-	room_goto(ItemSelect);
+	room_goto(ItemSwap);
 }

@@ -9,6 +9,8 @@
 //Enemies are better at dodging friendly fire than your attacks
 //If an enemy is *launched* out of the fight, they ain't coming back
 //Shots that ignore cover don't cause knockback
+//Starter items never become irrelevant
+//As soon as you've switched, you can't be hit by something in that lane
 
 
 //Getting around in a world that's split into 5 coloured lanes is hard, but we manage
