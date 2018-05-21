@@ -27,7 +27,7 @@ if (fire1 && _canFire)
 		_isUp = global.isUp;
 		_canDetonate = global.canDetonate;
 		_isLob = global.isLob;
-		_hasSlowAura = global.hasSlowAura || ItemActive(global.ItemSlowShot);
+		_hasSlowAura = global.hasSlowAura || IsItemActive(global.ItemSlowShot);
 		_hasSpeedAura = global.hasSpeedAura;
 	}
 	alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
@@ -60,7 +60,7 @@ else if (fire2 && _canFire)
 		_isUp = global.isUp2;
 		_canDetonate = global.canDetonate2;
 		_isLob = global.isLob2;
-		_hasSlowAura = global.hasSlowAura2 || ItemActive(global.ItemSlowShot);
+		_hasSlowAura = global.hasSlowAura2 || IsItemActive(global.ItemSlowShot);
 		_hasSpeedAura = global.hasSpeedAura2;
 	}
 

@@ -9,7 +9,7 @@ if (ai_fire && _canFire && !_isInvulnerable)
 
 _isAttacking = ai_fire;
 	
-if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling  && !ItemActive(global.ItemLaneBarrier))
+if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !_isFalling  && !IsItemActive(global.ItemLaneBarrier))
 {
 	SetSwitchLane(ai_moveUp, ai_moveDown);
 }

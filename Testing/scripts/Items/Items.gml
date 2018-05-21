@@ -7,14 +7,18 @@ global.ItemNone = "";
 global.ItemShield = "Shield";
 global.ItemSlowShot = "Slow Shot";
 global.ItemSpeedAura = "Speed Aura";
-global.ItemLaneBarrier= "Lane Barrier";
-global.ItemCrawlShots= "Crawl Shots";
-global.ItemLaunchShot= "Launch Shot";
+global.ItemLaneBarrier = "Lane Barrier";
+global.ItemLaunchShot = "Launch Shot";
+global.ItemStunTrap = "Stun Trap";
+global.ItemDownConveyor = "Down Conveyor";
+global.ItemUpConveyor = "Up Conveyor";
 
 ds_list_add(global.ItemsAvailable, global.ItemShield);
 ds_list_add(global.ItemsAvailable, global.ItemSlowShot);
 ds_list_add(global.ItemsAvailable, global.ItemSpeedAura);
 ds_list_add(global.ItemsAvailable, global.ItemLaneBarrier);
 
-ds_list_add(global.ItemsReserved, global.ItemCrawlShots);
 ds_list_add(global.ItemsReserved, global.ItemLaunchShot);
+ds_list_add(global.ItemsReserved, global.ItemStunTrap);
+ds_list_add(global.ItemsReserved, global.ItemDownConveyor);
+ds_list_add(global.ItemsReserved, global.ItemUpConveyor);

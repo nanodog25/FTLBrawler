@@ -1,4 +1,4 @@
 /// @description onHit
-if (ItemActive(global.ItemShield))
+if (IsItemActive(global.ItemShield))
 	_isBlocking = true;
 onHit();
