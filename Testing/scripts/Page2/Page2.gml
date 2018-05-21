@@ -21,9 +21,15 @@ if (keyboard_check_pressed(global.KeyMidRight) || keyboard_check_pressed(global.
 else if (keyboard_check_pressed(global.KeyMidLeft) || keyboard_check_pressed(global.KeyLeft))
 	_page2Index--;
 else if (_page2Section != 0 && keyboard_check_pressed(global.KeyHigh) || keyboard_check_pressed(global.KeyUp))
+{
 	_page2Section--;
+	_page2Index = 0;
+}
 else if (_page2Section != 2 && keyboard_check_pressed(global.KeyLow) || keyboard_check_pressed(global.KeyDown))
+{
 	_page2Section++;
+	_page2Index = 0;
+}
 
 switch(_page2Section)
 {
@@ -46,29 +52,54 @@ else if (_page2Index < 0)
 selectedItem = selectedSection[| _page2Index];
 selectedItem._isHighlighted = true;
 
-//if (keyboard_check_pressed(global.KeySelect))
-//{
-//	var isActive = !selectedItem._isActive;
-		
-//	if (isActive)
-//	{
-//		if (global.playerAbilityPoints >= ability._cost)
-//		{
-//			ds_list_add(global.AbilitiesActive, ability._text);
-//			ability._isActive = isActive;
-//			global.playerAbilityPoints -= ability._cost;
-//		}
-//	}
-//	else
-//	{
-//		ds_list_delete(global.AbilitiesActive, ds_list_find_index(global.AbilitiesActive, ability._text));
-//		ability._isActive = isActive;
-//		global.playerAbilityPoints += ability._cost;
-//	}
-//}
+if (keyboard_check_pressed(global.KeySelect))
+{
+	var isActive = !selectedItem._isActive;
 	
-
-
+	if (isActive)
+	{
+		if (_page2Section == 0 && global.playerWeaponPoints >= selectedItem._cost)
+		{
+			ds_list_add(global.LobActive, selectedItem._text);
+			selectedItem._isActive = isActive;
+			global.playerWeaponPoints -= selectedItem._cost;
+		}
+		else if (_page2Section == 1 && global.playerWeaponPoints >= selectedItem._cost)
+		{
+			ds_list_add(global.LinearActive, selectedItem._text);
+			selectedItem._isActive = isActive;
+			global.playerWeaponPoints -= selectedItem._cost;
+		}
+		else if (_page2Section == 2 && global.playerAttackPoints >= selectedItem._cost)
+		{
+			ds_list_add(global.AttacksActive, selectedItem._text);
+			selectedItem._isActive = isActive;
+			global.playerAttackPoints -= selectedItem._cost;
+		}
+	}
+	else
+	{
+		if (_page2Section == 0)
+		{
+			ds_list_delete(global.LobActive, ds_list_find_index(global.LobActive, selectedItem._text));
+			selectedItem._isActive = isActive;
+			global.playerWeaponPoints += selectedItem._cost;
+		}
+		else if (_page2Section == 1)
+		{
+			ds_list_delete(global.LinearActive, ds_list_find_index(global.LinearActive, selectedItem._text));
+			selectedItem._isActive = isActive;
+			global.playerWeaponPoints += selectedItem._cost;
+		}
+		else
+		{
+			ds_list_delete(global.AttacksActive, ds_list_find_index(global.AttacksActive, selectedItem._text));
+			selectedItem._isActive = isActive;
+			global.playerAttackPoints += selectedItem._cost;
+		}
+	}
+}
+	
 if (keyboard_check_pressed(global.KeyItemMenu))
 {
 	_onPage2 = false;

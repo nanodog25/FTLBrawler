@@ -1,1 +1,0 @@
-_isActive = ds_list_find_index(global.AbilitiesActive, _text) != -1;

@@ -11,4 +11,4 @@ global.LinearShrapnel = "Shrapnel";
 global.LobSplit = "Split";
 
 AddLinear(global.LinearShrapnel, 2);
-AddLob(global.LobSplit, 2);
+AddLob(global.LobSplit, 1);
