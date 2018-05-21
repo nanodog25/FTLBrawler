@@ -11,7 +11,7 @@ if (!_isVertical)
 {
 	CheckProjectileCollision();
 
-	if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyHigh))
+	if (!_destroySelf && _canDetonate && _origin.object_index == Player && keyboard_check_pressed(global.KeyFire1))
 	{
 		_colX = x;
 		_colY = y;
@@ -22,9 +22,6 @@ if (!_isVertical)
 
 if (_destroySelf && _colX != 0 && _hasSlowAura)
 	CreateSlowAura();
-	
-if (_destroySelf && _colX != 0 && _hasSpeedAura)
-	CreateSpeedAura();
 	
 if (_destroySelf)
 {

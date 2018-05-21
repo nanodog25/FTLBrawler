@@ -114,31 +114,3 @@ with (inst)
 	_variable = "isLauncher2";
 	_lable = "isLauncher:";
 }
-
-var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
-with (inst)
-{
-	_variable = "canDetonate2";
-	_lable = "canDetonate:";
-}
-
-var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
-with (inst)
-{
-	_variable = "isLob2";
-	_lable = "isLob:";
-}
-
-var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
-with (inst)
-{
-	_variable = "hasSlowAura2";
-	_lable = "hasSlowAura:";
-}
-
-var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
-with (inst)
-{
-	_variable = "hasSpeedAura2";
-	_lable = "hasSpeedAura:";
-}

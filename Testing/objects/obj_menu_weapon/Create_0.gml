@@ -135,10 +135,3 @@ with (inst)
 	_variable = "hasSlowAura";
 	_lable = "hasSlowAura:";
 }
-
-var inst = instance_create_depth(_x, _y + space * i++, -10000, obj_checkbox);
-with (inst)
-{
-	_variable = "hasSpeedAura";
-	_lable = "hasSpeedAura:";
-}

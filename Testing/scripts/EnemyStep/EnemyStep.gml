@@ -8,14 +8,36 @@ SetSpeedMod();
 
 _ySwitch = 0;
 
-if(!IsActorInterrupted())
+if (_isLaunched)
+{
+	Launch();
+}
+else if (_isHit)
+{
+	sprite_index = spr_jack_hit;
+	_direction = -_hitDirection;
+	_xSpeed = _hitDirection * _knockBack;
+}
+else if (_currentHP <= 0)
+{
+	_isSwitchingLane = false;
+	_isJumping = false;
+	
+	if (sprite_index != spr_jack_die)
+	{
+		_xSpeed = 0;
+		sprite_index = spr_jack_die;
+		image_index = 0;
+	}
+	else if (image_index > image_number - 1)
+		image_speed = 0;
+}
+else
 {
 	_xSpeed = 0;
 	
-	AI_DecideMovement();
-	AI_CalculateMovement();
-	
-	ActorStaticAnimation();
+	DecideMovement();
+	CalculateMovement();
 }
 
 if (_isSwitchingLane)
@@ -34,3 +56,11 @@ else if (_isFalling)
 }
 
 ApplyMovement();
+
+if (!_isHit && !_isJumping && !_isFalling && _currentHP > 0)
+{
+	if (_xSpeed == 0)
+		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;
+	else
+		sprite_index = _isAttacking ? spr_jack_runshoot : spr_jack_run;
+}
