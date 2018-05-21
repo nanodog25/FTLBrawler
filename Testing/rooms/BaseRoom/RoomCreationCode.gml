@@ -5,6 +5,7 @@ Items();
 Abilities();
 Weapons();
 Attacks();
+Tips();
 
 //Resolution();
 room = rm_street_parallelBridges;

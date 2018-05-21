@@ -2,7 +2,7 @@
 //You can't move left or right when hit, but you can jump or switch (most enemies can't)
 //Your items recharge at the start of every fight, and can be used endlessly between fights
 //*Hold* the 'switch' key in midair to switch twice before landing
-//Enemies won't see attacks coming from an adjacent lane
+//Attacking from an adjacent lane is slow, but enemies won't see them coming
 //Switching lane halts your vertical momentum
 //A slowed projectile can be punched back at the attacker. That's just good science
 //Piercing shots pass through destructible objects, bullets and people
@@ -38,4 +38,4 @@
 //Crawler shots
 //Proximity trap
 //Mobile Conveyor
-//
+//Lob can be split by pressing the button again while it's in the air
