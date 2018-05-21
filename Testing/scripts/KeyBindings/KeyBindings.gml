@@ -1,14 +1,16 @@
-global.KeyLeft = vk_left;
-global.KeyRight = vk_right;
-global.KeyUp = vk_up;
-global.KeyDown = vk_down;
-global.KeyJump = ord("Z");
+global.KeyLeft = ord("A");
+global.KeyRight = ord("D");
+global.KeyUp = ord("W");
+global.KeyDown = ord("S");
+global.KeyJump = vk_space;
+global.KeySelect = ord("E");
 global.KeyGrid = ord("G");
-global.KeyItemMenu = vk_space;
-global.KeyFire1 = ord("X");
-global.KeyFire2 = ord("C");
-global.KeyPunch = ord("D");
-global.KeyShield = ord("F");
+global.KeyChangeMode = ord("F");
+global.KeyItemMenu = vk_shift;
+global.KeyHigh = vk_up;
+global.KeyMidLeft = vk_left;
+global.KeyLow = vk_down;
+global.KeyMidRight = vk_right;
 global.KeyPlus = vk_add;
 global.KeyMinus = vk_subtract;
 

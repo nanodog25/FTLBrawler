@@ -1,1 +1,1 @@
-draw_text_transformed(_x - 170, _y - 60, "Weapon 1", 2, 2, 0);
+draw_text_transformed(_x - 170, _y - 60, "Lob Shot", 2, 2, 0);

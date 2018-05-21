@@ -22,3 +22,4 @@ _canDetonate = false;
 _reachesGround = false;
 _isLob = false;
 _hasSlowAura = false;
+_hasSpeedAura = false;

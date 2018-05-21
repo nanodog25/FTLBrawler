@@ -2,149 +2,32 @@ SetSpeedMod();
 
 _ySwitch = 0;
 _isBlocking = false;
+_isMelee = global.playerMelee;
 
-if (_isLaunched)
+
+if (!IsActorInterrupted())
 {
-	Launch();
-}
-else if (_isHit)
-{
-	sprite_index = spr_jack_hit;
-	_direction = -_hitDirection;
-	_xSpeed = _hitDirection * _knockBack;
-}
-else if (_hasBlocked)
-{
-	_direction = -_hitDirection;
-	_xSpeed = _hitDirection * _knockBack;
-	var jump = keyboard_check_pressed(global.KeyJump);	
-	if (jump)
+	if (_isMelee)
 	{
-		SetJumping();
-	}
-}
-else if (_currentHP == 0)
-{
-	if (sprite_index != spr_jack_die)
-	{
-		_xSpeed = 0;
-		sprite_index = spr_jack_die;
-		image_index = 0;
-	}
-	else if (image_index > image_number - 1)
-		image_speed = 0;
-	return;
-}
-else if (!_isPunching)
-{
-	if (!_isJumping && !_isFalling && keyboard_check_pressed(global.KeyPunch))
-	{
-		sprite_index = spr_jack_punch;
-		image_index = 0;
-		_isPunching = true;
-		var inst = instance_create_layer(x, y, "Projectiles", obj_punch);
-		with (inst)
-		{
-			_origin = other;
-			_xOffset = 30;
-			_yOffset = -40;
-		}
-	}
-	else if(keyboard_check(global.KeyShield))
-	{
-		sprite_index = spr_jack_punch;
-		image_index = 0;
-		image_speed = 0;
-		_isBlocking = true;
-		_xSpeed = 0;
+		Player_melee();
+		Player_switch();
+		Player_jump();
 	}
 	else
 	{
-		var fire1 = keyboard_check(global.KeyFire1);
-		var fire2 = keyboard_check(global.KeyFire2);
-		if (fire1 && _canFire)
-		{
-			_canFire = false;
-
-			var inst = instance_create_layer(x, y, "Projectiles", _projectile);
-			with (inst)
-			{
-				_origin = other;
-				_xOffset = 50;
-				_yOffset = -40;
-
-				_laneCrossing = global.laneCrossing;
-				_isVertical = global.isVertical;
-				_isIgnoringCover = global.isIgnoringCover;
-				_isPiercing = global.isPiercing;
-				_isDestructible = global.isDestructible;
-				_isLauncher = global.isLauncher;
-				_damage = global.damage;
-				_rateOfFire = global.rateOfFire;
-				_buildUpDuration = global.buildUpDuration;
-				_travelSpeed = global.travelSpeed;
-				_travelDistance = global.travelDistance;
-				_knockBack = global.knockBack;
-				_stunLength = global.stunLength;
-				_isUp = global.isUp;
-				_canDetonate = global.canDetonate;
-				_isLob = global.isLob;
-				_hasSlowAura = global.hasSlowAura;
-			}
-			alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
-		}
-		else if (fire2 && _canFire)
-		{
-			_canFire = false;
-
-			var inst = instance_create_layer(x, y, "Projectiles", _projectile);
-			with (inst)
-			{
-				_origin = other;
-				_xOffset = 50;
-				_yOffset = -40;
-
-				_laneCrossing = global.laneCrossing2;
-				_isVertical = global.isVertical2;
-				_isIgnoringCover = global.isIgnoringCover2;
-				_isPiercing = global.isPiercing2;
-				_isDestructible = global.isDestructible2;
-				_isLauncher = global.isLauncher2;
-				_damage = global.damage2;
-				_rateOfFire = global.rateOfFire2;
-				_buildUpDuration = global.buildUpDuration2;
-				_travelSpeed = global.travelSpeed2;
-				_travelDistance = global.travelDistance2;
-				_knockBack = global.knockBack2;
-				_stunLength = global.stunLength2;
-				_isUp = global.isUp2;
-			}
-
-			alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);
-		}
-		_isAttacking = fire1 || fire2;
-	
-		if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane)
-		{
-			var moveUp = _isJumping || _isFalling
-				? keyboard_check(global.KeyUp)
-				: keyboard_check_pressed(global.KeyUp);
-			var moveDown = _isJumping || _isFalling
-				? keyboard_check(global.KeyDown)
-				: keyboard_check_pressed(global.KeyDown);		
-			SetSwitchLane(moveUp, moveDown);
-		}
-	
-		if (!_isJumping && !_isFalling)
-		{	
-			_canSwitchLane = true;
-			var jump = keyboard_check_pressed(global.KeyJump);	
-			if (jump)
-			{
-				SetJumping();
-			}
-		}
+		if(!IsPlayer_punching() && !IsPlayer_shielding())
+			Player_fire();
+			
+		Player_switch();
+		Player_jump();
 	}
+	
+	if (!_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
+	{
+		Player_move();
+	}
+	
+	ActorStaticAnimation();
 }
 
 if (_isSwitchingLane)
@@ -168,20 +51,5 @@ if (_isHit || _isPunching && image_index > image_number - 1)
 	_isPunching = false;
 }
 
-if (!_isHit && !_hasBlocked && !_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
-{
-	var isMovingLeft = keyboard_check(global.KeyLeft);
-	var isMovingRight = keyboard_check(global.KeyRight);
-	MoveHorizontally(isMovingLeft, isMovingRight);
-}
-
 ApplyMovement();
 UpdatePlayerVariables();
-
-if (!_isHit && !_hasBlocked && !_isBlocking && !_isJumping && !_isFalling && !_isPunching)
-{
-	if (_xSpeed == 0)
-		sprite_index = _isAttacking ? spr_jack_shoot : spr_jack_stand;
-	else
-		sprite_index = _isAttacking ? spr_jack_runshoot : spr_jack_run;
-}

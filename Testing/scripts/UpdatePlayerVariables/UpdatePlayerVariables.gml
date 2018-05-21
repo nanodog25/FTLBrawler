@@ -1,4 +1,5 @@
 global.playerX = x;
+global.playerY = y;
 global.playerLane = _lane;
 
 _speed = global.playerSpeed;
