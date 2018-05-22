@@ -1,8 +1,8 @@
 {
-    "id": "dbc5efad-615b-4f32-874b-9022a438cafc",
+    "id": "d3fda1b8-53d1-4786-a724-46068984f1aa",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SetItemDuration",
+    "name": "GetItem",
     "IsCompatibility": false,
     "IsDnD": false
 }

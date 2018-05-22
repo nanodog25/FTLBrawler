@@ -1,3 +1,5 @@
+_items = instance_find(obj_items,0);
+
 _page1 = "Page1";
 _page2 = "Page2";
 

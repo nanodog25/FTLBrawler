@@ -1,0 +1,1 @@
+_name = "Stun Trap";

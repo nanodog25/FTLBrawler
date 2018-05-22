@@ -29,7 +29,7 @@ if (keyboard_check_released(global.KeyItemMenu))
 {
 	if (selectedItem != noone)
 	{
-		global.ItemActivated = selectedItem._text;
+		global.ItemActivated = selectedItem._item;
 		selectedItem = noone;
 	}
 	exitMenu = true;

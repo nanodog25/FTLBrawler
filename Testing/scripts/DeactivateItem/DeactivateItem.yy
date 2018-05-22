@@ -1,8 +1,8 @@
 {
-    "id": "7c6ffd00-dd07-4471-8deb-82a62ef6fb97",
+    "id": "0ecfa929-9fb0-4e6f-ad87-48ebcddad7a4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ApplyItemEffect",
+    "name": "DeactivateItem",
     "IsCompatibility": false,
     "IsDnD": false
 }

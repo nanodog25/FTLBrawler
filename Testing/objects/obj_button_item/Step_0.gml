@@ -1,4 +1,4 @@
-var isUsed = ds_list_find_index(global.ItemsUsed, _text) != -1;
+var isUsed = ds_list_find_index(global.ItemsUsed, _item) != -1;
 
 _isUsed = isUsed;
 

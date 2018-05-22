@@ -73,11 +73,11 @@ else if (_changingSelection)
 	if (keyboard_check_pressed(global.KeySelect))
 	{
 		_itemListObjects[| _itemListIndex]._isHighlighted = false;
-		var newReserve = selectedItem._text;
-		var newAvailable = _itemListObjects[| _itemListIndex]._text;
+		var newReserve = selectedItem._item;
+		var newAvailable = _itemListObjects[| _itemListIndex]._item;
 		
-		selectedItem._text = newAvailable;
-		_itemListObjects[| _itemListIndex]._text = newReserve;
+		selectedItem._item = newAvailable;
+		_itemListObjects[| _itemListIndex]._item = newReserve;
 		
 		global.ItemsAvailable[| ds_list_find_index(global.ItemsAvailable, newReserve)] = newAvailable;
 		global.ItemsReserved[| ds_list_find_index(global.ItemsReserved, newAvailable)] = newReserve;
