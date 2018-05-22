@@ -16,7 +16,7 @@ if (fire1 && _canFire)
 		_isIgnoringCover = global.isIgnoringCover;
 		_isPiercing = global.isPiercing;
 		_isDestructible = global.isDestructible;
-		_isLauncher = global.isLauncher;
+		_isLauncher = global.isLauncher || IsItemActive(global.ItemLaunchShot);
 		_damage = global.damage;
 		_rateOfFire = global.rateOfFire;
 		_buildUpDuration = global.buildUpDuration;
@@ -49,7 +49,7 @@ else if (fire2 && _canFire)
 		_isIgnoringCover = global.isIgnoringCover2;
 		_isPiercing = global.isPiercing2;
 		_isDestructible = global.isDestructible2;
-		_isLauncher = global.isLauncher2;
+		_isLauncher = global.isLauncher2 || IsItemActive(global.ItemLaunchShot);
 		_damage = global.damage2;
 		_rateOfFire = global.rateOfFire2;
 		_buildUpDuration = global.buildUpDuration2;

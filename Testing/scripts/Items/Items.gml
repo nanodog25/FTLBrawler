@@ -1,4 +1,5 @@
 global.ItemActivated = "";
+global.ItemsUsedThisStep = ds_list_create();
 global.ItemsActive = ds_list_create();
 global.ItemsUsed = ds_list_create();
 global.ItemsAvailable = ds_list_create();

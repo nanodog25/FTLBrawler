@@ -7,3 +7,14 @@ if (global.ItemActivated != global.ItemNone)
 	
 	global.ItemActivated = global.ItemNone;
 }
+
+if (!ds_list_empty(global.ItemsUsedThisStep))
+{
+	for(var i = 0; i < ds_list_size(global.ItemsUsedThisStep); i++)
+	{
+		with(GetItem(global.ItemsUsedThisStep[| i]))
+			event_user(2);
+	}
+	
+	ds_list_clear(global.ItemsUsedThisStep);
+}

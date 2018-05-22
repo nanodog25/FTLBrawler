@@ -5,9 +5,6 @@ var item = argument0;
 var isActive = ds_list_find_index(global.ItemsActive, item) != -1;
 
 if (isActive)
-{
-	with(GetItem(item))
-		event_user(2);
-}
+	ds_list_add(global.ItemsUsedThisStep, item);
 
 return isActive;
