@@ -126,7 +126,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "6a6cb37d-8615-498f-89ed-c3f1404dbe51",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -161,7 +161,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "ac862497-5861-42fa-9793-fdcd734f04f5",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -196,7 +196,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "4ddcfbfa-5f6c-40c4-a0c8-79538946af75",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -231,7 +231,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "660bf78c-0863-4f72-b779-40006b65bc2b",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -266,7 +266,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "8346b46b-9bea-4966-b873-f3bd757e8f01",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -301,7 +301,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "7e312904-dc3b-4e07-bc84-2c539cbc2e0a",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -336,7 +336,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "fd1a9e6b-af10-4293-b018-7c0a21908799",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -371,7 +371,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "9615e7e8-fb92-4475-be80-2015ec02527d",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -406,7 +406,7 @@
                     "layers": [
 
                     ],
-                    "m_parentID": "017cd3b4-2e0e-4455-b854-98f3bb4640ad",
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRBackgroundLayer",
                     "mvc": "1.0",
@@ -421,7 +421,7 @@
                     "y": 800
                 }
             ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_parentID": "389b44ad-c3f4-478a-8309-6fe3e63eaaca",
             "m_serialiseFrozen": false,
             "modelName": "GMRLayer",
             "mvc": "1.0",
@@ -467,7 +467,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Debug",
             "id": "0448f11d-59f8-4006-a0b5-3475b60dabea",
-            "depth": 0,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -494,7 +494,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "d04a8ee2-2690-40d4-8499-07d681adc977",
-            "depth": 100,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -523,7 +523,7 @@
             "assets": [
 
             ],
-            "depth": 200,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
