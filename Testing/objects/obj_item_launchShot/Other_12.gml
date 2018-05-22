@@ -1,5 +1,5 @@
 /// @description onUse
-_shots--;
+_count--;
 
-if (_shots <= 0)
+if (_count <= 0)
 	DeactivateItem(global.ItemLaunchShot);

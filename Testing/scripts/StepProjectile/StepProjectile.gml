@@ -21,10 +21,10 @@ if (!_isVertical)
 }
 
 if (_destroySelf && _colX != 0 && _hasSlowAura)
-	CreateSlowAura();
+	CreateSlowAura(0.5);
 	
 if (_destroySelf && _colX != 0 && _hasSpeedAura)
-	CreateSpeedAura();
+	CreateSpeedAura(2);
 	
 if (_destroySelf)
 {

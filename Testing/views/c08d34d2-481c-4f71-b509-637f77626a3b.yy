@@ -1,0 +1,13 @@
+{
+    "id": "c08d34d2-481c-4f71-b509-637f77626a3b",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "c08d34d2-481c-4f71-b509-637f77626a3b",
+    "children": [
+        
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Street2",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
