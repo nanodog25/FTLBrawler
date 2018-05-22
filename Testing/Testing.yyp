@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "007529b3-5702-4808-bef7-eb903e01967a",
+            "Value": {
+                "id": "8bf9e880-a6ab-4d29-99f1-9ed41944030c",
+                "resourcePath": "scripts\\CreateStunTrap\\CreateStunTrap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "00e88cda-3a15-44ad-a6dc-751e8e85c8cb",
             "Value": {
                 "id": "27e6138f-13e0-4255-84fd-2ff2a4b326ce",
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "3c9bb3fa-c3f6-450f-94d1-2bc888ebb376",
+            "Value": {
+                "id": "ccf720c8-251f-4c49-b4c8-75d0b61ff65c",
+                "resourcePath": "sprites\\sprite50\\sprite50.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e18228a-6933-4ac7-9c9f-dd5828846118",
             "Value": {
                 "id": "19c60e61-c889-4e77-b2e8-5a340b582175",
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "5856c17c-f3ed-464e-82db-a31e6c665771",
+            "Value": {
+                "id": "6a521b7f-7ec2-4ec3-83d1-23ddd6c8b3f4",
+                "resourcePath": "sprites\\sprite51\\sprite51.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5881aa01-ef80-4c55-b2ac-e7af7a5b8046",
             "Value": {
                 "id": "59d5ab78-a1ef-443a-b27d-7f8d98def88e",
@@ -1188,6 +1212,14 @@
                 "id": "e7a8bcf0-4fbc-4dbb-8fbc-628ed3cc414d",
                 "resourcePath": "scripts\\ProjectileCollision\\ProjectileCollision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "714b75af-b9dd-4e75-a21f-e0e95ce24eff",
+            "Value": {
+                "id": "d1ddc676-07d5-4136-9aff-f5ba5f851656",
+                "resourcePath": "objects\\obj_effect_stunTrap\\obj_effect_stunTrap.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1900,6 +1932,14 @@
                 "id": "d93e826d-e5bb-4570-8c52-d7ba71803254",
                 "resourcePath": "scripts\\GetAttack\\GetAttack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "af5f4aa4-075f-4ad1-81f0-3f13665d8192",
+            "Value": {
+                "id": "ce4fee13-f00a-4319-9166-07ba5367f25f",
+                "resourcePath": "views\\af5f4aa4-075f-4ad1-81f0-3f13665d8192.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2768,8 +2808,6 @@
         "4762479e-cd74-475c-9935-42aae187b4eb",
         "e3aac621-abe0-45ca-98b5-476830573c8e",
         "22f85157-e310-4baf-89a1-9ee7188b0b31",
-        "d67d4b50-020d-457f-bace-d9347d177de9",
-        "bf150a5b-b5bd-452f-bc43-96075504a074",
         "f7dae3a3-3457-4275-a747-fe9883b2c3dd",
         "f88585de-aff8-469a-ac11-76f0735e5928",
         "e531610e-4435-401a-97f4-28f5ed6b98ba",
@@ -2835,7 +2873,10 @@
         "83d9cc5b-bc2d-483b-ab6f-a24783413926",
         "adae682b-899d-4488-81dc-715c5aaa54a7",
         "c70612fd-ebc8-477f-b317-3d92d9502401",
-        "0ecfa929-9fb0-4e6f-ad87-48ebcddad7a4"
+        "0ecfa929-9fb0-4e6f-ad87-48ebcddad7a4",
+        "d67d4b50-020d-457f-bace-d9347d177de9",
+        "bf150a5b-b5bd-452f-bc43-96075504a074",
+        "007529b3-5702-4808-bef7-eb903e01967a"
     ],
     "tutorial": ""
 }

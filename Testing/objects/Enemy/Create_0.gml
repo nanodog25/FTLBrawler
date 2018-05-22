@@ -1,4 +1,5 @@
 st_none = "";
+st_stunned = "stunned";
 st_waiting = "waiting";
 st_retreat = "retreat";
 st_moveToCover = "moveToCover";
