@@ -1,1 +1,1 @@
-DeactivateItem(_item);
+DeactivateItem(global.ItemShield);

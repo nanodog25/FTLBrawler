@@ -1,10 +1,10 @@
-global.LobActive = ds_list_create();
+global.LobAll = ds_list_create();
 global.LobAvailable = ds_list_create();
-global.LobCost = ds_list_create();
+global.LobActive = ds_list_create();
 
-global.LinearActive = ds_list_create();
+global.LinearAll = ds_list_create();
 global.LinearAvailable = ds_list_create();
-global.LinearCost = ds_list_create();
+global.LinearActive = ds_list_create();
 
 global.LobSplit = "Split";
 global.LobSlowSplash = "Slow Splash";
@@ -23,19 +23,37 @@ global.LinearTravelSpeed = "Travel Speed";
 global.LinearStunRounds = "Stun Rounds";
 global.LinearPiercing = "Piercing";
 
-AddLob(global.LobSplit, 3);
-AddLob(global.LobSlowSplash, 5);
-AddLob(global.LobQuantumTunneling, 2);
-AddLob(global.LobWall, 3);
-AddLob(global.LobRoll, 2);
-AddLob(global.LobSightMount, 1);
-AddLob(global.LobExplosive, 3);
+ds_list_add(global.LobAll, global.LobSplit);
+ds_list_add(global.LobAll, global.LobSlowSplash);
+ds_list_add(global.LobAll, global.LobQuantumTunneling);
+ds_list_add(global.LobAll, global.LobWall);
+ds_list_add(global.LobAll, global.LobRoll);
+ds_list_add(global.LobAll, global.LobSightMount);
+ds_list_add(global.LobAll, global.LobExplosive);
 
-AddLinear(global.LinearShrapnel, 1);
-AddLinear(global.LinearCrawler, 4);
-AddLinear(global.LinearOneShotRocket, 4);
-AddLinear(global.LinearQuantumTunneling, 2);
-AddLinear(global.LinearExplosive, 3);
-AddLinear(global.LinearTravelSpeed, 2);
-AddLinear(global.LinearStunRounds, 2);
-AddLinear(global.LinearPiercing, 4);
+ds_list_add(global.LinearAll, global.LinearShrapnel);
+ds_list_add(global.LinearAll, global.LinearCrawler);
+ds_list_add(global.LinearAll, global.LinearOneShotRocket);
+ds_list_add(global.LinearAll, global.LinearQuantumTunneling);
+ds_list_add(global.LinearAll, global.LinearExplosive);
+ds_list_add(global.LinearAll, global.LinearTravelSpeed);
+ds_list_add(global.LinearAll, global.LinearStunRounds);
+ds_list_add(global.LinearAll, global.LinearPiercing);
+
+
+ds_list_add(global.LobAvailable, global.LobSplit);
+ds_list_add(global.LobAvailable, global.LobSlowSplash);
+ds_list_add(global.LobAvailable, global.LobQuantumTunneling);
+ds_list_add(global.LobAvailable, global.LobWall);
+ds_list_add(global.LobAvailable, global.LobRoll);
+ds_list_add(global.LobAvailable, global.LobSightMount);
+ds_list_add(global.LobAvailable, global.LobExplosive);
+
+ds_list_add(global.LinearAvailable, global.LinearShrapnel);
+ds_list_add(global.LinearAvailable, global.LinearCrawler);
+ds_list_add(global.LinearAvailable, global.LinearOneShotRocket);
+ds_list_add(global.LinearAvailable, global.LinearQuantumTunneling);
+ds_list_add(global.LinearAvailable, global.LinearExplosive);
+ds_list_add(global.LinearAvailable, global.LinearTravelSpeed);
+ds_list_add(global.LinearAvailable, global.LinearStunRounds);
+ds_list_add(global.LinearAvailable, global.LinearPiercing);

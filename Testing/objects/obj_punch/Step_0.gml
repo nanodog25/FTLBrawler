@@ -14,7 +14,7 @@ if (instList != noone)
 		if (_lane == inst._lane && inst != _origin)
 		{
 			with (inst)
-				event_user("onHit");
+				event_user(0);
 		}
 	}
 	instList = noone;	

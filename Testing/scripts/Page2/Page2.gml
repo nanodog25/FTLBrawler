@@ -51,6 +51,7 @@ else if (_page2Index < 0)
 	
 selectedItem = selectedSection[| _page2Index];
 selectedItem._isHighlighted = true;
+SetDescription(selectedItem);
 
 if (keyboard_check_pressed(global.KeySelect))
 {
@@ -58,23 +59,23 @@ if (keyboard_check_pressed(global.KeySelect))
 	
 	if (isActive)
 	{
-		if (_page2Section == 0 && global.playerWeaponPoints >= selectedItem._cost)
+		if (_page2Section == 0 && global.playerWeaponPoints >= selectedItem._obj._cost)
 		{
 			ds_list_add(global.LobActive, selectedItem._text);
 			selectedItem._isActive = isActive;
-			global.playerWeaponPoints -= selectedItem._cost;
+			global.playerWeaponPoints -= selectedItem._obj._cost;
 		}
-		else if (_page2Section == 1 && global.playerWeaponPoints >= selectedItem._cost)
+		else if (_page2Section == 1 && global.playerWeaponPoints >= selectedItem._obj._cost)
 		{
 			ds_list_add(global.LinearActive, selectedItem._text);
 			selectedItem._isActive = isActive;
-			global.playerWeaponPoints -= selectedItem._cost;
+			global.playerWeaponPoints -= selectedItem._obj._cost;
 		}
-		else if (_page2Section == 2 && global.playerAttackPoints >= selectedItem._cost)
+		else if (_page2Section == 2 && global.playerAttackPoints >= selectedItem._obj._cost)
 		{
 			ds_list_add(global.AttacksActive, selectedItem._text);
 			selectedItem._isActive = isActive;
-			global.playerAttackPoints -= selectedItem._cost;
+			global.playerAttackPoints -= selectedItem._obj._cost;
 		}
 	}
 	else
@@ -83,19 +84,19 @@ if (keyboard_check_pressed(global.KeySelect))
 		{
 			ds_list_delete(global.LobActive, ds_list_find_index(global.LobActive, selectedItem._text));
 			selectedItem._isActive = isActive;
-			global.playerWeaponPoints += selectedItem._cost;
+			global.playerWeaponPoints += selectedItem._obj._cost;
 		}
 		else if (_page2Section == 1)
 		{
 			ds_list_delete(global.LinearActive, ds_list_find_index(global.LinearActive, selectedItem._text));
 			selectedItem._isActive = isActive;
-			global.playerWeaponPoints += selectedItem._cost;
+			global.playerWeaponPoints += selectedItem._obj._cost;
 		}
 		else
 		{
 			ds_list_delete(global.AttacksActive, ds_list_find_index(global.AttacksActive, selectedItem._text));
 			selectedItem._isActive = isActive;
-			global.playerAttackPoints += selectedItem._cost;
+			global.playerAttackPoints += selectedItem._obj._cost;
 		}
 	}
 }

@@ -3,6 +3,7 @@ global.ItemsActive = ds_list_create();
 global.ItemsUsed = ds_list_create();
 global.ItemsAvailable = ds_list_create();
 global.ItemsReserved = ds_list_create();
+
 global.ItemNone = "";
 global.ItemShield = "Shield";
 global.ItemSlowShot = "Slow Shot";
@@ -12,6 +13,7 @@ global.ItemLaunchShot = "Launch Shot";
 global.ItemStunTrap = "Stun Trap";
 global.ItemDownConveyor = "Down Conveyor";
 global.ItemUpConveyor = "Up Conveyor";
+
 
 ds_list_add(global.ItemsAvailable, global.ItemShield);
 ds_list_add(global.ItemsAvailable, global.ItemSlowShot);

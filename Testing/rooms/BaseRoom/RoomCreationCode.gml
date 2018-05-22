@@ -16,9 +16,9 @@ global.playerMaxJumpHeight = 180;
 global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 global.playerMelee = false;
-global.playerAbilityPoints = 3;
-global.playerWeaponPoints = 3;
-global.playerAttackPoints = 3;
+global.playerAbilityPoints = 10;
+global.playerWeaponPoints = 10;
+global.playerAttackPoints = 10;
 
 global.laneCrossing = false;
 global.isVertical = false;

@@ -1,1 +1,2 @@
-/// @description getDescription
+/// @description setDescription
+	global.MenuDescription = "pow";

@@ -9,7 +9,7 @@ if (instList != noone)
 		{
 			with (inst)
 			{
-				event_user("onHit");
+				event_user(0);
 			}
 			if !(_isIgnoringCover || _isPiercing && inst._isDestructible)
 				_destroySelf = true;

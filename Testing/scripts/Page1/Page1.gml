@@ -24,6 +24,7 @@ if (_editingAbilities)
 	
 	var ability = _abilityListObjects[| _abilityListIndex];
 	ability._isHighlighted = true;
+	SetDescription(ability);
 	
 	if (keyboard_check_pressed(global.KeySelect))
 	{
@@ -31,18 +32,18 @@ if (_editingAbilities)
 		
 		if (isActive)
 		{
-			if (global.playerAbilityPoints >= ability._cost)
+			if (global.playerAbilityPoints >= ability._obj._cost)
 			{
 				ds_list_add(global.AbilitiesActive, ability._text);
 				ability._isActive = isActive;
-				global.playerAbilityPoints -= ability._cost;
+				global.playerAbilityPoints -= ability._obj._cost;
 			}
 		}
 		else
 		{
 			ds_list_delete(global.AbilitiesActive, ds_list_find_index(global.AbilitiesActive, ability._text));
 			ability._isActive = isActive;
-			global.playerAbilityPoints += ability._cost;
+			global.playerAbilityPoints += ability._obj._cost;
 		}
 	}
 	
@@ -68,19 +69,21 @@ else if (_changingSelection)
 		_itemListIndex =  ds_list_size(_itemListObjects) - 1;
 	
 	_itemListObjects[| _itemListIndex]._isHighlighted = true;
-	
-	
+	SetDescription(_itemListObjects[| _itemListIndex]);
+
 	if (keyboard_check_pressed(global.KeySelect))
 	{
 		_itemListObjects[| _itemListIndex]._isHighlighted = false;
-		var newReserve = selectedItem._item;
-		var newAvailable = _itemListObjects[| _itemListIndex]._item;
+		var tempObj = selectedItem._obj;
+		var tempText = selectedItem._text;
+
+		var newAvailable = _itemListObjects[| _itemListIndex];
 		
-		selectedItem._item = newAvailable;
-		_itemListObjects[| _itemListIndex]._item = newReserve;
+		selectedItem._obj = newAvailable._obj;
+		_itemListObjects[| _itemListIndex]._obj = tempObj;
 		
-		global.ItemsAvailable[| ds_list_find_index(global.ItemsAvailable, newReserve)] = newAvailable;
-		global.ItemsReserved[| ds_list_find_index(global.ItemsReserved, newAvailable)] = newReserve;
+		global.ItemsAvailable[| ds_list_find_index(global.ItemsAvailable, tempText)] = newAvailable._text;
+		global.ItemsReserved[| ds_list_find_index(global.ItemsReserved, newAvailable._text)] = tempText;
 
 		_changingSelection = false;
 	}
@@ -105,6 +108,9 @@ else
 		else
 			selectedItem = _item4;
 	}
+	
+	if (selectedItem != noone)
+		SetDescription(selectedItem);
 	
 	if (selectedItem != noone && keyboard_check_pressed(global.KeySelect))
 	{

@@ -1,4 +1,4 @@
 ///@arg obj
 
 with(argument0)
-	event_user("onActivate");
+	event_user(0);

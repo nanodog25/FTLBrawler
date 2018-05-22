@@ -2,4 +2,4 @@
 _shots--;
 
 if (_shots <= 0)
-	DeactivateItem(_item);
+	DeactivateItem(global.ItemSlowShot);
