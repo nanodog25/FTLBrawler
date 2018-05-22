@@ -1,6 +1,6 @@
 global.playerX = x;
 global.playerY = y;
-global.playerCurrentGroundY = _currentGroundY;
+global.playerTargetGroundY = _targetGroundY;
 global.playerLane = _lane;
 
 _speed = global.playerSpeed;

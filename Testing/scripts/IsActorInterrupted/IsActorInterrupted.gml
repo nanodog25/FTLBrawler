@@ -33,4 +33,9 @@ else if (_currentHP <= 0)
 		
 	return true;
 }
+else if (_isStunned)
+{
+	_xSpeed = 0;
+	return true;
+}
 return false;

@@ -14,8 +14,11 @@ if (_state != _nextState)
 	_stateTimer = 0;
 }
 
-if (_state == st_stunned)
+if (_isStunned)
 {
 	if (stb_isHit || _stateTimer > _stunDuration)
+	{
+		_isStunned = false;
 		_nextState = st_waiting;
+	}
 }
