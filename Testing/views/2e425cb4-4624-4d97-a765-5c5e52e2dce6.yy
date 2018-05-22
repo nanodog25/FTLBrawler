@@ -7,7 +7,9 @@
         "0ecfa929-9fb0-4e6f-ad87-48ebcddad7a4",
         "d67d4b50-020d-457f-bace-d9347d177de9",
         "bf150a5b-b5bd-452f-bc43-96075504a074",
-        "007529b3-5702-4808-bef7-eb903e01967a"
+        "007529b3-5702-4808-bef7-eb903e01967a",
+        "8aa86cce-aac7-4d17-b62e-b9cdcfc28444",
+        "81c15d13-3b0a-42be-bc86-c8294d5ada4e"
     ],
     "filterType": "GMScript",
     "folderName": "Items",

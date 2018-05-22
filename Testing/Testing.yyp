@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "15777b10-2e02-4d23-be0c-40b250f62d0e",
+            "Value": {
+                "id": "a9b53b49-357f-44c9-a0d8-4377458315ab",
+                "resourcePath": "sprites\\sprite53\\sprite53.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "159f65c6-5ae3-4dcf-bd65-15bef156efa0",
             "Value": {
                 "id": "927fcd16-b22b-46e7-822b-e23852b692b1",
@@ -468,6 +476,14 @@
                 "id": "a8a2950a-f09b-4aa6-8086-c4426c65ff09",
                 "resourcePath": "scripts\\MoveHorizontally\\MoveHorizontally.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2c5949ef-f872-4c89-9eb2-478b2ee737ab",
+            "Value": {
+                "id": "90219dfa-6670-41ba-9678-22ef0724eb38",
+                "resourcePath": "objects\\obj_effect_downConveyor\\obj_effect_downConveyor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1295,6 +1311,14 @@
             }
         },
         {
+            "Key": "76be2bbf-1f6c-4aea-8930-477ee1312729",
+            "Value": {
+                "id": "f2e21eb6-ace3-4b14-9f1c-436fe018ae27",
+                "resourcePath": "sprites\\sprite52\\sprite52.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "78321030-2883-47b3-b345-9a24d885f6aa",
             "Value": {
                 "id": "90c74118-c587-4bef-8966-3f7dd66a50f8",
@@ -1415,6 +1439,14 @@
             }
         },
         {
+            "Key": "81c15d13-3b0a-42be-bc86-c8294d5ada4e",
+            "Value": {
+                "id": "285b835e-c449-4195-8903-a48033923907",
+                "resourcePath": "scripts\\CreateUpConveyor\\CreateUpConveyor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8247c45b-ac10-4e98-bbb4-6e98f653b8a4",
             "Value": {
                 "id": "ae6d3583-31da-488c-883e-95e2dec57241",
@@ -1516,6 +1548,14 @@
                 "id": "d303526d-22df-4e81-9db3-873a8e39826a",
                 "resourcePath": "objects\\MetalBarrier\\MetalBarrier.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8aa86cce-aac7-4d17-b62e-b9cdcfc28444",
+            "Value": {
+                "id": "5ae9c06a-2fcb-47e7-a5b4-aaad7021fb43",
+                "resourcePath": "scripts\\CreateDownConveyor\\CreateDownConveyor.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2247,6 +2287,14 @@
             }
         },
         {
+            "Key": "cf9fcf53-8f4a-43cc-a0bc-8f4db5651a0c",
+            "Value": {
+                "id": "50363564-7426-45ea-ac62-4cb77296553b",
+                "resourcePath": "objects\\obj_effect_upConveyor\\obj_effect_upConveyor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d02d191e-f595-489f-b6a8-8ad440b40562",
             "Value": {
                 "id": "c21b221a-71e9-4168-8053-8e781364a808",
@@ -2876,7 +2924,9 @@
         "0ecfa929-9fb0-4e6f-ad87-48ebcddad7a4",
         "d67d4b50-020d-457f-bace-d9347d177de9",
         "bf150a5b-b5bd-452f-bc43-96075504a074",
-        "007529b3-5702-4808-bef7-eb903e01967a"
+        "007529b3-5702-4808-bef7-eb903e01967a",
+        "8aa86cce-aac7-4d17-b62e-b9cdcfc28444",
+        "81c15d13-3b0a-42be-bc86-c8294d5ada4e"
     ],
     "tutorial": ""
 }

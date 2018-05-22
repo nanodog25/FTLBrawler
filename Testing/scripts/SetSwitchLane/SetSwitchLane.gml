@@ -4,6 +4,9 @@
 var isMovingUp = argument0;
 var isMovingDown = argument1;
 
+if (isMovingUp == isMovingDown)
+	return;
+
 var canSwitch = false;
 
 if (isMovingUp && _lane != 0 && !IsSwitchCollision("up")) 

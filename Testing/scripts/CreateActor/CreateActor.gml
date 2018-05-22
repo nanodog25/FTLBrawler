@@ -12,6 +12,8 @@ _isLaunched = false;
 _sideCollision = false;
 _isMelee = false;
 _isStunned = false;
+_moveUp = false;
+_moveDown = false;
 
 _canFire = true;
 _onGround = true;

@@ -1,2 +1,3 @@
 _name = "Upward Push";
-_default = 3;
+_default = 0;
+_boosted = 20;
