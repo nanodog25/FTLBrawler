@@ -9,17 +9,17 @@ if (isMovingUp == isMovingDown)
 
 var canSwitch = false;
 
-if (isMovingUp && _lane != 0 && !IsSwitchCollision(_lane-1)) 
+if (isMovingUp && _lane == 0 && !IsSwitchCollision(4)) 
 { 
 	canSwitch = true;
-	_lane--;
-	_targetGroundY -= global.LaneWidth;
+	_lane=4;
+	_targetGroundY += global.LaneWidth*4;
 }
-else if (isMovingDown && _lane != 4 && !IsSwitchCollision(_lane+1)) 
+else if (isMovingDown && _lane == 4 && !IsSwitchCollision(0)) 
 { 
 	canSwitch = true;
-	_lane++;
-	_targetGroundY += global.LaneWidth;
+	_lane=0;
+	_targetGroundY -= global.LaneWidth*4;
 }
 
 if (canSwitch)

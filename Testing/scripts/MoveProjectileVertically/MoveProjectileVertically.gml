@@ -7,7 +7,7 @@ if (_state == "released")
 	if (abs(_yRelease - y) >= sprite_get_height(spr_proj_vertical))
 	{
 		mask_index = PlaceholderProjectile;
-		var col = IsSwitchCollision(_isUp ? "Up" : "Down");
+		var col = IsSwitchCollision(_isUp ? _lane-1 : _lane+1);
 		mask_index = spr_empty;
 		if (!col)
 		{

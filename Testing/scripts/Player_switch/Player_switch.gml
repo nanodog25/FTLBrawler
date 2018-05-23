@@ -7,4 +7,7 @@ if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !IsAbilityActiv
 		? keyboard_check(global.KeyDown)
 		: keyboard_check_pressed(global.KeyDown);		
 	SetSwitchLane(moveUp, moveDown);
+	
+	if (!_isSwitchingLane && IsAbilityActive(global.AbilityWrapSwitch))
+		SetSwitchLaneWrap(moveUp, moveDown);
 }

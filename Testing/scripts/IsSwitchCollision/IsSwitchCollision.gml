@@ -1,10 +1,6 @@
-/// @arg direction
+/// @arg targetLane
 
-var dir = argument0;
-
-var targetLane = dir == "up"
-	? _lane-1
-	: _lane+1;
+var targetLane = argument0;
 
 var objName = "LaneObject" + string(targetLane);
 var col = IsCollision(self, x, y, targetLane, objName, false);
