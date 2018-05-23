@@ -1,2 +1,2 @@
 /// @description setDescription
-	global.MenuDescription = "hop";
+global.MenuDescription = "Hop on projectiles/nHold jump as you land";
