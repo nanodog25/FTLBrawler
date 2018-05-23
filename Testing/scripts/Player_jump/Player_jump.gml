@@ -7,7 +7,7 @@ if (!_isJumping && !_isFalling)
 		SetJumping();
 	}
 }
-else if (IsAbilityActive(global.AbilityBulletHopping) && keyboard_check(global.KeyJump))
+else if (_isFalling && IsAbilityActive(global.AbilityBulletHopping))
 {
 	var projs = collision_rectangle_list(bbox_left, bbox_bottom, bbox_right, bbox_bottom+10, obj_proj_StandardProjectile, true, false, noone);
 	if (projs != noone)
@@ -17,6 +17,8 @@ else if (IsAbilityActive(global.AbilityBulletHopping) && keyboard_check(global.K
 			if (projs[| i]._lane == _lane)
 			{
 				SetJumping();
+				_yAcc = 0;
+				_isBulletHopping = true;
 				break;
 			}
 		}

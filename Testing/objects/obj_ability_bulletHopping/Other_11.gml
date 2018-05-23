@@ -1,2 +1,2 @@
 /// @description setDescription
-global.MenuDescription = "Hop on projectiles/nHold jump as you land";
+global.MenuDescription = "Land on top of a projectile\nto get a vertical boost";

@@ -30,7 +30,7 @@ if (!IsActorInterrupted())
 	ActorStaticAnimation();
 }
 
-if ((_moveUp || _moveDown) && !_isSwitchingLane && _canEverSwitchLane && _canSwitchLane  && !IsItemActive(global.ItemLaneBarrier))
+if ((_moveUp || _moveDown) && !_isSwitchingLane && !_isWormholeCooldown && _canEverSwitchLane && _canSwitchLane  && !IsItemActive(global.ItemLaneBarrier))
 {
 	SetSwitchLane(_moveUp, _moveDown);
 	Player_wraparound();
@@ -52,12 +52,13 @@ else if (_isSwitchingLane)
 
 if (_isJumping)
 {	
-	var jump = keyboard_check(global.KeyJump);
+	var jump = _isBulletHopping && _jumpHeight < _maxJumpHeight || keyboard_check(global.KeyJump);
 	_isFalling = false;
 	Jump(jump);
 }
 else if (_isFalling)
 {
+	_isBulletHopping = false;
 	Fall();
 }
 

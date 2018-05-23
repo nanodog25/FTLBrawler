@@ -1,4 +1,4 @@
-if (!_isSwitchingLane && _canEverSwitchLane && _canSwitchLane && !IsAbilityActive(global.AbilityItemBuff) && !IsItemActive(global.ItemLaneBarrier))
+if (!_isSwitchingLane && !_isWormholeCooldown && _canEverSwitchLane && _canSwitchLane && !IsAbilityActive(global.AbilityItemBuff) && !IsItemActive(global.ItemLaneBarrier))
 {
 	var moveUp = _isJumping || _isFalling
 		? keyboard_check(global.KeyUp)

@@ -6,3 +6,4 @@ with (_healthBar)
 }
 
 _isWormholeCooldown = false;
+_isBulletHopping = false;

@@ -5,22 +5,29 @@ if (instList != noone)
 	for(var i = 0; i < ds_list_size(instList); i++)
 	{
 		var inst = instList[| i];
-		if (inst != _origin && (!_ignoreProjectiles || asset_get_index(inst) == obj_proj_Projectile) && _lane == inst._lane)
+		
+		if (_origin != global.playerInstance && inst.object_index == obj_punch && _lane == inst._lane)
 		{
-			if (asset_get_index(inst) == obj_punch)
+			if (_speedMod < 1 || IsAbilityActive(global.AbilityKevlarGloves))
 			{
-				if (_speedMod < 1 || IsAbilityActive(global.AbilityKevlarGloves))
-				{
-					_direction = -_direction;
-					image_xscale = _direction;
-					_yRelease = _colY;
-					_xRelease = _colX;
-					_travelSpeed *= 2;
-					_isPiercing = true;
-					break;
-				}
+				_origin = global.playerInstance;
+				_direction = -_direction;
+				image_xscale = _direction;
+				_yRelease = _colY;
+				_xRelease = _colX;
+				_travelSpeed *= 2;
+				_isPiercing = true;
+				return;
 			}
-			
+		}
+	}
+	
+	for(var i = 0; i < ds_list_size(instList); i++)
+	{
+		var inst = instList[| i];
+		
+		if (inst != _origin && (!_ignoreProjectiles || object_is_ancestor(inst.object_index, obj_proj_Projectile)) && _lane == inst._lane)
+		{
 			with (inst)
 			{
 				event_user(0);
