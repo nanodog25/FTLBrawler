@@ -8,14 +8,29 @@ if (keyboard_check_pressed(global.KeyChangeMode))
 	global.playerMelee = !global.playerMelee;
 }
 
-if (keyboard_check_pressed(global.KeyMinus) && room_exists(room_previous(room)) && room_previous(room) != Menu && room_previous(room) != ItemSelect && room_previous(room) != ItemSwap)
+if (keyboard_check_pressed(global.KeyMinus))
 {
+	var currentIndex = room - 1;
+	while (!room_exists(currentIndex) || ds_list_find_index(_roomsOutOfBounds, currentIndex) != -1)
+	{
+		if (currentIndex < room_first)
+			currentIndex = room_last;
+		else
+			currentIndex--;
+	}
 	EndFight();
-	room_goto_previous();
+	room_goto(currentIndex);
 }
-
-if (keyboard_check_pressed(global.KeyPlus) && room_exists(room_next(room)) && room_next(room) != Menu && room_next(room) != ItemSelect && room_next(room) != ItemSwap)
+else if (keyboard_check_pressed(global.KeyPlus))
 {
+	var currentIndex = room + 1;
+	while (!room_exists(currentIndex) || ds_list_find_index(_roomsOutOfBounds, currentIndex) != -1)
+	{
+		if (currentIndex > room_last)
+			currentIndex = room_first;
+		else
+			currentIndex++;
+	}
 	EndFight();
-	room_goto_next();
+	room_goto(currentIndex);
 }

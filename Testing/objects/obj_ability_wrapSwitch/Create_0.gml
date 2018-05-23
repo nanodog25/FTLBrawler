@@ -1,2 +1,2 @@
 _name = "Wraparound";
-_cost = 2;
+_cost = 5;

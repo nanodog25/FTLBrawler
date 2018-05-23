@@ -1,2 +1,2 @@
 /// @description setDescription
-	global.MenuDescription = "whuh";
+global.MenuDescription = "You can circumnavigate the vertical axis";
