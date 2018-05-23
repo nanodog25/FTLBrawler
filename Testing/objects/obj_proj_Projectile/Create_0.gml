@@ -23,3 +23,4 @@ _reachesGround = false;
 _isLob = false;
 _hasSlowAura = false;
 _hasSpeedAura = false;
+_isLaneOverwrite = false;

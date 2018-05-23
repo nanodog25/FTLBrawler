@@ -8,6 +8,7 @@ if (isMovingUp == isMovingDown)
 	return;
 
 var canSwitch = false;
+_previousLane = _lane;
 
 if (isMovingUp && _lane == 0 && !IsSwitchCollision(4)) 
 { 
