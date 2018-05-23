@@ -1,2 +1,2 @@
 /// @description setDescription
-	global.MenuDescription = "move";
+global.MenuDescription = "Doubles your movement speed";

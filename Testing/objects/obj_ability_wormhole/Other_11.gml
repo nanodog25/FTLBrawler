@@ -1,2 +1,2 @@
 /// @description setDescription
-	global.MenuDescription = "hole";
+global.MenuDescription = "Instant switching";

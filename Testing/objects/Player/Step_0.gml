@@ -34,7 +34,7 @@ if ((_moveUp || _moveDown) && !_isSwitchingLane && _canEverSwitchLane && _canSwi
 {
 	SetSwitchLane(_moveUp, _moveDown);
 	
-	if (!_isSwitchingLane && IsAbilityActive(global.AbilityWrapSwitch))
+	if (!_isSwitchingLane && !_isWormholeCooldown && IsAbilityActive(global.AbilityWrapSwitch))
 		SetSwitchLaneWrap(_moveUp, _moveDown);
 		
 	_moveUp = false;
@@ -43,7 +43,17 @@ if ((_moveUp || _moveDown) && !_isSwitchingLane && _canEverSwitchLane && _canSwi
 
 if (_isSwitchingLane)
 {
-	SwitchLane();
+	if (IsAbilityActive(global.AbilityWormhole))
+	{
+		_ySwitch = _targetGroundY - _currentGroundY;
+		_isSwitchingLane = false;
+		_isWormholeCooldown = true;
+		alarm_set(4, InSeconds(0.2));
+	}
+	else
+	{
+		SwitchLane();
+	}
 }
 
 if (_isJumping)
