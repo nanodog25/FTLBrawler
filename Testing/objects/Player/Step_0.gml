@@ -33,27 +33,21 @@ if (!IsActorInterrupted())
 if ((_moveUp || _moveDown) && !_isSwitchingLane && _canEverSwitchLane && _canSwitchLane  && !IsItemActive(global.ItemLaneBarrier))
 {
 	SetSwitchLane(_moveUp, _moveDown);
-	
-	if (!_isSwitchingLane && !_isWormholeCooldown && IsAbilityActive(global.AbilityWrapSwitch))
-		SetSwitchLaneWrap(_moveUp, _moveDown);
-		
+	Player_wraparound();
 	_moveUp = false;
 	_moveDown = false;
 }
 
-if (_isSwitchingLane)
+if (_isWormholeCooldown && !_isHit && IsAbilityActive(global.AbilityTelefrag))
+{
+	Player_telefrag();
+}
+else if (_isSwitchingLane)
 {
 	if (IsAbilityActive(global.AbilityWormhole))
-	{
-		_ySwitch = _targetGroundY - _currentGroundY;
-		_isSwitchingLane = false;
-		_isWormholeCooldown = true;
-		alarm_set(4, InSeconds(0.2));
-	}
+		Player_wormhole();
 	else
-	{
 		SwitchLane();
-	}
 }
 
 if (_isJumping)
