@@ -27,7 +27,7 @@ wall._heightTop = GetRelativeHeight(min(startY, _traceY), obj._lane);
 wall._obj = obj.id;
 wall._lane = obj._lane;
 
-if (collision_point(_traceX+1, _traceY-1, obj, true, false))
+if (collision_point(_traceX+1, min(_traceY, startY)+1, obj, true, false))
 	ds_list_add(global.LaneWallsLeft[| obj._lane], wall);
 else
 	ds_list_add(global.LaneWallsRight[| obj._lane], wall);

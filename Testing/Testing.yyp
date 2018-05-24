@@ -1511,14 +1511,6 @@
             }
         },
         {
-            "Key": "80b30efc-78b4-4c25-aa5a-afefdb2bd73c",
-            "Value": {
-                "id": "7c93a02a-5d7e-4a65-a45a-03c03e3cb9a0",
-                "resourcePath": "scripts\\SetNearestCover\\SetNearestCover.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "80f36ac0-b75f-4a3f-8134-0d18b2eb70d7",
             "Value": {
                 "id": "6b10060f-f268-44e3-aa93-5d31cfe49b30",
@@ -2578,7 +2570,7 @@
             "Key": "d8966ec3-bfb9-4fa1-9906-8ee8d403afdd",
             "Value": {
                 "id": "5ae1fbc2-9871-404a-b06a-5bfa0124918c",
-                "resourcePath": "scripts\\SetNearestCover1\\SetNearestCover1.yy",
+                "resourcePath": "scripts\\SetNearestCover\\SetNearestCover.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3075,7 +3067,6 @@
         "28422c41-3e4e-4017-934c-aca69220184f",
         "e5a0069d-0074-4112-b8f4-3aae1693739c",
         "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",
-        "80b30efc-78b4-4c25-aa5a-afefdb2bd73c",
         "d8966ec3-bfb9-4fa1-9906-8ee8d403afdd",
         "9e0c7b4a-521c-421d-9f70-2364fe2b04de",
         "3f612d70-e63b-4923-85f4-74e82381bda2",
