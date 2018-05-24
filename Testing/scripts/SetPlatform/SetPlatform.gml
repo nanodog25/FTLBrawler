@@ -21,10 +21,11 @@ else
 }
 
 var platform = instance_create_layer(0,0,"Perimeters", PlatformStruct);
-platform._y = _traceY;
+platform._height = GetRelativeHeight(_traceY, obj._lane);
 platform._xLeft = min(startX, _traceX);
 platform._xRight = max(startX, _traceX);
 platform._obj = obj.id;
+platform._lane = obj._lane;
 
-if (collision_point(platform._xLeft+1, platform._y+1, obj, true, false))
+if (collision_point(platform._xLeft+1, _traceY+1, obj, true, false))
 	ds_list_add(global.LanePlatforms[| obj._lane], platform);

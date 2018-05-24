@@ -22,11 +22,12 @@ else
 
 var wall = instance_create_layer(0,0,"Perimeters", WallStruct);
 wall._x = _traceX;
-wall._yBase = max(startY, _traceY);
-wall._yTop = min(startY, _traceY);
+wall._heightBase = GetRelativeHeight(max(startY, _traceY), obj._lane);
+wall._heightTop = GetRelativeHeight(min(startY, _traceY), obj._lane);
 wall._obj = obj.id;
+wall._lane = obj._lane;
 
-if (collision_point(wall._x+1, wall._yBase-1, obj, true, false))
+if (collision_point(_traceX+1, _traceY-1, obj, true, false))
 	ds_list_add(global.LaneWallsLeft[| obj._lane], wall);
 else
 	ds_list_add(global.LaneWallsRight[| obj._lane], wall);

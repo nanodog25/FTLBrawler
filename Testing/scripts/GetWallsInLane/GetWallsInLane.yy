@@ -1,8 +1,8 @@
 {
-    "id": "a2de26b6-037e-431b-9890-6b0a5a40a9e6",
+    "id": "44558703-4ec4-4c8c-a0bd-28c0165fc3db",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetPlatform",
+    "name": "GetWallsInLane",
     "IsCompatibility": false,
     "IsDnD": false
 }

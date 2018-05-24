@@ -1,1 +1,1 @@
-return abs(global.playerX - x) < 64 || ai_coverObj == noone;
+return abs(global.playerX - x) < 128 || ai_coverObj == noone;

@@ -15,7 +15,7 @@ if (abs(ai_moveX - x) < global.collisionBuffer)
 }
 else
 {
-	if (_sideCollision)
+	if (_sideCollision || IsNearPlayer())
 		ai_jump = true;
 	
 	_direction = ai_moveX > x ? 1 : -1;

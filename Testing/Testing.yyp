@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "0fe4f2bd-d925-4019-b232-90c914a5a4e9",
+            "Value": {
+                "id": "c40bd2db-d5f6-4e18-8253-7df54d42fbe5",
+                "resourcePath": "objects\\obj_floor\\obj_floor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "112fd8b4-a244-494c-aa85-1088edb6269c",
             "Value": {
                 "id": "5aea2828-d37c-4b65-a2fb-c45ab726addd",
@@ -735,6 +743,14 @@
             }
         },
         {
+            "Key": "3ef703f6-0cf6-4af6-8865-27d8799890e3",
+            "Value": {
+                "id": "fef080d6-9a32-42d0-83a7-19431cbeea04",
+                "resourcePath": "scripts\\GetNearestWall\\GetNearestWall.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f612d70-e63b-4923-85f4-74e82381bda2",
             "Value": {
                 "id": "2757db7f-3731-4e24-a0ca-94122ebb0af0",
@@ -796,6 +812,14 @@
                 "id": "e9fc203c-5377-4681-993b-f527504c7c59",
                 "resourcePath": "sprites\\spr_proj_vertical\\spr_proj_vertical.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "44558703-4ec4-4c8c-a0bd-28c0165fc3db",
+            "Value": {
+                "id": "17bf4faf-3412-4f7a-b6a2-61cc2b8a1f3c",
+                "resourcePath": "scripts\\GetWallsInLane\\GetWallsInLane.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1250,7 +1274,7 @@
             "Key": "6d8383b1-0bc7-4ada-9510-f09c4f9cecc8",
             "Value": {
                 "id": "f5c9ebbc-3ec4-4e45-8177-a6232be0f754",
-                "resourcePath": "scripts\\GetWall\\GetWall.yy",
+                "resourcePath": "scripts\\SetWall\\SetWall.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1420,6 +1444,14 @@
                 "id": "2232880c-ee79-4768-bbd2-f92719812b2c",
                 "resourcePath": "views\\79f93cd3-5641-4257-b398-48a22d0233a5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7a7f4f0a-58f2-4676-93be-6ccb545b737b",
+            "Value": {
+                "id": "b8fae63a-26ef-4743-a148-c44f43421626",
+                "resourcePath": "scripts\\DoesWallMeetFloor\\DoesWallMeetFloor.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1970,7 +2002,7 @@
             "Key": "a2de26b6-037e-431b-9890-6b0a5a40a9e6",
             "Value": {
                 "id": "246114f7-dfa8-4872-ac9a-e2e36a545ba1",
-                "resourcePath": "scripts\\GetPlatform\\GetPlatform.yy",
+                "resourcePath": "scripts\\SetPlatform\\SetPlatform.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2227,6 +2259,14 @@
             "Value": {
                 "id": "64403a64-fb67-49cb-aac3-1f2b3c8a8069",
                 "resourcePath": "scripts\\CreateSpeedAura\\CreateSpeedAura.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c0741404-02ff-47bd-8cde-266d99600859",
+            "Value": {
+                "id": "585efe1e-40f0-479c-a7c3-fe2af2715de1",
+                "resourcePath": "scripts\\DoesFloorHaveEdge\\DoesFloorHaveEdge.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2532,6 +2572,14 @@
                 "id": "5bdacfcc-3da9-4fcb-a112-dccf2ab774d9",
                 "resourcePath": "objects\\obj_linear_travelSpeed\\obj_linear_travelSpeed.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d8966ec3-bfb9-4fa1-9906-8ee8d403afdd",
+            "Value": {
+                "id": "5ae1fbc2-9871-404a-b06a-5bfa0124918c",
+                "resourcePath": "scripts\\SetNearestCover1\\SetNearestCover1.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2957,6 +3005,14 @@
                 "resourcePath": "scripts\\DestructibleStepCheck\\DestructibleStepCheck.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "ff403254-f06e-4820-bd99-4151a893d08b",
+            "Value": {
+                "id": "560c38f0-e4a9-4af6-b4a7-9915bb3dfb0a",
+                "resourcePath": "scripts\\IsNearPlayer\\IsNearPlayer.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -3020,6 +3076,7 @@
         "e5a0069d-0074-4112-b8f4-3aae1693739c",
         "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",
         "80b30efc-78b4-4c25-aa5a-afefdb2bd73c",
+        "d8966ec3-bfb9-4fa1-9906-8ee8d403afdd",
         "9e0c7b4a-521c-421d-9f70-2364fe2b04de",
         "3f612d70-e63b-4923-85f4-74e82381bda2",
         "51f0b33a-d5c8-4093-8548-9c38cef40d4c",
@@ -3028,6 +3085,8 @@
         "ccd014ae-e4b4-4acb-b6a2-b72696ed6ecf",
         "8421c991-59f1-4c64-a562-7d224ef0c943",
         "469440ba-171d-4a15-98a1-831ef95e4942",
+        "ff403254-f06e-4820-bd99-4151a893d08b",
+        "3ef703f6-0cf6-4af6-8865-27d8799890e3",
         "5213a66f-9b7f-4085-b920-0349b1abaebe",
         "f7ce8fb7-e5ee-4f9e-9e56-ae3b3b0db35f",
         "4c9d4bb5-c1a2-4eee-8d97-776ec06b2927",
@@ -3036,6 +3095,9 @@
         "35f09d23-9bfb-45cc-90a2-4c4ce5435118",
         "6d8383b1-0bc7-4ada-9510-f09c4f9cecc8",
         "a2de26b6-037e-431b-9890-6b0a5a40a9e6",
+        "44558703-4ec4-4c8c-a0bd-28c0165fc3db",
+        "7a7f4f0a-58f2-4676-93be-6ccb545b737b",
+        "c0741404-02ff-47bd-8cde-266d99600859",
         "ff028f50-63ce-4217-b0fd-3d9bdb1adfd3",
         "9fae77fa-c1ae-4b51-812a-7eaf846e7117",
         "6e072a7e-104e-4764-b011-40d3fc9571c6",

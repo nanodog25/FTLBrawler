@@ -1,8 +1,8 @@
 {
-    "id": "6d8383b1-0bc7-4ada-9510-f09c4f9cecc8",
+    "id": "c0741404-02ff-47bd-8cde-266d99600859",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetWall",
+    "name": "DoesFloorHaveEdge",
     "IsCompatibility": false,
     "IsDnD": false
 }
