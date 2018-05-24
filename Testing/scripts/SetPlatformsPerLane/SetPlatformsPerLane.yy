@@ -1,8 +1,8 @@
 {
-    "id": "3eea8f84-2a71-4724-a48d-6674fcde67f8",
+    "id": "d2bfd4f8-9482-43f0-8665-07938fddec16",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetObjectsInView",
+    "name": "SetPlatformsPerLane",
     "IsCompatibility": false,
     "IsDnD": false
 }

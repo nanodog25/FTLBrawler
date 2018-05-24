@@ -6,7 +6,8 @@ if (!global.isFightInitiated)
 		camera_set_view_pos(view_camera[0], x, 0);
 		camera_set_view_target(view_camera[0], noone);
 		_camY = camera_get_view_y(view_camera[0]);
-		GetObjectsInView();
+		SetObjectsInView();
+		SetPlatformsPerLane();
 	}
 }
 else

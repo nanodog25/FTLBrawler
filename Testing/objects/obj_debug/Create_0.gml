@@ -7,3 +7,5 @@ ds_list_add(_roomsOutOfBounds, rm_street);
 ds_list_add(_roomsOutOfBounds, Menu);
 ds_list_add(_roomsOutOfBounds, ItemSelect);
 ds_list_add(_roomsOutOfBounds, ItemSwap);
+
+_loadedObjects = instance_find(obj_trigger_fight, 0) != noone;
