@@ -22,8 +22,8 @@ else
 
 var wall = instance_create_layer(0,0,"Perimeters", WallStruct);
 wall._x = _traceX;
-wall._heightBase = GetRelativeHeight(max(startY, _traceY), obj._lane);
-wall._heightTop = GetRelativeHeight(min(startY, _traceY), obj._lane);
+wall._yBase = max(startY, _traceY);
+wall._yTop = min(startY, _traceY);
 wall._obj = obj.id;
 wall._lane = obj._lane;
 

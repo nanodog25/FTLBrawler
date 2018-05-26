@@ -13,6 +13,7 @@
 //As soon as you've switched, you can't be hit by anything in that lane
 //Any fight can be replayed for points once you've completed a stage
 //Progress is saved after each fight and you can always change your loadout - experimentation is encouraged!
+//You don't have to earn any upgrades, but they help a lot in later stages
 
 
 //Getting around in a world that's split into 5 coloured lanes is hard, but we manage

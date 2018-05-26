@@ -21,7 +21,7 @@ for (var i=0; i<5; i++)
 		var goodCover = areRightWalls
 			? wall._x > global.playerX + 128
 			: wall._x < global.playerX - 128;
-		if (instance_exists(wall._obj) && goodCover) //check that the wall meets the floor
+		if (instance_exists(wall._obj) && goodCover && GetAdjoiningFloor(wall) != noone)
 		{
 			var dist = abs(wall._x - x);
 			if (!IsCollision(self, wall._x + bbWidth, 0, i, "LaneObject" + string(i), false)

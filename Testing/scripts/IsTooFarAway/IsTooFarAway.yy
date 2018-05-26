@@ -1,8 +1,8 @@
 {
-    "id": "4dd0ddfa-0567-4ffc-97d3-2061880bdbcc",
+    "id": "e669b533-0e13-425b-a452-ba38ef306f2f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MoveToSetPoint",
+    "name": "IsTooFarAway",
     "IsCompatibility": false,
     "IsDnD": false
 }

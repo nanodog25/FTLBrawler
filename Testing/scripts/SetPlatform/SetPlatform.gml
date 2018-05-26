@@ -21,7 +21,7 @@ else
 }
 
 var platform = instance_create_layer(0,0,"Perimeters", PlatformStruct);
-platform._height = GetRelativeHeight(_traceY, obj._lane);
+platform._y = _traceY;
 platform._xLeft = min(startX, _traceX);
 platform._xRight = max(startX, _traceX);
 platform._obj = obj.id;

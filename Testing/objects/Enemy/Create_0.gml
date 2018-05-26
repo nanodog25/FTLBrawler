@@ -2,6 +2,7 @@ st_none = "";
 st_waiting = "waiting";
 st_retreat = "retreat";
 st_moveToCover = "moveToCover";
+st_moveToPoint = "moveToPoint";
 st_popUp = "popUp";
 st_popDown = "popDown";
 st_fire = "fire";

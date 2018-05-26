@@ -1,4 +1,5 @@
 MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
+
 if (ai_retreat)
 	Retreat();
 	
@@ -24,4 +25,12 @@ if (!_isJumping && !_isFalling && _currentGroundY == y)
 		_isJumping = true;
 		_jumpHeight = 0;
 	}
+}
+
+if (ai_atPathDestination)
+{
+	if (ai_moveX > x && ai_moveX < x + _xSpeed)
+		_xSpeed = ai_moveX - x;
+	else if (ai_moveX < x && ai_moveX > x + _xSpeed)
+		_xSpeed = ai_moveX - x;
 }
