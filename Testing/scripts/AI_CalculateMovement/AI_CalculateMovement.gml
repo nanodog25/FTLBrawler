@@ -27,10 +27,10 @@ if (!_isJumping && !_isFalling && _currentGroundY == y)
 	}
 }
 
-if (ai_atPathDestination)
+if (_onPath)
 {
-	if (ai_moveX > x && ai_moveX < x + _xSpeed)
-		_xSpeed = ai_moveX - x;
-	else if (ai_moveX < x && ai_moveX > x + _xSpeed)
-		_xSpeed = ai_moveX - x;
+	if (_pathStruct._x > x && _pathStruct._x < x + _xSpeed)
+		_xSpeed = _pathStruct._x - x;
+	else if (_pathStruct._x < x && _pathStruct._x > x + _xSpeed)
+		_xSpeed = _pathStruct._x - x;
 }

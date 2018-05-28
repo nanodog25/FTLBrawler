@@ -6,21 +6,20 @@ if (ds_list_empty(global.objectsInView))
 var coverIndex = argument0;
 
 var areRightWalls = global.playerX < x;
-var bbWidth = bbox_right - bbox_left;
 
-var wall = GetNearestWall(areRightWalls, bbWidth, coverIndex);
+var wall = GetNearestWall(areRightWalls, _bbWidth/2+5, coverIndex);
 
 if (wall == noone)
 {
 	areRightWalls = !areRightWalls;
-	wall = GetNearestWall(areRightWalls, bbWidth, 0);
+	wall = GetNearestWall(areRightWalls, _bbWidth/2+5, 0);
 }
 
 if (wall != noone)
 {
 	ai_moveX = areRightWalls
-		? wall._x + bbWidth
-		: wall._x - bbWidth;
+		? wall._x + _bbWidth/2+5
+		: wall._x - _bbWidth/2-5;
 	ai_moveY = wall._yBase;
 	ai_moveLane = wall._lane;
 	ai_coverObj = wall._obj;

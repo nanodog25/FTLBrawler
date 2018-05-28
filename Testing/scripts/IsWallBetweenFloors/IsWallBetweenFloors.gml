@@ -17,7 +17,6 @@ if (isTargetRight && targetFloor._xLeft <= flr._xRight || !isTargetRight && flr.
 var walls = GetWallsInLane(flr._lane, true);
 var walls2 = GetWallsInLane(flr._lane, false);
 
-var boundHeight = bbox_bottom-bbox_top;
 var gapLeft = isTargetRight ? flr._xRight : targetFloor._xRight;
 var gapRight = isTargetRight ? targetFloor._xLeft : flr._xLeft;
 
@@ -25,7 +24,7 @@ for (var i=0; i<ds_list_size(walls); i++)
 {
 	var wall = walls[| i];
 	if (wall._x >= gapLeft && wall._x <= gapRight
-		&& wall._yBase > flr._y - boundHeight && wall._yTop < flr._y - _maxJumpHeight)
+		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _maxJumpHeight)
 		return true;
 }
 
@@ -33,7 +32,7 @@ for (var i=0; i<ds_list_size(walls2); i++)
 {
 	var wall = walls2[| i];
 	if (wall._x >= gapLeft && wall._x <= gapRight
-		&& wall._yBase > flr._y - boundHeight && wall._yTop < flr._y - _maxJumpHeight)
+		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _maxJumpHeight)
 		return true;
 }
 

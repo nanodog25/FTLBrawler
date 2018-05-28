@@ -6,9 +6,6 @@ var paths = argument0;
 var path = argument1;
 var nextFloors = argument2;
 
-if (nextFloors == noone)
-	return;
-
 for (var i=0; i<ds_list_size(nextFloors); i++)
 {
 	if (_pathCount == 5)
@@ -32,3 +29,5 @@ for (var i=0; i<ds_list_size(nextFloors); i++)
 		FindPath(paths, newPath);
 	}
 }
+
+ds_list_destroy(nextFloors);

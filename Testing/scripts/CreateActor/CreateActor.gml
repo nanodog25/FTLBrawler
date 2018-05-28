@@ -29,6 +29,8 @@ _currentGroundY = _targetGroundY;
 
 _direction = 1;
 image_xscale = -_direction;
+_bbWidth = bbox_right - bbox_left;
+_bbHeight = bbox_bottom - bbox_top;
 
 _state = st_none;
 _nextState = st_waiting;

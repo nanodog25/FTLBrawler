@@ -12,7 +12,10 @@
         "65eb4ce9-5c79-41d6-b5a3-170a9569b1eb",
         "3f612d70-e63b-4923-85f4-74e82381bda2",
         "fab95a26-90eb-4bfd-84a4-e7aba7ad8411",
-        "b3c78aa7-7b9f-4f27-b914-ccba9c934890"
+        "b3c78aa7-7b9f-4f27-b914-ccba9c934890",
+        "24989972-2009-49ce-8069-8be584ddc3f8",
+        "9be161a3-8f4f-4244-903c-4375e7c4fa5a",
+        "9b1e57c7-3ab7-4f91-89bd-60f490673c62"
     ],
     "filterType": "GMScript",
     "folderName": "Pathfinding",

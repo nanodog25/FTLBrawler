@@ -1,59 +1,87 @@
-//switch lane as soon as possible
-//jump between paths if necessary
-
-if (_path == noone || ds_list_empty(_path))
+if (_path == noone || _pathStruct == noone || ds_list_empty(_path))
+{
+	_nextState = st_waiting;
 	return;
+}
 
 var currentFloor = _path[| 0];
 var nextFloor = currentFloor == ai_floor ? noone : _path[| 1];
 
-var bbWidth = bbox_right-bbox_left;
-
-if (nextFloor != noone && nextFloor._lane == _lane && nextFloor._xLeft - bbWidth <= x && nextFloor._xRight + bbWidth >= x && nextFloor._y == _targetGroundY)
+if (currentFloor == ai_floor && IsAtPathAction())
 {
+	_direction = sign(global.playerX - x);
+	if (_state == st_moveToCover)
+		_nextState = st_inCover;
+	else
+		_nextState = st_waiting;
+		
+	return;
+}
+
+if (IsOnFloor(nextFloor))
+{
+	_onPath = true;
 	ds_list_delete(_path, 0);
+	SetPathStruct();
+	return;
+}
+
+if (_pathStruct._requiredObj != noone && !instance_exists(_pathStruct._requiredObj))
+{
+	_nextState = st_waiting;
 	return;
 }
 
 
-if (nextFloor != noone)
+_onPath = true;
+
+if (_pathStruct._isPerformingAction)
 {
-	if (nextFloor._lane != _lane && nextFloor._xLeft <= x && nextFloor._xRight >= x)
+	if (x < _pathStruct._x)
 	{
-		ai_moveUp = _lane > nextFloor._lane;
-		ai_moveDown = !ai_moveUp;
+		ai_isMovingRight = true;
+		ai_jump = _pathStruct._jump;
 	}
+	else if (x > _pathStruct._x)
+	{
+		ai_isMovingLeft = true;
+		ai_jump = _pathStruct._jump;
+	}		
 	else
 	{
-		if (_sideCollision || IsNearPlayer())
-			ai_jump = true;
-	
-		_direction = nextFloor._xLeft + bbWidth > x ? 1 : -1;
-		ai_isMovingRight = _direction == 1;
-		ai_isMovingLeft = !ai_isMovingRight;
+		ai_moveUp = _pathStruct._up && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_moveDown = _pathStruct._down && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_isMovingLeft = _pathStruct._left;
+		ai_isMovingRight = _pathStruct._right;
+		ai_jump = _pathStruct._jump;
 	}
 }
 else
 {
-	ai_atPathDestination = true;
-	if (ai_moveX == x)
-	{
-		if (!(_isJumping || _isFalling || _ySwitch != 0))
-		{
-			_direction = sign(global.playerX - x);
-			if (_state == st_moveToCover)
-				_nextState = st_inCover;
-			else
-				_nextState = st_waiting;
-		}
-	}
+	if (IsAtPathAction())
+		_pathStruct._isPerformingAction = true;
 	else
 	{
-		_direction = ai_moveX > x ? 1 : -1;
+		_direction = _pathStruct._x > x ? 1 : -1;
 		ai_isMovingRight = _direction == 1;
 		ai_isMovingLeft = !ai_isMovingRight;
+		
+		if (_sideCollision || IsNearPlayer())
+			ai_jump = true;
+			
+		if (_stateTimer < 1)
+			ai_retreat = true;
+		
+		if (ai_isMovingRight && x > currentFloor._xRight - _bbWidth/2 || ai_isMovingLeft && x < currentFloor._xLeft + _bbWidth/2)
+		{
+			if (_isJumping || _isFalling)
+			{
+				ai_isMovingRight = false;
+				ai_isMovingLeft = false;
+			}
+			else
+				_pathStruct._isPerformingAction = true;
+		}
 	}
 }
 
-if (_stateTimer < 1)
-	ai_retreat = true;

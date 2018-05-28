@@ -5,16 +5,6 @@
     "name": "Destructible4",
     "eventList": [
         {
-            "id": "bb0b3b90-f24b-4534-b11b-e69884b21fd5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "dea9f9df-0afc-4a1f-84bd-4b8b853e365f"
-        },
-        {
             "id": "1692f01e-be86-41c7-857d-73d3b1107b59",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -42,6 +32,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "dea9f9df-0afc-4a1f-84bd-4b8b853e365f"
+        },
+        {
+            "id": "276d6197-cdf1-4225-9bda-f0ff697b1081",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
             "m_owner": "dea9f9df-0afc-4a1f-84bd-4b8b853e365f"
         }
     ],

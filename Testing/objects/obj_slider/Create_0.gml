@@ -1,5 +1,5 @@
-_leftX = 0;
-_rightX = 0;
+_xLeft = 0;
+_xRight = 0;
 _value = 0;
 _minValue = 0;
 _maxValue = 0;

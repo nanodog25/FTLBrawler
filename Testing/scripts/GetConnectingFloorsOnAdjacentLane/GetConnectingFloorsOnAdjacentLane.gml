@@ -24,7 +24,7 @@ else
 	AddFloorsFromLane(relevantFloors, lastFloor._lane-1);
 }
 
-for(var i=0; i<ds_list_size(relevantFloors); i++)
+for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
 	
@@ -35,28 +35,15 @@ for(var i=0; i<ds_list_size(relevantFloors); i++)
 		|| GetRelativeHeight(flr._y, flr._lane) - GetRelativeHeight(lastFloor._y, lastFloor._lane) > _maxJumpHeight
 		|| (rightDirectionOnly && !IsRightDirection(lastFloor, flr, xTarget))
 		|| IsTooFarAway(lastFloor, flr))
-		ds_list_replace(relevantFloors, i, noone);
+		ds_list_delete(relevantFloors, i);
 }
 
 //remove any that have a wall in the way
-for(var i=0; i<ds_list_size(relevantFloors); i++)
+for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
 	if (flr != noone && IsWallBetweenFloors(lastFloor, flr))
-		ds_list_replace(relevantFloors, i, noone);
+		ds_list_delete(relevantFloors, i);
 }
 
-var returnFloors = ds_list_create();
-for(var i=0; i<ds_list_size(relevantFloors); i++)
-{
-	var flr = relevantFloors[| i];
-	if (flr != noone)
-		ds_list_add(returnFloors, flr);
-}
-
-ds_list_destroy(relevantFloors);
-
-if (ds_list_empty(returnFloors))
-	returnFloors = noone;
-
-return returnFloors;
+return relevantFloors;

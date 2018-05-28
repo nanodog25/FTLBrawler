@@ -11,8 +11,8 @@ if (!_created)
 
 	with(inst)
 	{
-		_leftX = other.bbox_left;
-		_rightX = other.bbox_right;
+		_xLeft = other.bbox_left;
+		_xRight = other.bbox_right;
 		_minValue = other._minValue;
 		_maxValue = other._maxValue;
 		_variable = other._variable;
