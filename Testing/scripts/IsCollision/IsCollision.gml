@@ -9,7 +9,7 @@ var obj = argument0;
 var targetX = argument1;
 var targetY = argument2;
 var targetLane = argument3;
-var collidingWith = object_exists(argument4) ? argument4 : asset_get_index(argument4);
+var collidingWith = asset_get_index(argument4) != -1 ? asset_get_index(argument4) : argument4;
 var checkLaneVariable = argument5;
 
 var laneOffset = global.LaneWidth * (targetLane - obj._lane);

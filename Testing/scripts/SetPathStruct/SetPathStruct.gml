@@ -60,26 +60,33 @@ else
 	}
 	else
 	{
+		//for now, just have it switch early and move if possible
 		var left = max(nextFloor._xLeft + _bbWidth/2, currentFloor._xLeft + _bbWidth/2);
 		var right = min(nextFloor._xRight - _bbWidth/2, currentFloor._xRight - _bbWidth/2);
 		
-		if (ai_moveX > x && x <= right)
-			left = max(left, x);
+		//if (ai_moveX > x && x <= right)
+		//	left = max(left, x);
 		
-		if (ai_moveX < x && x >= left)
-			right = min(right, x);
+		//if (ai_moveX < x && x >= left)
+		//	right = min(right, x);
 			
-		if (ai_moveX > x && ai_moveX >= left)
-			right = min(right, ai_moveX);
+		//if (ai_moveX > x && ai_moveX >= left)
+		//	right = min(right, ai_moveX);
 			
-		if (ai_moveX < x && ai_moveX <= right)
-			left = max(left, ai_moveX);
+		//if (ai_moveX < x && ai_moveX <= right)
+		//	left = max(left, ai_moveX);
 			
 		if (right - left <= _bbWidth)
 			_pathStruct._x = left;
 		else
 		{
-			_pathStruct._x = clamp(random(1), left, right);
+			if (x < left)
+				_pathStruct._x = left;
+			else if (x > right)
+				_pathStruct._x = right;
+			else
+				_pathStruct._x = x;
+				
 			if (ai_moveX > _pathStruct._x && right > _pathStruct._x + 30)
 				_pathStruct._right = true;
 				

@@ -37,12 +37,12 @@ _onPath = true;
 
 if (_pathStruct._isPerformingAction)
 {
-	if (x < _pathStruct._x)
+	if (_currentGroundY == _targetGroundY && x < _pathStruct._x)
 	{
 		ai_isMovingRight = true;
 		ai_jump = _pathStruct._jump;
 	}
-	else if (x > _pathStruct._x)
+	else if (_currentGroundY == _targetGroundY && x > _pathStruct._x)
 	{
 		ai_isMovingLeft = true;
 		ai_jump = _pathStruct._jump;
