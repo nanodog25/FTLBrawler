@@ -24,7 +24,7 @@ for (var i=0; i<ds_list_size(walls); i++)
 {
 	var wall = walls[| i];
 	if (wall._x >= gapLeft && wall._x <= gapRight
-		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _maxJumpHeight)
+		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _jumpClearance)
 		return true;
 }
 
@@ -32,7 +32,7 @@ for (var i=0; i<ds_list_size(walls2); i++)
 {
 	var wall = walls2[| i];
 	if (wall._x >= gapLeft && wall._x <= gapRight
-		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _maxJumpHeight)
+		&& wall._yBase > flr._y - _bbHeight && wall._yTop < flr._y - _jumpClearance)
 		return true;
 }
 

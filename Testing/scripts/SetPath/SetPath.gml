@@ -6,8 +6,31 @@ FindPath(paths, noone);
 
 if (!ds_list_empty(paths))
 {
-	//should be weighted etc
-	_path = paths[| irandom(ds_list_size(paths) - 1)];
+	var weights = ds_map_create();
+	var totalWeight = 0;
+	var selectedPath = 0;
+	
+	for(var i=0; i<ds_list_size(paths); i++)
+	{
+		var weight = 100/ds_list_size(paths[| i]);
+		ds_map_add(weights, i, weight);
+		totalWeight += weight;
+	}
+	
+	var randomWeight = random(totalWeight);
+	
+	for(var i=0; i<ds_map_size(weights); i++)
+	{
+		if (randomWeight < weights[? i])
+		{
+			selectedPath = i;
+			break;
+		}
+		
+		randomWeight -= weights[? i];
+	}
+	
+	_path = paths[| selectedPath];
 	SetPathStruct();
 }
 ds_list_destroy(paths);

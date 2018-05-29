@@ -16,7 +16,7 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
 	if (ds_list_find_index(path, flr) != -1
-		|| lastFloor._y - flr._y > _maxJumpHeight
+		|| lastFloor._y - flr._y > _jumpClearance
 		|| (rightDirectionOnly && !IsRightDirection(lastFloor, flr, xTarget))
 		|| IsTooFarAway(lastFloor, flr))
 		ds_list_delete(relevantFloors, i);

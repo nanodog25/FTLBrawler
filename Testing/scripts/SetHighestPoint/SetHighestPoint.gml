@@ -18,7 +18,6 @@ for (var i=0; i<ds_list_size(global.objectsInView); i++)
 if (highestObject != noone)
 {
 	ai_moveX = highestObject.x;
-	ai_moveY = highestObject.bbox_top;
 	ai_moveLane = highestObject._lane;
 	return true;
 }

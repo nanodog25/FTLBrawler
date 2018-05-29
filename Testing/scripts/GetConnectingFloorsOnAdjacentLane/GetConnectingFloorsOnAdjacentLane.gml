@@ -32,7 +32,7 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 		var a = 10;
 	
 	if (ds_list_find_index(path, flr) != -1
-		|| GetRelativeHeight(flr._y, flr._lane) - GetRelativeHeight(lastFloor._y, lastFloor._lane) > _maxJumpHeight
+		|| GetRelativeHeight(flr._y, flr._lane) - GetRelativeHeight(lastFloor._y, lastFloor._lane) > _jumpClearance
 		|| (rightDirectionOnly && !IsRightDirection(lastFloor, flr, xTarget))
 		|| IsTooFarAway(lastFloor, flr))
 		ds_list_delete(relevantFloors, i);

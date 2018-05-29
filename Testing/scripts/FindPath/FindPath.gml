@@ -15,21 +15,17 @@ var pathCount = _pathCount;
 if (path == noone)
 {
 	path = ds_list_create();
-	var floors = GetFloorsInLane(_lane);
-	for (var i=0; i<ds_list_size(floors); i++)
+	var flr = GetCurrentFloor();
+	
+	if (flr == noone)
+		return;
+	
+	ds_list_add(path, flr);
+
+	if (flr == ai_floor)
 	{
-		var flr = floors[| i];
-		if (flr._xLeft <= x && flr._xRight >= x && flr._y == _targetGroundY)
-		{
-			ds_list_add(path, flr);
-			
-			if (flr == ai_floor)
-			{
-				ds_list_add(paths, path);
-				return;
-			}
-			break;
-		}
+		ds_list_add(paths, path);
+		return;
 	}
 }
 

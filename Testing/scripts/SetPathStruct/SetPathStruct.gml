@@ -1,5 +1,6 @@
 var currentFloor = _path[| 0];
 var nextFloor = _path[| 0] == ai_floor ? noone : _path[| 1];
+var bbHalf = _bbWidth/2;
 
 _pathStruct._isPerformingAction = false;
 _pathStruct._requiredObj = noone;
@@ -28,10 +29,10 @@ else
 	if (leftOverlap >=0 || rightOverlap >= 0)
 	{
 		_pathStruct._x = leftOverlap >=0
-			? nextFloor._xLeft + _bbWidth
-			: nextFloor._xRight - _bbWidth;
+			? nextFloor._xLeft + bbHalf
+			: nextFloor._xRight - bbHalf;
 			
-		_pathStruct._jump = _pathStruct._jump || leftOverlap > _bbWidth || rightOverlap > _bbWidth;
+		_pathStruct._jump = _pathStruct._jump || leftOverlap > bbHalf || rightOverlap > bbHalf;
 	}
 	else if (currentFloor._lane == nextFloor._lane)
 	{
@@ -49,20 +50,20 @@ else
 			lowerFloor = currentFloor;
 		}
 			
-		if (ai_moveX > x && lowerFloor._xRight >= upperFloor._xRight + _bbWidth)
-			_pathStruct._x = upperFloor._xRight + _bbWidth;
-		else if(lowerFloor._xLeft <= upperFloor._xLeft - _bbWidth)
-			_pathStruct._x = upperFloor._xLeft - _bbWidth;
-		else if(lowerFloor._xRight >= upperFloor._xRight + _bbWidth)
-			_pathStruct._x = upperFloor._xRight + _bbWidth;
+		if (ai_moveX > x && lowerFloor._xRight >= upperFloor._xRight + bbHalf)
+			_pathStruct._x = upperFloor._xRight + bbHalf;
+		else if(lowerFloor._xLeft <= upperFloor._xLeft - bbHalf)
+			_pathStruct._x = upperFloor._xLeft - bbHalf;
+		else if(lowerFloor._xRight >= upperFloor._xRight + bbHalf)
+			_pathStruct._x = upperFloor._xRight + bbHalf;
 		else
 			_pathStruct = noone;
 	}
 	else
 	{
 		//for now, just have it switch early and move if possible
-		var left = max(nextFloor._xLeft + _bbWidth/2, currentFloor._xLeft + _bbWidth/2);
-		var right = min(nextFloor._xRight - _bbWidth/2, currentFloor._xRight - _bbWidth/2);
+		var left = max(nextFloor._xLeft + bbHalf, currentFloor._xLeft + bbHalf);
+		var right = min(nextFloor._xRight - bbHalf, currentFloor._xRight - bbHalf);
 		
 		//if (ai_moveX > x && x <= right)
 		//	left = max(left, x);
@@ -76,7 +77,7 @@ else
 		//if (ai_moveX < x && ai_moveX <= right)
 		//	left = max(left, ai_moveX);
 			
-		if (right - left <= _bbWidth)
+		if (right - left <= bbHalf)
 			_pathStruct._x = left;
 		else
 		{
@@ -95,3 +96,6 @@ else
 		}
 	}
 }
+
+if (_pathStruct != noone)
+	_pathStruct._x = ceil(_pathStruct._x);

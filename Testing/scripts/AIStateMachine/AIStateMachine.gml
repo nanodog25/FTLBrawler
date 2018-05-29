@@ -17,4 +17,4 @@ switch(_state)
 		break;
 }
 
-st_Hit = false;
+stb_isHit = false;

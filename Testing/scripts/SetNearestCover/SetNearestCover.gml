@@ -20,7 +20,6 @@ if (wall != noone)
 	ai_moveX = areRightWalls
 		? wall._x + _bbWidth/2+5
 		: wall._x - _bbWidth/2-5;
-	ai_moveY = wall._yBase;
 	ai_moveLane = wall._lane;
 	ai_coverObj = wall._obj;
 	ai_floor = GetAdjoiningFloor(wall);

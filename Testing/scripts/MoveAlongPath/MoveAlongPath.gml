@@ -1,4 +1,4 @@
-if (_path == noone || _pathStruct == noone || ds_list_empty(_path))
+if (_isHit || _path == noone || _pathStruct == noone || ds_list_empty(_path))
 {
 	_nextState = st_waiting;
 	return;
@@ -49,8 +49,8 @@ if (_pathStruct._isPerformingAction)
 	}		
 	else
 	{
-		ai_moveUp = _pathStruct._up && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
-		ai_moveDown = _pathStruct._down && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_moveUp = _lane != nextFloor._lane && _pathStruct._up && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_moveDown = _lane != nextFloor._lane && _pathStruct._down && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
 		ai_isMovingLeft = _pathStruct._left;
 		ai_isMovingRight = _pathStruct._right;
 		ai_jump = _pathStruct._jump;
