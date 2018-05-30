@@ -11,7 +11,7 @@ switch(_state)
 		
 			var flr = floors[| irandom(ds_list_size(floors)-1)];
 		
-			ai_moveX = lerp(flr._xLeft + _bbWidth/2, flr._xRight - _bbWidth/2, random(1));
+			ai_moveX = ceil(lerp(flr._xLeft + _bbWidth/2, flr._xRight - _bbWidth/2, random(1)));
 			ai_moveLane = lane;
 			ai_floor = flr;
 			SetPath();

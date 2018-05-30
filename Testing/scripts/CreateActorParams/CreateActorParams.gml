@@ -20,4 +20,4 @@ _objectType = argument8;
 
 _currentHP = _maxHP;
 _canEverSwitchLane = _canSwitchLane;
-_jumpClearance = _maxJumpHeight - bbox_bottom + bbox_top - 20;
+_jumpClearance = _maxJumpHeight - 20;

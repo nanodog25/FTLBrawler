@@ -1,16 +1,16 @@
 ///@arg paths
 ///@arg path
+///@arg currentX
 
 var paths = argument0;
 var path = argument1;
+var currentX = argument2;
 
-if (_pathCount == 5)
+if (_pathCount == 1)
 {
 	path = noone;
 	return;
 }
-
-var pathCount = _pathCount;
 
 if (path == noone)
 {
@@ -29,24 +29,11 @@ if (path == noone)
 	}
 }
 
+var currentFloor = path[| ds_list_size(path)-1];
+var weights = ds_list_create();
+var nextFloorsWeighted = ds_map_create();
 
-var laneFloors = GetConnectingFloorsOnThisLane(path, ai_moveX, true);
-AddPaths(paths, path, laneFloors);
+GetConnectingFloorsOnThisLane(path, currentFloor, currentX, weights, nextFloorsWeighted);
+GetConnectingFloorsOnAdjacentLane(path, currentFloor, currentX, weights, nextFloorsWeighted);
 
-if (pathCount == _pathCount)
-{
-	var adjacentFloors = GetConnectingFloorsOnAdjacentLane(path, ai_moveX, ai_moveLane, true);
-	AddPaths(paths, path, adjacentFloors);
-}
-
-if (pathCount == _pathCount)
-{
-	var laneFloorsWrongDirection = GetConnectingFloorsOnThisLane(path, ai_moveX, false);
-	AddPaths(paths, path, laneFloorsWrongDirection);
-}
-
-if (pathCount == _pathCount)
-{
-	var adjacentFloorsWrongDirection = GetConnectingFloorsOnAdjacentLane(path, ai_moveX, ai_moveLane, false);
-	AddPaths(paths, path, adjacentFloorsWrongDirection);
-}
+AddPaths(paths, path, currentX, weights, nextFloorsWeighted);

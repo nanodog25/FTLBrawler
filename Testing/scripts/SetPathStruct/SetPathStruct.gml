@@ -28,10 +28,20 @@ else
 	
 	if (leftOverlap >=0 || rightOverlap >= 0)
 	{
-		_pathStruct._x = leftOverlap >=0
-			? nextFloor._xLeft + bbHalf
-			: nextFloor._xRight - bbHalf;
-			
+		var safeDistance = bbHalf + 10;
+		var halfWidth = (nextFloor._xRight - nextFloor._xLeft)/2;
+		
+		if (halfWidth < safeDistance)
+		{
+			_pathStruct._x = nextFloor._xLeft + halfWidth;
+		}
+		else
+		{
+			_pathStruct._x = leftOverlap >=0
+				? nextFloor._xLeft + safeDistance
+				: nextFloor._xRight - safeDistance;
+		}
+		
 		_pathStruct._jump = _pathStruct._jump || leftOverlap > bbHalf || rightOverlap > bbHalf;
 	}
 	else if (currentFloor._lane == nextFloor._lane)
@@ -51,11 +61,11 @@ else
 		}
 			
 		if (ai_moveX > x && lowerFloor._xRight >= upperFloor._xRight + bbHalf)
-			_pathStruct._x = upperFloor._xRight + bbHalf;
+			_pathStruct._x = upperFloor._xRight + _bbWidth;
 		else if(lowerFloor._xLeft <= upperFloor._xLeft - bbHalf)
-			_pathStruct._x = upperFloor._xLeft - bbHalf;
+			_pathStruct._x = upperFloor._xLeft - _bbWidth;
 		else if(lowerFloor._xRight >= upperFloor._xRight + bbHalf)
-			_pathStruct._x = upperFloor._xRight + bbHalf;
+			_pathStruct._x = upperFloor._xRight + _bbWidth;
 		else
 			_pathStruct = noone;
 	}
@@ -88,10 +98,10 @@ else
 			else
 				_pathStruct._x = x;
 				
-			if (ai_moveX > _pathStruct._x && right > _pathStruct._x + 30)
+			if (ai_moveX > _pathStruct._x && right > _pathStruct._x + 60)
 				_pathStruct._right = true;
 				
-			if (ai_moveX < _pathStruct._x && left < _pathStruct._x - 30)
+			if (ai_moveX < _pathStruct._x && left < _pathStruct._x - 60)
 				_pathStruct._left = true;
 		}
 	}

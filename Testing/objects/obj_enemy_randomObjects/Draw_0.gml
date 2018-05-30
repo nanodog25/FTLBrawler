@@ -9,7 +9,7 @@ if (_canDraw && _path != noone && _pathStruct != noone)
 	}
 	
 	var c1 = GetColour(_path[| 0]._lane);
-	var c2 = GetColour(ai_moveLane);
+	var c2 = c_black;
 
 	draw_circle_color(_pathStruct._x, _path[| 0]._y, 10, c1, c1, false);
 	draw_circle_color(ai_moveX, ai_floor._y, 10, c2, c2, false);

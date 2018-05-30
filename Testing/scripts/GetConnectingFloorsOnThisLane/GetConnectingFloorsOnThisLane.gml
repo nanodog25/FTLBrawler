@@ -1,24 +1,25 @@
 ///@arg path
-///@arg xTarget
-///@arg rightDirectionOnly
+///@arg currentFloor
+///@arg currentX
+///@arg weights
+///@arg nextFloorsWeighted
 
 var path = argument0;
-var xTarget = argument1;
-var rightDirectionOnly = argument2;
-
-var lastFloor = path[| ds_list_size(path)-1];
+var currentFloor = argument1;
+var currentX = argument2;
+var weights = argument3;
+var nextFloorsWeighted = argument4;
 
 var relevantFloors = ds_list_create();
-ds_list_copy(relevantFloors, GetFloorsInLane(lastFloor._lane));
+ds_list_copy(relevantFloors, GetFloorsInLane(currentFloor._lane));
 
 //remove any that overlap, are too high or far away or wrong direction
 for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
 	if (ds_list_find_index(path, flr) != -1
-		|| lastFloor._y - flr._y > _jumpClearance
-		|| (rightDirectionOnly && !IsRightDirection(lastFloor, flr, xTarget))
-		|| IsTooFarAway(lastFloor, flr))
+		|| currentFloor._y - flr._y > _jumpClearance
+		|| IsTooFarAway(currentFloor, flr))
 		ds_list_delete(relevantFloors, i);
 }
 
@@ -27,8 +28,36 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
-	if (flr != noone && IsWallBetweenFloors(lastFloor, flr))
+	if (flr != noone && IsWallBetweenFloors(currentFloor, flr))
 		ds_list_delete(relevantFloors, i);
 }
 
-return relevantFloors;
+if (ds_list_find_index(relevantFloors, ai_floor) != -1)
+{
+	ds_map_add(nextFloorsWeighted, 0, ai_floor);
+	ds_list_add(weights, 0);
+}
+else
+{
+	for(var i=0; i<ds_list_size(relevantFloors); i++)
+	{
+		var flr = relevantFloors[| i];
+		var weight = 2000;
+		if (flr._lane != ai_moveLane)
+			weight += 200;
+	
+		weight += abs(ai_moveX - flr._xLeft);
+		weight += abs(ai_moveX - flr._xRight);
+	
+		if (currentFloor._y != flr._y)
+			weight += 100;
+	
+		while(ds_list_find_index(weights, weight) != -1)
+			weight++;
+	
+		ds_map_add(nextFloorsWeighted, weight, flr);
+		ds_list_add(weights, weight);
+	}
+}
+
+ds_list_destroy(relevantFloors);

@@ -1,6 +1,6 @@
 MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
 
-if (ai_retreat)
+if (ai_retreat && _lane == global.playerLane)
 	Retreat();
 	
 if (ai_fire && _canFire && !_isInvulnerable)

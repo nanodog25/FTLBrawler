@@ -66,13 +66,7 @@ else
 		ai_isMovingRight = _direction == 1;
 		ai_isMovingLeft = !ai_isMovingRight;
 		
-		if (_sideCollision || IsNearPlayer())
-			ai_jump = true;
-			
-		if (_stateTimer < 1)
-			ai_retreat = true;
-		
-		if (ai_isMovingRight && x > currentFloor._xRight - _bbWidth/2 || ai_isMovingLeft && x < currentFloor._xLeft + _bbWidth/2)
+		if (ai_isMovingRight && x > currentFloor._xRight - _bbWidth/2 - 10 || ai_isMovingLeft && x < currentFloor._xLeft + _bbWidth/2 + 10)
 		{
 			if (_isJumping || _isFalling)
 			{
@@ -81,6 +75,14 @@ else
 			}
 			else
 				_pathStruct._isPerformingAction = true;
+		}
+		else
+		{
+			if (_sideCollision || IsNearPlayer())
+				ai_jump = true;
+			
+			if (_stateTimer < 1)
+				ai_retreat = true;
 		}
 	}
 }

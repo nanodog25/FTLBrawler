@@ -2,7 +2,7 @@ _pathCount = 0;
 _path = noone;
 _pathStruct = instance_create_layer(0,0,"Perimeters", PathStruct);
 var paths = ds_list_create();
-FindPath(paths, noone);
+FindPath(paths, noone, x);
 
 if (!ds_list_empty(paths))
 {
@@ -12,7 +12,7 @@ if (!ds_list_empty(paths))
 	
 	for(var i=0; i<ds_list_size(paths); i++)
 	{
-		var weight = 100/ds_list_size(paths[| i]);
+		var weight = 100/(ds_list_size(paths[| i])^2);
 		ds_map_add(weights, i, weight);
 		totalWeight += weight;
 	}
@@ -34,4 +34,6 @@ if (!ds_list_empty(paths))
 	SetPathStruct();
 }
 ds_list_destroy(paths);
-instance_deactivate_object(_path);
+
+if (_path != noone)
+	instance_deactivate_object(_path);
