@@ -27,11 +27,16 @@ if (path == noone)
 		ds_list_add(paths, path);
 		return;
 	}
+	else
+	{
+		ds_list_add(path, ai_floor);
+	}
 }
 
-var currentFloor = path[| ds_list_size(path)-1];
 var weights = ds_list_create();
 var nextFloorsWeighted = ds_map_create();
+var currentFloor = path[| 1];
+var targetFloor = path[| 0];
 
 GetConnectingFloorsOnThisLane(path, currentFloor, currentX, weights, nextFloorsWeighted);
 GetConnectingFloorsOnAdjacentLane(path, currentFloor, currentX, weights, nextFloorsWeighted);

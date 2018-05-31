@@ -17,8 +17,8 @@ ds_list_copy(relevantFloors, GetFloorsInLane(currentFloor._lane));
 for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
-	if (ds_list_find_index(path, flr) != -1
-		|| currentFloor._y - flr._y > _jumpClearance
+	if (ds_list_find_index(path, flr) > 0
+		|| flr._y - currentFloor._y > _jumpClearance
 		|| IsTooFarAway(currentFloor, flr))
 		ds_list_delete(relevantFloors, i);
 }
@@ -32,9 +32,9 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 		ds_list_delete(relevantFloors, i);
 }
 
-if (ds_list_find_index(relevantFloors, ai_floor) != -1)
+if (ds_list_find_index(relevantFloors, path[| 0]) != -1)
 {
-	ds_map_add(nextFloorsWeighted, 0, ai_floor);
+	ds_map_add(nextFloorsWeighted, 0, path[| 0]);
 	ds_list_add(weights, 0);
 }
 else
@@ -43,11 +43,11 @@ else
 	{
 		var flr = relevantFloors[| i];
 		var weight = 2000;
-		if (flr._lane != ai_moveLane)
+		if (flr._lane != _lane)
 			weight += 200;
 	
-		weight += abs(ai_moveX - flr._xLeft);
-		weight += abs(ai_moveX - flr._xRight);
+		weight += abs(x - flr._xLeft);
+		weight += abs(x - flr._xRight);
 	
 		if (currentFloor._y != flr._y)
 			weight += 100;

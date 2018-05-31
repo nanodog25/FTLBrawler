@@ -10,8 +10,6 @@ _ySwitch = 0;
 
 if(!IsActorInterrupted())
 {
-	_xSpeed = 0;
-	
 	AI_DecideMovement();
 	AI_CalculateMovement();
 	

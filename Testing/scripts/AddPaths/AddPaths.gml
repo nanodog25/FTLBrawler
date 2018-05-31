@@ -1,6 +1,6 @@
 ///@arg paths
 ///@arg path
-///@arg currentFloor
+///@arg currentX
 ///@arg weights
 ///@arg nextFloorsWeighted
 
@@ -19,9 +19,8 @@ for (var i=0; i<ds_list_size(weights); i++)
 			
 	var weight = weights[| i];
 	var flr = nextFloorsWeighted[? weight];
-	if (flr == ai_floor)
+	if (flr == path[| 0])
 	{
-		ds_list_add(path, flr);
 		ds_list_add(paths, path);
 		_pathCount++;
 	}
@@ -35,7 +34,7 @@ for (var i=0; i<ds_list_size(weights); i++)
 			
 		var newPath = ds_list_create();
 		ds_list_copy(newPath, path);
-		ds_list_add(newPath, flr);
+		ds_list_insert(newPath, 1, flr);
 		FindPath(paths, newPath, predictedX);
 	}
 }

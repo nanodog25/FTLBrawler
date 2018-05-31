@@ -19,8 +19,8 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 {
 	var flr = relevantFloors[| i];
 	
-	if (ds_list_find_index(path, flr) != -1
-		|| GetRelativeHeight(flr._y, flr._lane) - GetRelativeHeight(currentFloor._y, currentFloor._lane) > _jumpClearance
+	if (ds_list_find_index(path, flr) > 0
+		|| GetRelativeHeight(currentFloor._y, currentFloor._lane) - GetRelativeHeight(flr._y, flr._lane) > _jumpClearance
 		|| IsTooFarAway(currentFloor, flr))
 		ds_list_delete(relevantFloors, i);
 }
@@ -33,9 +33,9 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 		ds_list_delete(relevantFloors, i);
 }
 
-if (ds_list_find_index(relevantFloors, ai_floor) != -1)
+if (ds_list_find_index(relevantFloors, path[| 0]) != -1)
 {
-	ds_map_add(nextFloorsWeighted, 0, ai_floor);
+	ds_map_add(nextFloorsWeighted, 0, path[| 0]);
 	ds_list_add(weights, 0);
 }
 else
@@ -44,13 +44,13 @@ else
 	{
 		var flr = relevantFloors[| i];
 		var weight = 2000;
-		if (abs(flr._lane - ai_moveLane) > abs(currentFloor._lane - ai_moveLane))
+		if (abs(flr._lane - _lane) > abs(currentFloor._lane - _lane))
 			weight += 500;
 	
-		if (ai_moveX < flr._xLeft)
-			weight += flr._xLeft - ai_moveX;
-		if (ai_moveX > flr._xRight)
-			weight += ai_moveX - flr._xRight;
+		if (x < flr._xLeft)
+			weight += flr._xLeft - x;
+		if (x > flr._xRight)
+			weight += x - flr._xRight;
 	
 		if (GetRelativeHeight(currentFloor._y, currentFloor._lane) != GetRelativeHeight(flr._y, flr._lane))
 			weight += 100;

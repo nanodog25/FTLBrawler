@@ -7,8 +7,6 @@ _pathStruct._requiredObj = noone;
 
 _pathStruct._up = false;
 _pathStruct._down = false;
-_pathStruct._right = false;
-_pathStruct._left = false;
 _pathStruct._jump = false;
 
 if (nextFloor == noone)
@@ -97,12 +95,6 @@ else
 				_pathStruct._x = right;
 			else
 				_pathStruct._x = x;
-				
-			if (ai_moveX > _pathStruct._x && right > _pathStruct._x + 60)
-				_pathStruct._right = true;
-				
-			if (ai_moveX < _pathStruct._x && left < _pathStruct._x - 60)
-				_pathStruct._left = true;
 		}
 	}
 }

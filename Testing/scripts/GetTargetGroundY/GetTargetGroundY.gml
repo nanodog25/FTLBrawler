@@ -6,23 +6,18 @@ if (IsPlatformCollision("down") != noone)
 	var wedgedLeft = collision_line(move_xLeft, move_yDown - 11, move_xLeft+1, move_yDown - 11, move_obj, true, true);
 	var wedgedRight = collision_line(move_xRight-1, move_yDown - 11, move_xRight, move_yDown - 11, move_obj, true, true);
 
-	var left;
-	var right;
+	var left = move_xLeft;
+	var right = move_xRight;
 	
 	if (wedgedLeft)
-	{
-		left = move_xLeft;
-		right = move_xLeft+1;
-	}
-	else if (wedgedRight)
 	{
 		left = move_xRight-1;
 		right = move_xRight;
 	}
-	else
+	else if (wedgedRight)
 	{
 		left = move_xLeft;
-		right = move_xRight;
+		right = move_xLeft+1;
 	}
 	
 	//Begin raycast loop

@@ -3,8 +3,8 @@
 var targetLane = argument0;
 
 var objName = "LaneObject" + string(targetLane);
-var col = IsCollision(self, x, y, targetLane, objName, false);
-var lenience = 40;
+var col = IsCollision(self, x, y-10, targetLane, objName, false);
+var lenience = (_isJumping || _isFalling) ? 10 : 40;
 
 if (col != noone && object_is_ancestor(object_index, obj_proj_Projectile))
 {
@@ -21,6 +21,8 @@ if (col != noone)
 			_xSpeed = -overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}	
+	
+	//right of obstacle
 	overlap = col.bbox_right - bbox_left + 5;
 	if (overlap <= lenience && IsCollision(self, x + overlap, y, targetLane, objName, false) == noone)
 	{

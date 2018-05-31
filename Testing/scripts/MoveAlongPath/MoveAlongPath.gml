@@ -37,12 +37,21 @@ _onPath = true;
 
 if (_pathStruct._isPerformingAction)
 {
-	if (_currentGroundY == _targetGroundY && x < _pathStruct._x)
+	if (_currentGroundY != _targetGroundY)
+	{
+		var remainingSwitchDistance = abs(_targetGroundY - _currentGroundY);
+		if (abs(ai_moveX - x) > remainingSwitchDistance)
+		{
+			ai_isMovingRight = ai_moveX > x;
+			ai_isMovingLeft = !ai_isMovingRight;
+		}
+	}
+	else if (x < _pathStruct._x)
 	{
 		ai_isMovingRight = true;
 		ai_jump = _pathStruct._jump;
 	}
-	else if (_currentGroundY == _targetGroundY && x > _pathStruct._x)
+	else if (x > _pathStruct._x)
 	{
 		ai_isMovingLeft = true;
 		ai_jump = _pathStruct._jump;
@@ -51,8 +60,6 @@ if (_pathStruct._isPerformingAction)
 	{
 		ai_moveUp = _lane != nextFloor._lane && _pathStruct._up && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
 		ai_moveDown = _lane != nextFloor._lane && _pathStruct._down && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
-		ai_isMovingLeft = _pathStruct._left;
-		ai_isMovingRight = _pathStruct._right;
 		ai_jump = _pathStruct._jump;
 	}
 }
@@ -78,10 +85,10 @@ else
 		}
 		else
 		{
-			if (_sideCollision || IsNearPlayer())
+			if (_sideCollision || IsNearPlayer() && sign(x - global.playerX) != sign(_pathStruct._x - global.playerX))
 				ai_jump = true;
 			
-			if (_stateTimer < 1)
+			if (_stateTimer < 1 && _lane == global.playerLane)
 				ai_retreat = true;
 		}
 	}

@@ -1,4 +1,5 @@
-MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
+if (!_isSwitchingLane || _xSpeed == 0)
+	MoveHorizontally(ai_isMovingLeft, ai_isMovingRight);
 
 if (ai_retreat && _lane == global.playerLane)
 	Retreat();
