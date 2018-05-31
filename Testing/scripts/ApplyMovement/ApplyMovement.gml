@@ -26,13 +26,16 @@ if (_xSpeed != 0)
 	}
 }
 
-var targetGroundYBefore = _targetGroundY;
-var targetGroundYAfter = GetTargetGroundY();
-_targetGroundY = targetGroundYAfter == 0 ? _targetGroundY : targetGroundYAfter;
-
-if (targetGroundYBefore != _targetGroundY)
+if (!_isWrapping)
 {
-	_currentGroundY -= targetGroundYBefore - _targetGroundY;
+	var targetGroundYBefore = _targetGroundY;
+	var targetGroundYAfter = GetTargetGroundY();
+	_targetGroundY = targetGroundYAfter == 0 ? _targetGroundY : targetGroundYAfter;
+
+	if (targetGroundYBefore != _targetGroundY)
+	{
+		_currentGroundY -= targetGroundYBefore - _targetGroundY;
+	}
 }
 
 var onFloor = !_isJumping && _currentGroundY == y;

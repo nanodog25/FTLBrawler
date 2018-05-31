@@ -18,7 +18,9 @@ if (col != noone)
 	if (overlap <= lenience && IsCollision(self, x - overlap, y, targetLane, objName, false) == noone)
 	{
 		if (_xSpeed >= 0)
-			_xSpeed = -overlap / (global.LaneWidth/_switchSpeed);
+			_xSpeed = IsAbilityActive(global.AbilityWormhole)
+				? -overlap
+				: -overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}	
 	
@@ -27,7 +29,9 @@ if (col != noone)
 	if (overlap <= lenience && IsCollision(self, x + overlap, y, targetLane, objName, false) == noone)
 	{
 		if (_xSpeed <= 0)
-			_xSpeed = overlap / (global.LaneWidth/_switchSpeed);
+			_xSpeed = IsAbilityActive(global.AbilityWormhole)
+				? overlap
+				: overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}
 	return true;

@@ -1,4 +1,5 @@
 _isSwitchingLane = false;
+_isWrapping = false;
 _isJumping = false;
 _isFalling = false;
 _isAttacking = false;

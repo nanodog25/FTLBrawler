@@ -1,2 +1,2 @@
 /// @description setDescription
-global.MenuDescription = "Circumnavigate the vertical axis";
+global.MenuDescription = "Go up to get down";

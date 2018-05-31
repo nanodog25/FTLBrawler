@@ -14,13 +14,8 @@ if (isMovingUp && _lane == 0 && !IsSwitchCollision(4))
 { 
 	canSwitch = true;
 	_lane=4;
-	_targetGroundY += global.LaneWidth*4;
-}
-else if (isMovingDown && _lane == 4 && !IsSwitchCollision(0)) 
-{ 
-	canSwitch = true;
-	_lane=0;
-	_targetGroundY -= global.LaneWidth*4;
+	_isWrapping = true;
+	_targetGroundY -= global.LaneWidth;
 }
 
 if (canSwitch)
