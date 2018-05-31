@@ -20,6 +20,7 @@ _isSwitchingLane = _targetGroundY != _currentGroundY;
 
 if (!_isSwitchingLane)
 {
+	_isWrapping = false;
 	_previousLane = _lane;
 }
 
