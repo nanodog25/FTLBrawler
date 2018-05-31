@@ -58,9 +58,26 @@ if (_pathStruct._isPerformingAction)
 	}		
 	else
 	{
-		ai_moveUp = _lane != nextFloor._lane && _pathStruct._up && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
-		ai_moveDown = _lane != nextFloor._lane && _pathStruct._down && GetRelativeHeight(y, _lane) >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_moveUp = _lane != nextFloor._lane && _pathStruct._up && GetRelativeHeight(y, _lane) + 10 >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
+		ai_moveDown = _lane != nextFloor._lane && _pathStruct._down && GetRelativeHeight(y, _lane) + 10 >= GetRelativeHeight(nextFloor._y, nextFloor._lane);
 		ai_jump = _pathStruct._jump;
+		
+		if (ai_jump && _lane == nextFloor._lane && y+15 <= nextFloor._y)
+		{
+			var safeDistance = _bbWidth/2 + 10;
+			var halfWidth = (nextFloor._xRight - nextFloor._xLeft)/2;
+		
+			if (halfWidth < safeDistance)
+			{
+				_pathStruct._x = nextFloor._xLeft + halfWidth;
+			}
+			else
+			{
+				_pathStruct._x = nextFloor._xLeft > x
+					? nextFloor._xLeft + safeDistance
+					: nextFloor._xRight - safeDistance;
+			}
+		}
 	}
 }
 else

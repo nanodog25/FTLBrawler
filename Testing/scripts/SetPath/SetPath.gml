@@ -1,6 +1,8 @@
 _pathCount = 0;
 _path = noone;
 _pathStruct = instance_create_layer(0,0,"Perimeters", PathStruct);
+instance_deactivate_object(_pathStruct);
+
 var paths = ds_list_create();
 FindPath(paths, noone, x);
 
@@ -34,6 +36,3 @@ if (!ds_list_empty(paths))
 	SetPathStruct();
 }
 ds_list_destroy(paths);
-
-if (_path != noone)
-	instance_deactivate_object(_path);
