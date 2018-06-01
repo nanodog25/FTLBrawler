@@ -1,4 +1,4 @@
-_isDestructible = false;
+_isDestructible = true;
 _isHit = false;
 
 if (sprite_index >= 0)
