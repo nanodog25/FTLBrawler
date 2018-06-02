@@ -17,10 +17,9 @@ if (col != noone)
 	var overlap = bbox_right - col.bbox_left + 5;
 	if (overlap <= lenience && IsCollision(self, x - overlap, y, targetLane, objName, false) == noone)
 	{
-		if (_xSpeed >= 0)
-			_xSpeed = IsAbilityActive(global.AbilityWormhole)
-				? -overlap
-				: -overlap / (global.LaneWidth/_switchSpeed);
+		_xSwitchSpeed = IsAbilityActive(global.AbilityWormhole)
+			? -overlap
+			: -overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}	
 	
@@ -28,10 +27,9 @@ if (col != noone)
 	overlap = col.bbox_right - bbox_left + 5;
 	if (overlap <= lenience && IsCollision(self, x + overlap, y, targetLane, objName, false) == noone)
 	{
-		if (_xSpeed <= 0)
-			_xSpeed = IsAbilityActive(global.AbilityWormhole)
-				? overlap
-				: overlap / (global.LaneWidth/_switchSpeed);
+		_xSwitchSpeed = IsAbilityActive(global.AbilityWormhole)
+			? overlap
+			: overlap / (global.LaneWidth/_switchSpeed);
 		return false;
 	}
 	return true;

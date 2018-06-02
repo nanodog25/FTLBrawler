@@ -8,11 +8,11 @@ Attacks();
 Tips();
 
 //Resolution();
-room = JacobsRoom;
+room = rm_street_highGround;
 
 global.playerSpeed = 6;
 global.playerSwitchSpeed = 6;
-global.playerMaxJumpHeight = 180;
+global.playerMaxJumpHeight = 120;
 global.playerJumpSpeed = 6;
 global.playerFallSpeed = 20;
 global.playerMelee = false;

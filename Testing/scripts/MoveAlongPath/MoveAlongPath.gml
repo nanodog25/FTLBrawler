@@ -11,7 +11,10 @@ if (currentFloor == ai_floor && IsAtPathAction())
 {
 	_direction = sign(global.playerX - x);
 	if (_state == st_moveToCover)
+	{
 		_nextState = st_inCover;
+		_direction = -_direction;
+	}
 	else
 		_nextState = st_waiting;
 		

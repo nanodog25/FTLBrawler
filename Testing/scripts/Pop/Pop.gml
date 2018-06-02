@@ -6,11 +6,13 @@ if (_canFire)
 	
 	if (above)
 	{
+		_direction = !_direction;
 		ai_moveUp = true;
 		_nextState = st_popUp;
 	}
 	else if (below)
 	{
+		_direction = !_direction;
 		ai_moveDown = true;
 		_nextState = st_popDown;
 	}

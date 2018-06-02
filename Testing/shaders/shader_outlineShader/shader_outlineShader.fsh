@@ -31,5 +31,5 @@ void main()
                  texture2D(gm_BaseTexture, v_vTexcoord);
   
   // Use the computed alpha
-  gl_FragColor.a = sign(alpha) * alph;
+  gl_FragColor.a = sign(alpha) * alph + sign(alpha) * (1.0 - originAlpha) * 0.5;
 }

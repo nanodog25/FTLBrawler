@@ -385,8 +385,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Triggers",
-            "id": "826e4f59-2215-4737-846a-13e50d1acbcc",
+            "name": "Copies",
+            "id": "ea87c82b-a4d4-4667-808e-2dc36ec875d1",
             "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
@@ -411,9 +411,9 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Perimeters",
-            "id": "383a90aa-5ccb-4472-86e6-ac57305895fd",
-            "depth": 100,
+            "name": "Triggers",
+            "id": "826e4f59-2215-4737-846a-13e50d1acbcc",
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -428,7 +428,33 @@
             "layers": [
 
             ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_parentID": "4762d33f-b189-406a-9e40-abdfb10a3185",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Perimeters",
+            "id": "383a90aa-5ccb-4472-86e6-ac57305895fd",
+            "depth": 600,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "5315143c-10bf-4f10-a835-3ca9ebd190f9",
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
@@ -439,7 +465,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Debug",
             "id": "09b0b294-c049-40e7-b042-032ad4038bba",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -466,7 +492,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "ab3d183d-bdf3-429a-9b84-e0d3533a8006",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -495,7 +521,7 @@
             "assets": [
 
             ],
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

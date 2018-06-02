@@ -3,9 +3,10 @@
 var startX = _traceX;
 var obj = argument0;
 
-if (collision_point(_traceX+1, _traceY, obj, true, false))
+if (collision_point(_traceX+1, _traceY-1, obj, true, false) != collision_point(_traceX+1, _traceY+1, obj, true, false))
 {
-	while (collision_point(_traceX, _traceY, obj, true, false))
+	_traceX++;
+	while (collision_point(_traceX, _traceY-1, obj, true, false) != collision_point(_traceX, _traceY+1, obj, true, false))
 	{
 		_traceX++;
 	}
@@ -13,7 +14,8 @@ if (collision_point(_traceX+1, _traceY, obj, true, false))
 }
 else
 {
-	while (collision_point(_traceX, _traceY, obj, true, false))
+	_traceX--;
+	while (collision_point(_traceX, _traceY-1, obj, true, false) != collision_point(_traceX, _traceY+1, obj, true, false))
 	{
 		_traceX--;
 	}
@@ -29,3 +31,5 @@ platform._lane = obj._lane;
 
 if (collision_point(platform._xLeft+1, _traceY+1, obj, true, false))
 	ds_list_add(global.LanePlatforms[| obj._lane], platform);
+else if (_traceY+1 < global.LaneYs[| obj._lane] && !collision_point(platform._xLeft+1, _traceY+1, asset_get_index("LaneObject" + string(obj._lane)), true, false))
+	ds_list_add(global.LaneCeilings[| obj._lane], platform);

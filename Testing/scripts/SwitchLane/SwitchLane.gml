@@ -22,6 +22,7 @@ if (!_isSwitchingLane)
 {
 	_isWrapping = false;
 	_previousLane = _lane;
+	_xSwitchSpeed = 0;
 }
 
 if (abs(_targetGroundY - currenctGroundY) > global.LaneHalf && abs(_targetGroundY - _currentGroundY) < global.LaneHalf || abs(_targetGroundY - _currentGroundY) == global.LaneHalf)

@@ -4,13 +4,15 @@ if (_ySwitch == 0)
 	{
 		ai_fire = true;
 	}
-	else if (_state == st_popDown && IsPopSpace(ai_floor, "down"))
+	else if (_state == st_popDown)
 	{
+		_direction = !_direction;
 		ai_moveUp = true;
 		_nextState = st_inCover;
 	}
-	else if (_state == st_popUp && IsPopSpace(ai_floor, "up"))
+	else if (_state == st_popUp)
 	{
+		_direction = !_direction;
 		ai_moveDown = true;
 		_nextState = st_inCover;
 	}

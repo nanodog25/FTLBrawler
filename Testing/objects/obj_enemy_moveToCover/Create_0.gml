@@ -1,2 +1,2 @@
 event_inherited();
-CreateActorParams(true, 6, 6, 180, 6, 20, 0, 100, "Enemy");
+CreateActorParams(true, 6, 6, 120, 6, 20, 0, 100, "Enemy");

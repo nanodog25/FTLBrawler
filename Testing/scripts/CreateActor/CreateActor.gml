@@ -20,6 +20,7 @@ _canFire = true;
 _onGround = true;
 
 _xSpeed = 0;
+_xSwitchSpeed = 0;
 _ySpeed = 0;
 _yAcc = 0;
 _ySwitch = 0;

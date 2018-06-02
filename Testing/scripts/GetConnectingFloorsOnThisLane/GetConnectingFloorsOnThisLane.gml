@@ -10,6 +10,7 @@ var currentX = argument2;
 var weights = argument3;
 var nextFloorsWeighted = argument4;
 
+var targetFloor = path[| 0]; 
 var relevantFloors = ds_list_create();
 ds_list_copy(relevantFloors, GetFloorsInLane(currentFloor._lane));
 
@@ -32,9 +33,9 @@ for(var i=ds_list_size(relevantFloors)-1; i>=0; i--)
 		ds_list_delete(relevantFloors, i);
 }
 
-if (ds_list_find_index(relevantFloors, path[| 0]) != -1)
+if (ds_list_find_index(relevantFloors, targetFloor) != -1)
 {
-	ds_map_add(nextFloorsWeighted, 0, path[| 0]);
+	ds_map_add(nextFloorsWeighted, 0, targetFloor);
 	ds_list_add(weights, 0);
 }
 else
@@ -49,7 +50,7 @@ else
 		weight += abs(x - flr._xLeft);
 		weight += abs(x - flr._xRight);
 	
-		if (currentFloor._y != flr._y)
+		if (abs(currentFloor._y - targetFloor._y) < abs(flr._y - targetFloor._y))
 			weight += 100;
 	
 		while(ds_list_find_index(weights, weight) != -1)

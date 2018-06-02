@@ -3,9 +3,10 @@
 var startY = _traceY;
 var obj = argument0;
 
-if (collision_point(_traceX, _traceY+1, obj, true, false))
+if (collision_point(_traceX-1, _traceY+1, obj, true, false) != collision_point(_traceX+1, _traceY+1, obj, true, false))
 {
-	while (collision_point(_traceX, _traceY, obj, true, false))
+	_traceY++;
+	while (collision_point(_traceX-1, _traceY, obj, true, false) != collision_point(_traceX+1, _traceY, obj, true, false))
 	{
 		_traceY++;
 	}
@@ -13,7 +14,8 @@ if (collision_point(_traceX, _traceY+1, obj, true, false))
 }
 else
 {
-	while (collision_point(_traceX, _traceY, obj, true, false))
+	_traceY--;
+	while (collision_point(_traceX-1, _traceY, obj, true, false) != collision_point(_traceX+1, _traceY, obj, true, false))
 	{
 		_traceY--;
 	}

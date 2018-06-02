@@ -10,7 +10,12 @@ move_yDown = bbox_bottom - switchOffset;
 move_obj = asset_get_index("LaneObject" + string(_lane));
 
 var col = noone;
-if (_xSpeed != 0)
+
+if (_xSwitchSpeed != 0)
+{
+	x += _xSwitchSpeed
+}
+else if (_xSpeed != 0)
 {
 	col = _xSpeed > 0
 		? IsPlatformCollision("right")
@@ -76,4 +81,6 @@ else
 }
 
 var laneDepth = _ySwitch < 0 ? _lane + 1 : _lane;
-depth = DepthModifier(laneDepth, _objectType);
+depth = _isSwitchingLane && _ySwitch < 0
+? DepthModifier(laneDepth, "FrontLane")
+: DepthModifier(laneDepth, _objectType);

@@ -1,6 +1,6 @@
 if (sprite_index >= 0)
 {
-	var newalph = _lane == global.playerLane ? 1 : 0.6;
+	var newalph = _lane == global.playerLane ? 1 : 0.2;
 
 	shader_set(shader_outlineShader);
 	shader_set_uniform_f(pixH, texH*2);
