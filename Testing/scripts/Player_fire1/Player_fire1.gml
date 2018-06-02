@@ -29,3 +29,5 @@ with (inst)
 	_hasSpeedAura = global.hasSpeedAura;
 	_isLaneOverwrite = isLaneOverwrite;
 }
+
+alarm_set(0, InSeconds(inst._rateOfFire)/_speedMod);

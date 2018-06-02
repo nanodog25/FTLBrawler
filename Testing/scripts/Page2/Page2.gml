@@ -20,12 +20,12 @@ if (keyboard_check_pressed(global.KeyMidRight) || keyboard_check_pressed(global.
 	_page2Index++;
 else if (keyboard_check_pressed(global.KeyMidLeft) || keyboard_check_pressed(global.KeyLeft))
 	_page2Index--;
-else if (_page2Section != 0 && keyboard_check_pressed(global.KeyHigh) || keyboard_check_pressed(global.KeyUp))
+else if (_page2Section != 0 && (keyboard_check_pressed(global.KeyHigh) || keyboard_check_pressed(global.KeyUp)))
 {
 	_page2Section--;
 	_page2Index = 0;
 }
-else if (_page2Section != 2 && keyboard_check_pressed(global.KeyLow) || keyboard_check_pressed(global.KeyDown))
+else if (_page2Section != 2 && (keyboard_check_pressed(global.KeyLow) || keyboard_check_pressed(global.KeyDown)))
 {
 	_page2Section++;
 	_page2Index = 0;

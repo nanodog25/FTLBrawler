@@ -31,7 +31,13 @@ if (!_isJumping && !_isFalling && _currentGroundY == y)
 if (_onPath && !_isSwitchingLane)
 {
 	if (_pathStruct._x >= x && _pathStruct._x < x + _xSpeed)
-		_xSpeed = _pathStruct._x - x;
+	{
+		_xSpeed = 0;
+		x = _pathStruct._x;
+	}
 	else if (_pathStruct._x <= x && _pathStruct._x > x + _xSpeed)
-		_xSpeed = _pathStruct._x - x;
+	{
+		_xSpeed = 0;
+		x = _pathStruct._x;
+	}
 }

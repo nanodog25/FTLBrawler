@@ -22,7 +22,7 @@ if (!IsActorInterrupted())
 		Player_jump();
 	}
 	
-	if (!_isBlocking && (!_isSwitchingLane || _xSpeed == 0))
+	if (!_isBlocking)
 	{
 		Player_move();
 	}
