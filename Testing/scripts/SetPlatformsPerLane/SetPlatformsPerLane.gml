@@ -38,6 +38,9 @@ for (var i=0; i<ds_list_size(global.objectsInView); i++)
 	until (traceStartX == _traceX && traceStartY == _traceY)
 }
 
+//RemoveOverlaps();
+
+
 for(var i=0; i<5;i++)
 {
 	var width;
@@ -46,17 +49,35 @@ for(var i=0; i<5;i++)
 		width[a] = 1;
 	}
 
-	var floors = GetFloorsInLane(i);
+	var lWalls = GetWallsInLane(i, false);
+	var rWalls = GetWallsInLane(i, true);
 	
-	for (var j=0; j<ds_list_size(floors); j++)
+	var lX = ds_list_create();
+	var rX = ds_list_create();
+	var laneY = global.LaneYs[| i];
+	
+	for (var j=0; j<ds_list_size(lWalls); j++)
 	{
-		var platform = floors[| j];
-		if (platform._obj.y == global.LaneYs[| i])
+		var w = lWalls[| j];
+		if (w._yBase == laneY)
+			ds_list_add(lX, w._x);
+	}
+
+	for (var j=0; j<ds_list_size(rWalls); j++)
+	{
+		var w = rWalls[| j];
+		if (w._yBase == laneY)
+			ds_list_add(rX, w._x);
+	}
+	
+	ds_list_sort(lX, true);
+	ds_list_sort(rX, true);
+
+	for (var j=0; j<ds_list_size(lX); j++)
+	{
+		for(var k = lX[| j]; k <= rX[| j]; k++)
 		{
-			for(var k = platform._xLeft; k <= platform._xRight; k++)
-			{
-				width[k] = 0;
-			}
+			width[k] = 0;
 		}
 	}
 	
