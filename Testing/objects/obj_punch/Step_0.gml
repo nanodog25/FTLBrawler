@@ -13,7 +13,7 @@ if (!_hasFired)
 		for(var i = 0; i < ds_list_size(instList); i++)
 		{
 			var inst = instList[| i];
-			if (_lane == inst._lane && inst != _origin && !object_is_ancestor(inst.object_index, obj_proj_Projectile))
+			if (_lane == inst._lane && inst != _origin && !object_is_ancestor(inst.object_index, obj_Projectile))
 			{
 				with (inst)
 					event_user(0);

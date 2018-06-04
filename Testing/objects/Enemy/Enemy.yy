@@ -115,6 +115,20 @@
             "value": "0",
             "varName": "_lane",
             "varType": 1
+        },
+        {
+            "id": "d7459519-69e7-40aa-b95b-45621060c64d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_projectile",
+            "varType": 5
         }
     ],
     "solid": false,

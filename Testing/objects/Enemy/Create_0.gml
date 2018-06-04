@@ -14,9 +14,9 @@ ai_canDodge = true;
 ai_moveX = 0;
 ai_moveLane = 0;
 
+
 event_inherited();
 CreateActor();
-randomise();
-image_blend = make_colour_hsv(random(255), 255, 255);
 
 _direction = -1;
+ai_startFloor = noone;

@@ -21,8 +21,16 @@ else if (_xSpeed != 0)
 		? IsPlatformCollision("right")
 		: IsPlatformCollision("left");
 
-	if (col == noone || _isLaunched && (col == obj_leftBorder || col == obj_rightBorder))
+	if (col == noone || _isLaunched && object_index != Player && (col == obj_leftBorder || col == obj_rightBorder))
+	{
 		x += _xSpeed * _speedMod * global.delta;
+	}
+	else if (col != obj_leftBorder && col != obj_rightBorder && _isLaunched && col._isDestructible)
+	{
+		x += _xSpeed * _speedMod * global.delta;
+		with(col)
+			event_user(0);
+	}
 	else
 	{
 		x += GetExactHorizontalCollision();

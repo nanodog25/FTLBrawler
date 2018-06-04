@@ -6,7 +6,7 @@ var objName = "LaneObject" + string(targetLane);
 var col = IsCollision(self, x, y-10, targetLane, objName, false);
 var lenience = (_isJumping || _isFalling) ? 10 : 40;
 
-if (col != noone && object_is_ancestor(object_index, obj_proj_Projectile))
+if (col != noone && object_is_ancestor(object_index, obj_Projectile))
 {
 	return !col._isDestructible;
 }

@@ -10,7 +10,7 @@ else if (_isHit || _hasBlocked)
 	_direction = -_hitDirection;
 	_xSpeed = _hitDirection * _knockBack;
 	
-	if (self == Player)
+	if (object_index == Player)
 	{
 		Player_switch();
 		Player_jump();

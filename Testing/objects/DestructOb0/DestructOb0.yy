@@ -2,7 +2,7 @@
     "id": "b27390c5-e46b-4c28-97d7-8b3f62c6bcf2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Destructible0",
+    "name": "DestructOb0",
     "eventList": [
         {
             "id": "03398d25-170a-47a7-86b4-7a7308153c34",

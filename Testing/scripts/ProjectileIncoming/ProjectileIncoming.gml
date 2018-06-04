@@ -2,7 +2,7 @@ var projectile = noone;
 
 if (ai_canDodge)
 {
-	with(obj_proj_StandardProjectile)
+	with(obj_StandardProjectile)
 	{
 		if (_lane == other._lane)
 		{

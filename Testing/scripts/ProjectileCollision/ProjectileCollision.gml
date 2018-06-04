@@ -39,7 +39,7 @@ if (instList != noone)
 	for(var i = 0; i < ds_list_size(instList); i++)
 	{
 		var inst = instList[| i];
-		var isProjectile = object_is_ancestor(inst.object_index, obj_proj_Projectile);
+		var isProjectile = object_is_ancestor(inst.object_index, obj_Projectile);
 		var instIgnoresUs = isProjectile && inst._isPiercing;
 		
 		if (inst != _origin && inst != other && !instIgnoresUs && _lane == inst._lane)
