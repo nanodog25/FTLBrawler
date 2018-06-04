@@ -8,7 +8,8 @@ Attacks();
 Tips();
 
 //Resolution();
-room = rm_street_mockup;
+room = rm_street_wall;
+global.InstanceOrder = 0;
 
 global.playerSpeed = 6;
 global.playerSwitchSpeed = 6;
