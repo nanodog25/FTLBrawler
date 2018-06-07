@@ -9,6 +9,7 @@ if (_triggerObj._isTriggered)
 			var position = _enemyFormations[? enemy];
 			enemy.ai_startFloor = PositionToPlatform(position);
 			enemy.ai_moveX = position._x;
+			enemy._nextState = "waiting";
 		}
 		enemy = ds_map_find_next(_enemyFormations, enemy);
 	}
