@@ -12,7 +12,8 @@
         "c0741404-02ff-47bd-8cde-266d99600859",
         "5c38895d-58f1-4577-9644-5d0445ce861a",
         "3ef703f6-0cf6-4af6-8865-27d8799890e3",
-        "ff403254-f06e-4820-bd99-4151a893d08b"
+        "ff403254-f06e-4820-bd99-4151a893d08b",
+        "b6bcdb58-9b4c-4c3d-964c-3d3c6571b145"
     ],
     "filterType": "GMScript",
     "folderName": "Navigation",

@@ -1,0 +1,1 @@
+_isTriggered = false;

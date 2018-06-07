@@ -50,7 +50,7 @@ for(var i=0; i<overlapIndex; i++)
 	}
 	if (thisStart != -1 && (overlaps[i] == 1 || (i == overlapIndex-1 && overlaps[i-1] == 0)))
 	{
-		var platform = instance_create_layer(0,0,"Perimeters", PlatformStruct);
+		var platform = instance_create_layer(0,0,"Structs", PlatformStruct);
 		platform._y = _traceY;
 		platform._xLeft = min(thisStart, startX + dirValue*i);
 		platform._xRight = max(thisStart, startX + dirValue*i);

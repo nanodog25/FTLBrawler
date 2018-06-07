@@ -1,18 +1,18 @@
 {
-    "id": "01d4c230-d336-454b-ae64-7d9bd320b51b",
+    "id": "b596e995-fdea-4ac6-a7e2-d551cda4ead5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "PlatformRight",
+    "name": "obj_trigger_formation",
     "eventList": [
         {
-            "id": "58b19894-f2e1-4dcc-82c7-e9db5f177bea",
+            "id": "8d08ea67-aa07-4bb5-87db-24883f0c0bf2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "01d4c230-d336-454b-ae64-7d9bd320b51b"
+            "eventtype": 3,
+            "m_owner": "b596e995-fdea-4ac6-a7e2-d551cda4ead5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -34,5 +34,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

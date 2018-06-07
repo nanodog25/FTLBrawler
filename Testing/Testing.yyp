@@ -90,7 +90,7 @@
             "Key": "01d4c230-d336-454b-ae64-7d9bd320b51b",
             "Value": {
                 "id": "c0294100-dfb3-4891-ae46-54ab0e61a4d0",
-                "resourcePath": "objects\\PlatformRight\\PlatformRight.yy",
+                "resourcePath": "objects\\PositionStruct\\PositionStruct.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -124,6 +124,14 @@
                 "id": "2856b3a3-ab6d-483b-9a93-adab590a9446",
                 "resourcePath": "scripts\\RandomFloorPosition\\RandomFloorPosition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "047d9d03-5da6-4ca1-ae9c-c74af9c7da91",
+            "Value": {
+                "id": "6e9b5cb0-b314-4518-a89a-aa9b65b14041",
+                "resourcePath": "views\\047d9d03-5da6-4ca1-ae9c-c74af9c7da91.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -791,6 +799,14 @@
             }
         },
         {
+            "Key": "397b0880-4ced-47e5-ab51-079b76ade808",
+            "Value": {
+                "id": "a7daa89c-94be-4113-afa0-de352614cb9f",
+                "resourcePath": "objects\\obj_trigger_zone\\obj_trigger_zone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a475f20-f8de-4fbd-b5dc-a8706aeb8ad8",
             "Value": {
                 "id": "1e0be71f-5492-4d30-94ac-38b4e6427fc1",
@@ -956,6 +972,14 @@
                 "id": "8027a0a9-8b9d-4e8e-8fce-9f7487a4cbdc",
                 "resourcePath": "objects\\obj_block_2\\obj_block_2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "45bc3b11-2bb0-4217-a1cb-dfe4b6bc686c",
+            "Value": {
+                "id": "adb7e40e-7c6e-433a-aa03-ce2ec2cae510",
+                "resourcePath": "scripts\\CreateFormationTrigger\\CreateFormationTrigger.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2455,6 +2479,14 @@
             }
         },
         {
+            "Key": "b596e995-fdea-4ac6-a7e2-d551cda4ead5",
+            "Value": {
+                "id": "4681a31e-8733-4b44-b0ac-bab9ba32d422",
+                "resourcePath": "objects\\obj_trigger_formation\\obj_trigger_formation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b5a16509-1db2-4047-ba80-9b87e8ab50d2",
             "Value": {
                 "id": "58a416f4-702c-425c-93eb-9f4c2d820fca",
@@ -2467,6 +2499,14 @@
             "Value": {
                 "id": "697ef0a2-60e9-4aad-b6f0-35c34cf4ab29",
                 "resourcePath": "scripts\\Player_melee\\Player_melee.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b6bcdb58-9b4c-4c3d-964c-3d3c6571b145",
+            "Value": {
+                "id": "31fbe98a-171a-4a99-8cb6-a84945e17f32",
+                "resourcePath": "scripts\\PositionToPlatform\\PositionToPlatform.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2652,6 +2692,14 @@
                 "id": "c0d27e50-c176-4202-bd39-f9e2e21c07db",
                 "resourcePath": "objects\\obj_menu_player\\obj_menu_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c4af64bf-47a3-4f82-bffa-7629b3bd2d2c",
+            "Value": {
+                "id": "adef1856-01da-47d7-9989-7b96f22ed969",
+                "resourcePath": "scripts\\CreateZoneTrigger\\CreateZoneTrigger.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3475,6 +3523,8 @@
         "bb5468a5-973c-48e4-96cc-2119fc35c3bf",
         "716a1013-d5b7-4bcf-89a0-c41f8521ddfc",
         "62c53ea9-cf06-4a86-bda0-c61468a680be",
+        "c4af64bf-47a3-4f82-bffa-7629b3bd2d2c",
+        "45bc3b11-2bb0-4217-a1cb-dfe4b6bc686c",
         "da7a81ab-8292-4ce5-958b-7c9c2a7dd392",
         "112fd8b4-a244-494c-aa85-1088edb6269c",
         "9e455fbd-2736-4586-90b8-2278a5643e96",
@@ -3578,6 +3628,7 @@
         "5c38895d-58f1-4577-9644-5d0445ce861a",
         "3ef703f6-0cf6-4af6-8865-27d8799890e3",
         "ff403254-f06e-4820-bd99-4151a893d08b",
+        "b6bcdb58-9b4c-4c3d-964c-3d3c6571b145",
         "ff028f50-63ce-4217-b0fd-3d9bdb1adfd3",
         "9fae77fa-c1ae-4b51-812a-7eaf846e7117",
         "6e072a7e-104e-4764-b011-40d3fc9571c6",

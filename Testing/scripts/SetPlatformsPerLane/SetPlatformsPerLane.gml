@@ -89,7 +89,7 @@ for(var i=0; i<5;i++)
 		
 		if (left != -1 && (width[a] == 0 || a == global.roomRight))
 		{
-			var platform = instance_create_layer(0,0,"Perimeters", PlatformStruct);
+			var platform = instance_create_layer(0,0,"Structs", PlatformStruct);
 			platform._y = global.LaneYs[| i];
 			platform._xLeft = left;
 			platform._xRight = a-1;

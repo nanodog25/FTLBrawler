@@ -49,7 +49,7 @@ for(var i=0; i<overlapIndex; i++)
 	}
 	if (thisStart != -1 && (overlaps[i] == 1 || (i == overlapIndex-1 && overlaps[i-1] == 0)))
 	{
-		var wall = instance_create_layer(0,0,"Perimeters", WallStruct);
+		var wall = instance_create_layer(0,0,"Structs", WallStruct);
 		wall._x = _traceX;
 		wall._yBase = max(thisStart, startY + dirValue*i);
 		wall._yTop = min(thisStart, startY + dirValue*i);

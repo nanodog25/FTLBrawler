@@ -1,6 +1,6 @@
 _pathCount = 0;
 _path = noone;
-_pathStruct = instance_create_layer(0,0,"Perimeters", PathStruct);
+_pathStruct = instance_create_layer(0,0,"Structs", PathStruct);
 instance_deactivate_object(_pathStruct);
 
 var paths = ds_list_create();
